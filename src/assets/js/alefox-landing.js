@@ -1,6 +1,5 @@
 (function ($) {
     "use strict";
-    $(document).ready(function() {
 
     if ($(".dynamic-year").length) {
         let currentYear = new Date().getFullYear();
@@ -16,5 +15,5 @@
         });
         wow.init();
     }
-    });
+
 })(jQuery);

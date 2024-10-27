@@ -1,26 +1,24 @@
 (function ($) {
   "use strict";
 
-  $(document).ready(function() {
-
-    /*-- Checkout Accoradin --*/
+  /*-- Checkout Accoradin --*/
   if ($(".checkout-page__payment__title").length) {
     $(".checkout-page__payment__item")
-      .find(".checkout-page__payment__content")
-      .hide();
+        .find(".checkout-page__payment__content")
+        .hide();
     $(".checkout-page__payment__item--active")
-      .find(".checkout-page__payment__content")
-      .show();
+        .find(".checkout-page__payment__content")
+        .show();
     $(".checkout-page__payment__title").on("click", function (e) {
       e.preventDefault();
       $(this)
-        .parents(".checkout-page__payment")
-        .find(".checkout-page__payment__item")
-        .removeClass("checkout-page__payment__item--active");
+          .parents(".checkout-page__payment")
+          .find(".checkout-page__payment__item")
+          .removeClass("checkout-page__payment__item--active");
       $(this)
-        .parents(".checkout-page__payment")
-        .find(".checkout-page__payment__content")
-        .slideUp();
+          .parents(".checkout-page__payment")
+          .find(".checkout-page__payment__content")
+          .slideUp();
       $(this).parent().addClass("checkout-page__payment__item--active");
       $(this).parent().find(".checkout-page__payment__content").slideDown();
     });
@@ -42,44 +40,44 @@
   // Popular Causes Progress Bar
   if ($(".count-bar").length) {
     $(".count-bar").appear(
-      function () {
-        var el = $(this);
-        var percent = el.data("percent");
-        $(el).css("width", percent).addClass("counted");
-      }, {
-        accY: -50
-      }
+        function () {
+          var el = $(this);
+          var percent = el.data("percent");
+          $(el).css("width", percent).addClass("counted");
+        }, {
+          accY: -50
+        }
     );
   }
 
   //Fact Counter + Text Count
   if ($(".count-box").length) {
     $(".count-box").appear(
-      function () {
-        var $t = $(this),
-          n = $t.find(".count-text").attr("data-stop"),
-          r = parseInt($t.find(".count-text").attr("data-speed"), 10);
+        function () {
+          var $t = $(this),
+              n = $t.find(".count-text").attr("data-stop"),
+              r = parseInt($t.find(".count-text").attr("data-speed"), 10);
 
-        if (!$t.hasClass("counted")) {
-          $t.addClass("counted");
-          $({
-            countNum: $t.find(".count-text").text()
-          }).animate({
-            countNum: n
-          }, {
-            duration: r,
-            easing: "linear",
-            step: function () {
-              $t.find(".count-text").text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $t.find(".count-text").text(this.countNum);
-            }
-          });
+          if (!$t.hasClass("counted")) {
+            $t.addClass("counted");
+            $({
+              countNum: $t.find(".count-text").text()
+            }).animate({
+              countNum: n
+            }, {
+              duration: r,
+              easing: "linear",
+              step: function () {
+                $t.find(".count-text").text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $t.find(".count-text").text(this.countNum);
+              }
+            });
+          }
+        }, {
+          accY: 0
         }
-      }, {
-        accY: 0
-      }
     );
   }
 
@@ -98,42 +96,41 @@
   //======Circle Progress
   if ($(".dial").length) {
     $(".dial").appear(
-      function () {
-        var elm = $(this);
-        var color = elm.attr("data-fgColor");
-        var perc = elm.attr("value");
-        elm.knob({
-          value: 0,
-          min: 0,
-          max: 100,
-          skin: "tron",
-          readOnly: true,
-          thickness: 0.16,
-          dynamicDraw: true,
-          displayInput: false,
-        });
-        $({
-          value: 0,
-        }).animate({
-          value: perc,
+        function () {
+          var elm = $(this);
+          var color = elm.attr("data-fgColor");
+          var perc = elm.attr("value");
+          elm.knob({
+            value: 0,
+            min: 0,
+            max: 100,
+            skin: "tron",
+            readOnly: true,
+            thickness: 0.16,
+            dynamicDraw: true,
+            displayInput: false,
+          });
+          $({
+            value: 0,
+          }).animate({
+            value: perc,
+          }, {
+            duration: 2000,
+            easing: "swing",
+            progress: function () {
+              elm.val(Math.ceil(this.value)).trigger("change");
+            },
+          });
+          $(this).append(function () {});
         }, {
-          duration: 2000,
-          easing: "swing",
-          progress: function () {
-            elm.val(Math.ceil(this.value)).trigger("change");
-          },
-        });
-        $(this).append(function () {});
-      }, {
-        accY: 20,
-      }
+          accY: 20,
+        }
     );
   }
 
   // custom coursor
   if ($(".custom-cursor").length) {
     var cursor = document.querySelector(".custom-cursor__cursor");
-    console.log(document.querySelector('.page-wrapper'));
     var cursorinner = document.querySelector(".custom-cursor__cursor-two");
     var a = document.querySelectorAll("a");
 
@@ -191,14 +188,14 @@
       submitHandler: function (form) {
         // sending value with ajax request
         $.post(
-          $(form).attr("action"),
-          $(form).serialize(),
-          function (response) {
-            $(form).parent().find(".result").append(response);
-            $(form).find('input[type="text"]').val("");
-            $(form).find('input[type="email"]').val("");
-            $(form).find("textarea").val("");
-          }
+            $(form).attr("action"),
+            $(form).serialize(),
+            function (response) {
+              $(form).parent().find(".result").append(response);
+              $(form).find('input[type="text"]').val("");
+              $(form).find('input[type="email"]').val("");
+              $(form).find("textarea").val("");
+            }
         );
         return false;
       }
@@ -316,14 +313,14 @@
 
   if ($(".sticky-header").length) {
     $(".sticky-header")
-      .clone()
-      .insertAfter(".sticky-header")
-      .addClass("sticky-header--cloned");
+        .clone()
+        .insertAfter(".sticky-header")
+        .addClass("sticky-header--cloned");
   }
 
   if ($(".mobile-nav__container .main-menu__list").length) {
     let dropdownAnchor = $(
-      ".mobile-nav__container .main-menu__list .dropdown > a"
+        ".mobile-nav__container .main-menu__list .dropdown > a"
     );
     dropdownAnchor.each(function () {
       let self = $(this);
@@ -402,14 +399,14 @@
   if ($("#donate-amount__predefined").length) {
     let donateInput = $("#donate-amount");
     $("#donate-amount__predefined")
-      .find("li")
-      .on("click", function (e) {
-        e.preventDefault();
-        let amount = $(this).find("a").text();
-        donateInput.val(amount);
-        $("#donate-amount__predefined").find("li").removeClass("active");
-        $(this).addClass("active");
-      });
+        .find("li")
+        .on("click", function (e) {
+          e.preventDefault();
+          let amount = $(this).find("a").text();
+          donateInput.val(amount);
+          $("#donate-amount__predefined").find("li").removeClass("active");
+          $(this).addClass("active");
+        });
   }
 
   //accrodion
@@ -424,20 +421,20 @@
       Self.find(".accrodion.active").find(".accrodion-content").show();
       accordion.each(function () {
         $(this)
-          .find(".accrodion-title")
-          .on("click", function () {
-            if ($(this).parent().hasClass("active") === false) {
-              $(".alefox-accrodion." + accrodionName)
-                .find(".accrodion")
-                .removeClass("active");
-              $(".alefox-accrodion." + accrodionName)
-                .find(".accrodion")
-                .find(".accrodion-content")
-                .slideUp();
-              $(this).parent().addClass("active");
-              $(this).parent().find(".accrodion-content").slideDown();
-            }
-          });
+            .find(".accrodion-title")
+            .on("click", function () {
+              if ($(this).parent().hasClass("active") === false) {
+                $(".alefox-accrodion." + accrodionName)
+                    .find(".accrodion")
+                    .removeClass("active");
+                $(".alefox-accrodion." + accrodionName)
+                    .find(".accrodion")
+                    .find(".accrodion-content")
+                    .slideUp();
+                $(this).parent().addClass("active");
+                $(this).parent().find(".accrodion-content").slideDown();
+              }
+            });
       });
     });
   }
@@ -445,8 +442,8 @@
   $(".add").on("click", function () {
     if ($(this).prev().val() < 999) {
       $(this)
-        .prev()
-        .val(+$(this).prev().val() + 1);
+          .prev()
+          .val(+$(this).prev().val() + 1);
     }
   });
 
@@ -454,8 +451,8 @@
     if ($(this).next().val() > 0) {
       if ($(this).next().val() > 0)
         $(this)
-        .next()
-        .val(+$(this).next().val() - 1);
+            .next()
+            .val(+$(this).next().val() - 1);
     }
   });
 
@@ -468,21 +465,21 @@
         return false;
       } else {
         target
-          .parents(".tabs-box")
-          .find(".tab-buttons")
-          .find(".tab-btn")
-          .removeClass("active-btn");
+            .parents(".tabs-box")
+            .find(".tab-buttons")
+            .find(".tab-btn")
+            .removeClass("active-btn");
         $(this).addClass("active-btn");
         target
-          .parents(".tabs-box")
-          .find(".tabs-content")
-          .find(".tab")
-          .fadeOut(0);
+            .parents(".tabs-box")
+            .find(".tabs-content")
+            .find(".tab")
+            .fadeOut(0);
         target
-          .parents(".tabs-box")
-          .find(".tabs-content")
-          .find(".tab")
-          .removeClass("active-tab");
+            .parents(".tabs-box")
+            .find(".tabs-content")
+            .find(".tab")
+            .removeClass("active-tab");
         $(target).fadeIn(300);
         $(target).addClass("active-tab");
       }
@@ -519,7 +516,7 @@
         let elm = $(this);
         let options = elm.data("owl-options");
         let thmOwlCarousel = elm.owlCarousel(
-          "object" === typeof options ? options : JSON.parse(options)
+            "object" === typeof options ? options : JSON.parse(options)
         );
         elm.find("button").each(function () {
           $(this).attr("aria-label", "carousel button");
@@ -562,7 +559,7 @@
         let elm = $(this);
         let options = elm.data("slick-options");
         let alefoxslickCarousel = elm.slick(
-          "object" === typeof options ? options : JSON.parse(options)
+            "object" === typeof options ? options : JSON.parse(options)
         );
       });
     }
@@ -572,22 +569,22 @@
   let scrollTop = $('.scroll-top path');
   if (scrollTop.length) {
     var e = document.querySelector(".scroll-top path"),
-      t = e.getTotalLength();
+        t = e.getTotalLength();
     (e.style.transition = e.style.WebkitTransition = "none"),
-    (e.style.strokeDasharray = t + " " + t),
-    (e.style.strokeDashoffset = t),
-    e.getBoundingClientRect(),
-      (e.style.transition = e.style.WebkitTransition =
-        "stroke-dashoffset 10ms linear");
+        (e.style.strokeDasharray = t + " " + t),
+        (e.style.strokeDashoffset = t),
+        e.getBoundingClientRect(),
+        (e.style.transition = e.style.WebkitTransition =
+            "stroke-dashoffset 10ms linear");
     var o = function () {
       var o = $(window).scrollTop(),
-        r = $(document).height() - $(window).height(),
-        i = t - (o * t) / r;
+          r = $(document).height() - $(window).height(),
+          i = t - (o * t) / r;
       e.style.strokeDashoffset = i;
     };
     o(), $(window).scroll(o);
     var back = $(".scroll-top"),
-      body = $("body, html");
+        body = $("body, html");
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > $(window).height()) {
         back.addClass("scroll-top--active");
@@ -609,13 +606,13 @@
         }
         var target = $(this);
         $("html, body")
-          .stop()
-          .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
-            },
-            900,
-            "easeInOutExpo"
-          );
+            .stop()
+            .animate({
+                  scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+                },
+                900,
+                "easeInOutExpo"
+            );
         anchor.removeClass("current");
         anchor.removeClass("current-menu-ancestor");
         anchor.removeClass("current_page_item");
@@ -638,18 +635,18 @@
             var Sectionid = $(sections).attr("id");
             $(".one-page-scroll-menu").find("li").removeClass("current");
             $(".one-page-scroll-menu")
-              .find("li")
-              .removeClass("current-menu-ancestor");
+                .find("li")
+                .removeClass("current-menu-ancestor");
             $(".one-page-scroll-menu")
-              .find("li")
-              .removeClass("current_page_item");
+                .find("li")
+                .removeClass("current_page_item");
             $(".one-page-scroll-menu")
-              .find("li")
-              .removeClass("current-menu-parent");
+                .find("li")
+                .removeClass("current-menu-parent");
             $(".one-page-scroll-menu")
-              .find("a[href*=\\#" + Sectionid + "]")
-              .parent()
-              .addClass("current");
+                .find("a[href*=\\#" + Sectionid + "]")
+                .parent()
+                .addClass("current");
           }
         });
       });
@@ -663,25 +660,25 @@
   function stickyMenuUpScroll($targetMenu, $toggleClass) {
     var lastScrollTop = 0;
     window.addEventListener(
-      "scroll",
-      function () {
-        var st = window.pageYOffset || document.documentElement.scrollTop;
-        if (st > 500) {
-          if (st > lastScrollTop) {
-            // downscroll code
-            $targetMenu.removeClass($toggleClass);
-            // console.log("down");
+        "scroll",
+        function () {
+          var st = window.pageYOffset || document.documentElement.scrollTop;
+          if (st > 500) {
+            if (st > lastScrollTop) {
+              // downscroll code
+              $targetMenu.removeClass($toggleClass);
+              // console.log("down");
+            } else {
+              // upscroll code
+              $targetMenu.addClass($toggleClass);
+              // console.log("up");
+            }
           } else {
-            // upscroll code
-            $targetMenu.addClass($toggleClass);
-            // console.log("up");
+            $targetMenu.removeClass($toggleClass);
           }
-        } else {
-          $targetMenu.removeClass($toggleClass);
-        }
-        lastScrollTop = st;
-      },
-      false
+          lastScrollTop = st;
+        },
+        false
     );
   }
   stickyMenuUpScroll($(".sticky-header--normal"), "active");
@@ -691,22 +688,22 @@
     var i = $(window).width();
     $(".row .alefox-stretch-element-inside-column").each(function () {
       var $this = $(this),
-        row = $this.closest(".row"),
-        cols = $this.closest('[class^="col-"]'),
-        colsheight = $this.closest('[class^="col-"]').height(),
-        rect = this.getBoundingClientRect(),
-        l = row[0].getBoundingClientRect(),
-        s = cols[0].getBoundingClientRect(),
-        r = rect.left,
-        d = i - rect.right,
-        c = l.left + (parseFloat(row.css("padding-left")) || 0),
-        u = i - l.right + (parseFloat(row.css("padding-right")) || 0),
-        p = s.left,
-        f = i - s.right,
-        styles = {
-          "margin-left": 0,
-          "margin-right": 0
-        };
+          row = $this.closest(".row"),
+          cols = $this.closest('[class^="col-"]'),
+          colsheight = $this.closest('[class^="col-"]').height(),
+          rect = this.getBoundingClientRect(),
+          l = row[0].getBoundingClientRect(),
+          s = cols[0].getBoundingClientRect(),
+          r = rect.left,
+          d = i - rect.right,
+          c = l.left + (parseFloat(row.css("padding-left")) || 0),
+          u = i - l.right + (parseFloat(row.css("padding-right")) || 0),
+          p = s.left,
+          f = i - s.right,
+          styles = {
+            "margin-left": 0,
+            "margin-right": 0
+          };
       if (Math.round(c) === Math.round(p)) {
         var h = parseFloat($this.css("margin-left") || 0);
         styles["margin-left"] = h - r;
@@ -727,7 +724,7 @@
         let elm = $(this);
         let options = elm.data("circle-text-options");
         elm.circleType(
-          "object" === typeof options ? options : JSON.parse(options)
+            "object" === typeof options ? options : JSON.parse(options)
         );
       });
     }
@@ -747,10 +744,10 @@
         }
       });
       $(".price-ranger .ranger-min-max-block .min").val(
-        "$" + $(".price-ranger #slider-range").slider("values", 0)
+          "$" + $(".price-ranger #slider-range").slider("values", 0)
       );
       $(".price-ranger .ranger-min-max-block .max").val(
-        "$" + $(".price-ranger #slider-range").slider("values", 1)
+          "$" + $(".price-ranger #slider-range").slider("values", 1)
       );
     }
   }
@@ -825,7 +822,7 @@
       // var allItem = $('.single-filter-item').length;
 
       var activeFilterItem = $(".post-filter.has-dynamic-filter-counter").find(
-        "li"
+          "li"
       );
 
       activeFilterItem.each(function () {
@@ -883,52 +880,52 @@
   if ($(".countdown-one__list").length) {
     let mainDate = $(".countdown-one__list").data("deadline-date");
     let yearsCondition =
-      undefined == $(".countdown-one__list").data("enable-years") ?
-      false :
-      $(".countdown-one__list").data("enable-years");
+        undefined == $(".countdown-one__list").data("enable-years") ?
+            false :
+            $(".countdown-one__list").data("enable-years");
     let daysCondition =
-      undefined == $(".countdown-one__list").data("enable-days") ?
-      true :
-      $(".countdown-one__list").data("enable-days");
+        undefined == $(".countdown-one__list").data("enable-days") ?
+            true :
+            $(".countdown-one__list").data("enable-days");
     let leadingZeros = $(".countdown-one__list").data("leading-zeros");
     console.log(daysCondition);
     let deadLine =
-      "dynamicDate" == mainDate ?
-      new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000) :
-      "dynamicHour" == mainDate ?
-      new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000) :
-      mainDate;
+        "dynamicDate" == mainDate ?
+            new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000) :
+            "dynamicHour" == mainDate ?
+                new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000) :
+                mainDate;
 
     $(".countdown-one__list").countdown({
       date: deadLine,
       leadingZeros: true,
       render: function (date) {
         this.el.innerHTML =
-          (true == yearsCondition ?
-            "<li> <span class='years'> " +
-            (true == leadingZeros ?
-              this.leadingZeros(date.years) :
-              date.years) +
-            " <i> Years </i> </span> </li>" :
-            " ") +
-          (true == daysCondition ?
-            "<li> <span class='days'> " +
-            (true == leadingZeros ?
-              this.leadingZeros(date.days) :
-              date.days) +
-            " <i> Days </i> </span> </li>" :
-            " ") +
-          "<li> <span class='hours'>" +
-          (true == leadingZeros ? this.leadingZeros(date.hours) : date.hours) +
-          " <i> Hours </i> </span> </li>" +
-          "<li> <span class='minutes'> " +
-          (true == leadingZeros ? this.leadingZeros(date.min) : date.min) +
-          " <i> Minutes </i> </span> </li>" +
-          "<li> <span class='seconds'>" +
-          (true == leadingZeros ? this.leadingZeros(date.sec) : date.sec) +
-          " <i> Seconds </i> </span> </li>";
+            (true == yearsCondition ?
+                "<li> <span class='years'> " +
+                (true == leadingZeros ?
+                    this.leadingZeros(date.years) :
+                    date.years) +
+                " <i> Years </i> </span> </li>" :
+                " ") +
+            (true == daysCondition ?
+                "<li> <span class='days'> " +
+                (true == leadingZeros ?
+                    this.leadingZeros(date.days) :
+                    date.days) +
+                " <i> Days </i> </span> </li>" :
+                " ") +
+            "<li> <span class='hours'>" +
+            (true == leadingZeros ? this.leadingZeros(date.hours) : date.hours) +
+            " <i> Hours </i> </span> </li>" +
+            "<li> <span class='minutes'> " +
+            (true == leadingZeros ? this.leadingZeros(date.min) : date.min) +
+            " <i> Minutes </i> </span> </li>" +
+            "<li> <span class='seconds'>" +
+            (true == leadingZeros ? this.leadingZeros(date.sec) : date.sec) +
+            " <i> Seconds </i> </span> </li>";
       }
     });
   }
-  });
+
 })(jQuery);
