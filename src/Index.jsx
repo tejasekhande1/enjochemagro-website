@@ -9,7 +9,7 @@ function Index() {
             <div className="preloader">
                 <div
                     className="preloader__image"
-                    style={{backgroundImage: "url(assets/images/loader.png)"}}
+                    style={{backgroundImage: "url(../src/assets/images/loader.png)"}}
                 />
             </div>
             {/* /.preloader */}
@@ -50,7 +50,7 @@ function Index() {
                                 {/* /.topbar-one__social */}
                                 <div className="topbar-one__language">
                                     <a href="#">
-                                        <img src="assets/images/shapes/flag.png" alt="alefox"/>
+                                        <img src="../src/assets/images/shapes/flag.png" alt="alefox"/>
                                         EN
                                     </a>
                                     <div
@@ -58,11 +58,11 @@ function Index() {
                                         style={{display: "none"}}
                                     >
                                         <a href="#">
-                                            <img src="assets/images/shapes/flag.png" alt="alefox"/>
+                                            <img src="../src/assets/images/shapes/flag.png" alt="alefox"/>
                                             EN
                                         </a>
                                         <a href="#">
-                                            <img src="assets/images/shapes/flag-two.png" alt="alefox"/>
+                                            <img src="../src/assets/images/shapes/flag-two.png" alt="alefox"/>
                                             FR
                                         </a>
                                     </div>
@@ -81,7 +81,7 @@ function Index() {
                             <div className="main-header__logo">
                                 <a href="index.html">
                                     <img
-                                        src="assets/images/logo-dark.png"
+                                        src="../src/assets/images/logo-dark.png"
                                         alt="Alefox HTML"
                                         width={147}
                                     />
@@ -102,7 +102,7 @@ function Index() {
                                                                     <div className="demo-one__card">
                                                                         <div className="demo-one__image">
                                                                             <img
-                                                                                src="assets/images/alefox-landing/home-1.jpg"
+                                                                                src="../src/assets/images/alefox-landing/home-1.jpg"
                                                                                 alt="alefox"
                                                                             />
                                                                             <div className="demo-one__btns">
@@ -147,7 +147,7 @@ function Index() {
                                                                     <div className="demo-one__card">
                                                                         <div className="demo-one__image">
                                                                             <img
-                                                                                src="assets/images/alefox-landing/home-2.jpg"
+                                                                                src="../src/assets/images/alefox-landing/home-2.jpg"
                                                                                 alt="alefox"
                                                                             />
                                                                             <div className="demo-one__btns">
@@ -192,7 +192,7 @@ function Index() {
                                                                     <div className="demo-one__card">
                                                                         <div className="demo-one__image">
                                                                             <img
-                                                                                src="assets/images/alefox-landing/home-3.jpg"
+                                                                                src="../src/assets/images/alefox-landing/home-3.jpg"
                                                                                 alt="alefox"
                                                                             />
                                                                             <div className="demo-one__btns">
@@ -237,7 +237,7 @@ function Index() {
                                                                     <div className="demo-one__card">
                                                                         <div className="demo-one__image">
                                                                             <img
-                                                                                src="assets/images/alefox-landing/home-dark.jpg"
+                                                                                src="../src/assets/images/alefox-landing/home-dark.jpg"
                                                                                 alt="alefox"
                                                                             />
                                                                             <div className="demo-one__btns">
@@ -539,7 +539,7 @@ function Index() {
                   <span
                       className="sec-title__tagline__left-leaf"
                       style={{
-                          backgroundImage: "url(assets/images/shapes/leaf.png)"
+                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                       }}
                   />
                                             Wellcome to <span>Alefox !</span>
@@ -550,7 +550,7 @@ function Index() {
                       className="main-slider-one__title__leaf"
                       style={{
                           backgroundImage:
-                              "url(assets/images/shapes/slider-1-leaf.png)"
+                              "url(../src/assets/images/shapes/slider-1-leaf.png)"
                       }}
                   />
                                             We Organic Food
@@ -576,27 +576,27 @@ function Index() {
                                 <div
                                     className="main-slider-one__layer"
                                     style={{
-                                        backgroundImage: "url(assets/images/backgrounds/slider-1-1.jpg)"
+                                        backgroundImage: "url(../src/assets/images/backgrounds/slider-1-1.jpg)"
                                     }}
                                 />
                                 {/* right-image */}
                                 <div className="main-slider-one__shape-one">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-1.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-1.png"
                                         alt="alefox"
                                     />
                                 </div>
                                 {/* shape-one */}
                                 <div className="main-slider-one__shape-two">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-2.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-2.png"
                                         alt="alefox"
                                     />
                                 </div>
                                 {/* shape-two */}
                                 <div className="main-slider-one__shape-three">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-3.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-3.png"
                                         alt="alefox"
                                     />
                                 </div>
@@ -614,7 +614,7 @@ function Index() {
                   <span
                       className="sec-title__tagline__left-leaf"
                       style={{
-                          backgroundImage: "url(assets/images/shapes/leaf.png)"
+                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                       }}
                   />
                                             Wellcome to <span>Alefox !</span>
@@ -625,7 +625,7 @@ function Index() {
                       className="main-slider-one__title__leaf"
                       style={{
                           backgroundImage:
-                              "url(assets/images/shapes/slider-1-leaf.png)"
+                              "url(../src/assets/images/shapes/slider-1-leaf.png)"
                       }}
                   />
                                             We Organic Food
@@ -651,27 +651,27 @@ function Index() {
                                 <div
                                     className="main-slider-one__layer"
                                     style={{
-                                        backgroundImage: "url(assets/images/backgrounds/slider-1-2.jpg)"
+                                        backgroundImage: "url(../src/assets/images/backgrounds/slider-1-2.jpg)"
                                     }}
                                 />
                                 {/* right-image */}
                                 <div className="main-slider-one__shape-one">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-1.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-1.png"
                                         alt="alefox"
                                     />
                                 </div>
                                 {/* shape-one */}
                                 <div className="main-slider-one__shape-two">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-2.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-2.png"
                                         alt="alefox"
                                     />
                                 </div>
                                 {/* shape-two */}
                                 <div className="main-slider-one__shape-three">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-3.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-3.png"
                                         alt="alefox"
                                     />
                                 </div>
@@ -689,7 +689,7 @@ function Index() {
                   <span
                       className="sec-title__tagline__left-leaf"
                       style={{
-                          backgroundImage: "url(assets/images/shapes/leaf.png)"
+                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                       }}
                   />
                                             Wellcome to <span>Alefox !</span>
@@ -700,7 +700,7 @@ function Index() {
                       className="main-slider-one__title__leaf"
                       style={{
                           backgroundImage:
-                              "url(assets/images/shapes/slider-1-leaf.png)"
+                              "url(../src/assets/images/shapes/slider-1-leaf.png)"
                       }}
                   />
                                             We Organic Food
@@ -726,27 +726,27 @@ function Index() {
                                 <div
                                     className="main-slider-one__layer"
                                     style={{
-                                        backgroundImage: "url(assets/images/backgrounds/slider-1-3.jpg)"
+                                        backgroundImage: "url(../src/assets/images/backgrounds/slider-1-3.jpg)"
                                     }}
                                 />
                                 {/* right-image */}
                                 <div className="main-slider-one__shape-one">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-1.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-1.png"
                                         alt="alefox"
                                     />
                                 </div>
                                 {/* shape-one */}
                                 <div className="main-slider-one__shape-two">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-2.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-2.png"
                                         alt="alefox"
                                     />
                                 </div>
                                 {/* shape-two */}
                                 <div className="main-slider-one__shape-three">
                                     <img
-                                        src="assets/images/shapes/slider-1-shape-3.png"
+                                        src="../src/assets/images/shapes/slider-1-shape-3.png"
                                         alt="alefox"
                                     />
                                 </div>
@@ -761,12 +761,12 @@ function Index() {
                 {/* main-slider-end */}
                 <section
                     className="category-one"
-                    style={{backgroundImage: "url(assets/images/shapes/category-bg-1.png)"}}
+                    style={{backgroundImage: "url(../src/assets/images/shapes/category-bg-1.png)"}}
                 >
                     <div
                         className="category-one__shape"
                         style={{
-                            backgroundImage: "url(assets/images/shapes/category-shape-1.png)"
+                            backgroundImage: "url(../src/assets/images/shapes/category-shape-1.png)"
                         }}
                     />
                     <div className="container">
@@ -774,12 +774,12 @@ function Index() {
                             <h6 className="sec-title__tagline bw-split-in-right">
             <span
                 className="sec-title__tagline__left-leaf"
-                style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
             />
                                 Recently Category
                                 <span
                                     className="sec-title__tagline__right-leaf"
-                                    style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                                    style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
                                 />
                             </h6>
                             {/* /.sec-title__tagline */}
@@ -822,13 +822,13 @@ function Index() {
                             <div className="item">
                                 <a href="products.html" className="category-one__item">
                                       <span className="category-one__item__icon">
-                                        <img src="assets/images/shapes/vegetables.png" alt="alefox"/>
+                                        <img src="../src/assets/images/shapes/vegetables.png" alt="alefox"/>
                                       </span>
                                     <span className="category-one__item__text">Vegetables</span>
                                     <span
                                         className="category-one__item__bg"
                                         style={{
-                                            backgroundImage: "url(assets/images/shapes/vegetables.png)"
+                                            backgroundImage: "url(../src/assets/images/shapes/vegetables.png)"
                                         }}
                                     />
                                 </a>
@@ -837,13 +837,13 @@ function Index() {
                             <div className="item">
                                 <a href="products.html" className="category-one__item">
               <span className="category-one__item__icon">
-                <img src="assets/images/shapes/fruits.png" alt="alefox"/>
+                <img src="../src/assets/images/shapes/fruits.png" alt="alefox"/>
               </span>
                                     <span className="category-one__item__text">Fresh Fruits</span>
                                     <span
                                         className="category-one__item__bg"
                                         style={{
-                                            backgroundImage: "url(assets/images/shapes/fruits.png)"
+                                            backgroundImage: "url(../src/assets/images/shapes/fruits.png)"
                                         }}
                                     />
                                 </a>
@@ -852,13 +852,13 @@ function Index() {
                             <div className="item">
                                 <a href="products.html" className="category-one__item">
               <span className="category-one__item__icon">
-                <img src="assets/images/shapes/salads.png" alt="alefox"/>
+                <img src="../src/assets/images/shapes/salads.png" alt="alefox"/>
               </span>
                                     <span className="category-one__item__text">Salads</span>
                                     <span
                                         className="category-one__item__bg"
                                         style={{
-                                            backgroundImage: "url(assets/images/shapes/salads.png)"
+                                            backgroundImage: "url(../src/assets/images/shapes/salads.png)"
                                         }}
                                     />
                                 </a>
@@ -867,13 +867,13 @@ function Index() {
                             <div className="item">
                                 <a href="products.html" className="category-one__item">
               <span className="category-one__item__icon">
-                <img src="assets/images/shapes/grocery.png" alt="alefox"/>
+                <img src="../src/assets/images/shapes/grocery.png" alt="alefox"/>
               </span>
                                     <span className="category-one__item__text">Grocery</span>
                                     <span
                                         className="category-one__item__bg"
                                         style={{
-                                            backgroundImage: "url(assets/images/shapes/grocery.png)"
+                                            backgroundImage: "url(../src/assets/images/shapes/grocery.png)"
                                         }}
                                     />
                                 </a>
@@ -882,13 +882,13 @@ function Index() {
                             <div className="item">
                                 <a href="products.html" className="category-one__item">
               <span className="category-one__item__icon">
-                <img src="assets/images/shapes/beverage.png" alt="alefox"/>
+                <img src="../src/assets/images/shapes/beverage.png" alt="alefox"/>
               </span>
                                     <span className="category-one__item__text">Beverage</span>
                                     <span
                                         className="category-one__item__bg"
                                         style={{
-                                            backgroundImage: "url(assets/images/shapes/beverage.png)"
+                                            backgroundImage: "url(../src/assets/images/shapes/beverage.png)"
                                         }}
                                     />
                                 </a>
@@ -902,7 +902,7 @@ function Index() {
                     <div
                         className="about-one__shape"
                         style={{
-                            backgroundImage: "url(assets/images/resources/about-1-shape-1.png)"
+                            backgroundImage: "url(../src/assets/images/resources/about-1-shape-1.png)"
                         }}
                     />
                     <div className="container">
@@ -912,13 +912,13 @@ function Index() {
                                     className="about-one__image wow fadeInLeft"
                                     data-wow-delay="200ms"
                                 >
-                                    <img src="assets/images/resources/about-1-1.jpg" alt="alefox"/>
+                                    <img src="../src/assets/images/resources/about-1-1.jpg" alt="alefox"/>
                                     <div className="about-one__image__two">
-                                        <img src="assets/images/resources/about-1-2.jpg" alt="alefox"/>
+                                        <img src="../src/assets/images/resources/about-1-2.jpg" alt="alefox"/>
                                     </div>
                                     <div className="about-one__image__three">
                                         <img
-                                            src="assets/images/shapes/about-1-brand.png"
+                                            src="../src/assets/images/shapes/about-1-brand.png"
                                             alt="alefox"
                                         />
                                     </div>
@@ -933,14 +933,14 @@ function Index() {
                   <span
                       className="sec-title__tagline__left-leaf"
                       style={{
-                          backgroundImage: "url(assets/images/shapes/leaf.png)"
+                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                       }}
                   />
                                             Our About Us
                                             <span
                                                 className="sec-title__tagline__right-leaf"
                                                 style={{
-                                                    backgroundImage: "url(assets/images/shapes/leaf.png)"
+                                                    backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                                                 }}
                                             />
                                         </h6>
@@ -1013,7 +1013,7 @@ function Index() {
                                         See More
                                     </a>
                                     <div className="offer-two__item__image">
-                                        <img src="assets/images/resources/offer-2-1.png" alt="alefox"/>
+                                        <img src="../src/assets/images/resources/offer-2-1.png" alt="alefox"/>
                                     </div>
                                 </div>
                             </div>
@@ -1034,7 +1034,7 @@ function Index() {
                                         See More
                                     </a>
                                     <div className="offer-two__item__image">
-                                        <img src="assets/images/resources/offer-2-2.png" alt="alefox"/>
+                                        <img src="../src/assets/images/resources/offer-2-2.png" alt="alefox"/>
                                     </div>
                                 </div>
                             </div>
@@ -1048,7 +1048,7 @@ function Index() {
                     <div
                         className="service-one__shape"
                         style={{
-                            backgroundImage: "url(assets/images/resources/service-shape-1.png)"
+                            backgroundImage: "url(../src/assets/images/resources/service-shape-1.png)"
                         }}
                     />
                     <div className="container">
@@ -1056,12 +1056,12 @@ function Index() {
                             <h6 className="sec-title__tagline bw-split-in-right">
             <span
                 className="sec-title__tagline__left-leaf"
-                style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
             />
                                 Our Best Services
                                 <span
                                     className="sec-title__tagline__right-leaf"
-                                    style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                                    style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
                                 />
                             </h6>
                             {/* /.sec-title__tagline */}
@@ -1098,7 +1098,7 @@ function Index() {
                                     </div>
                                     <div className="service-one__item__image">
                                         <img
-                                            src="assets/images/resources/service-1-1.jpg"
+                                            src="../src/assets/images/resources/service-1-1.jpg"
                                             alt="alefox"
                                         />
                                     </div>
@@ -1131,7 +1131,7 @@ function Index() {
                                     </div>
                                     <div className="service-one__item__image">
                                         <img
-                                            src="assets/images/resources/service-1-2.jpg"
+                                            src="../src/assets/images/resources/service-1-2.jpg"
                                             alt="alefox"
                                         />
                                     </div>
@@ -1167,7 +1167,7 @@ function Index() {
                                     </div>
                                     <div className="service-one__item__image">
                                         <img
-                                            src="assets/images/resources/service-1-3.jpg"
+                                            src="../src/assets/images/resources/service-1-3.jpg"
                                             alt="alefox"
                                         />
                                     </div>
@@ -1203,7 +1203,7 @@ function Index() {
                                     </div>
                                     <div className="service-one__item__image">
                                         <img
-                                            src="assets/images/resources/service-1-4.jpg"
+                                            src="../src/assets/images/resources/service-1-4.jpg"
                                             alt="alefox"
                                         />
                                     </div>
@@ -1249,10 +1249,10 @@ function Index() {
                                     <div className="service-one__bottom__image">
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <img src="assets/images/resources/sb-1.jpg" alt="alefox"/>
+                                                <img src="../src/assets/images/resources/sb-1.jpg" alt="alefox"/>
                                             </div>
                                             <div className="col-md-6">
-                                                <img src="assets/images/resources/sb-2.jpg" alt="alefox"/>
+                                                <img src="../src/assets/images/resources/sb-2.jpg" alt="alefox"/>
                                             </div>
                                         </div>
                                     </div>
@@ -1268,12 +1268,12 @@ function Index() {
                             <h6 className="sec-title__tagline bw-split-in-right">
             <span
                 className="sec-title__tagline__left-leaf"
-                style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
             />
                                 Recently Added
                                 <span
                                     className="sec-title__tagline__right-leaf"
-                                    style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                                    style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
                                 />
                             </h6>
                             {/* /.sec-title__tagline */}
@@ -1290,7 +1290,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-1.png"
+                                            src="../src/assets/images/products/product-1-1.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__flash">
@@ -1341,7 +1341,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-2.png"
+                                            src="../src/assets/images/products/product-1-2.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__btn">
@@ -1389,7 +1389,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-3.png"
+                                            src="../src/assets/images/products/product-1-3.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__flash">
@@ -1440,7 +1440,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-4.png"
+                                            src="../src/assets/images/products/product-1-4.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__btn">
@@ -1488,7 +1488,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-5.png"
+                                            src="../src/assets/images/products/product-1-5.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__flash">
@@ -1539,7 +1539,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-6.png"
+                                            src="../src/assets/images/products/product-1-6.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__btn">
@@ -1587,7 +1587,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-7.png"
+                                            src="../src/assets/images/products/product-1-7.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__flash">
@@ -1638,7 +1638,7 @@ function Index() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src="assets/images/products/product-1-8.png"
+                                            src="../src/assets/images/products/product-1-8.png"
                                             alt="alefox"
                                         />
                                         <div className="product__item__btn">
@@ -1691,14 +1691,14 @@ function Index() {
                         data-speed="0.3"
                         data-imgposition="50% -100%"
                         style={{
-                            backgroundImage: "url(assets/images/backgrounds/video-bg-1-1.jpg)"
+                            backgroundImage: "url(../src/assets/images/backgrounds/video-bg-1-1.jpg)"
                         }}
                     />
                     {/* /.video-one__bg */}
                     <div
                         className="video-one__shape"
                         style={{
-                            backgroundImage: "url(assets/images/shapes/video-shape-1.png)"
+                            backgroundImage: "url(../src/assets/images/shapes/video-shape-1.png)"
                         }}
                     />
                     <div className="container">
@@ -1732,12 +1732,12 @@ function Index() {
                             <h6 className="sec-title__tagline bw-split-in-right">
             <span
                 className="sec-title__tagline__left-leaf"
-                style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
             />
                                 Our Team People
                                 <span
                                     className="sec-title__tagline__right-leaf"
-                                    style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                                    style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
                                 />
                             </h6>
                             {/* /.sec-title__tagline */}
@@ -1780,7 +1780,7 @@ function Index() {
                                     data-wow-delay="000ms"
                                 >
                                     <div className="team-card__image">
-                                        <img src="assets/images/team/team-1-1.jpg" alt="Sonia Garcia"/>
+                                        <img src="../src/assets/images/team/team-1-1.jpg" alt="Sonia Garcia"/>
                                     </div>
                                     {/* /.team-card__image */}
                                     <div className="team-card__content">
@@ -1823,7 +1823,7 @@ function Index() {
                                 >
                                     <div className="team-card__image">
                                         <img
-                                            src="assets/images/team/team-1-2.jpg"
+                                            src="../src/assets/images/team/team-1-2.jpg"
                                             alt="Richard Behler"
                                         />
                                     </div>
@@ -1868,7 +1868,7 @@ function Index() {
                                 >
                                     <div className="team-card__image">
                                         <img
-                                            src="assets/images/team/team-1-3.jpg"
+                                            src="../src/assets/images/team/team-1-3.jpg"
                                             alt="Tony Feingold"
                                         />
                                     </div>
@@ -1956,43 +1956,43 @@ function Index() {
       }'
                         >
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                             <div className="client-carousel__one__item">
-                                <img src="assets/images/brand/brand-1-1.png" alt="alefox"/>
+                                <img src="../src/assets/images/brand/brand-1-1.png" alt="alefox"/>
                             </div>
                             {/* /.owl-slide-item*/}
                         </div>
@@ -2005,7 +2005,7 @@ function Index() {
                     <div
                         className="why-choose-one__shape"
                         style={{
-                            backgroundImage: "url(assets/images/resources/why-choose-shape-1.png)"
+                            backgroundImage: "url(../src/assets/images/resources/why-choose-shape-1.png)"
                         }}
                     />
                     <div className="container">
@@ -2014,7 +2014,7 @@ function Index() {
                                 <div className="alefox-stretch-element-inside-column">
                                     <div className="why-choose-one__image wow slideInLeft">
                                         <img
-                                            src="assets/images/resources/why-choose-1-1.jpg"
+                                            src="../src/assets/images/resources/why-choose-1-1.jpg"
                                             alt="alefox"
                                         />
                                         <div className="why-choose-one__video">
@@ -2038,14 +2038,14 @@ function Index() {
                   <span
                       className="sec-title__tagline__left-leaf"
                       style={{
-                          backgroundImage: "url(assets/images/shapes/leaf.png)"
+                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                       }}
                   />
                                             Shopping Store cHOOSE
                                             <span
                                                 className="sec-title__tagline__right-leaf"
                                                 style={{
-                                                    backgroundImage: "url(assets/images/shapes/leaf.png)"
+                                                    backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                                                 }}
                                             />
                                         </h6>
@@ -2116,25 +2116,25 @@ function Index() {
                         <div
                             className="offer-one__inner"
                             style={{
-                                backgroundImage: "url(assets/images/shapes/offer-bg-1.png)"
+                                backgroundImage: "url(../src/assets/images/shapes/offer-bg-1.png)"
                             }}
                         >
                             <div
                                 className="offer-one__shape-one"
                                 style={{
-                                    backgroundImage: "url(assets/images/shapes/offer-s-1-1.png)"
+                                    backgroundImage: "url(../src/assets/images/shapes/offer-s-1-1.png)"
                                 }}
                             />
                             <div className="row">
                                 <div className="col-lg-6 wow fadeInUp">
                                     <div className="offer-one__left">
-                                        <img src="assets/images/resources/offer-1-1.png" alt="alefox"/>
+                                        <img src="../src/assets/images/resources/offer-1-1.png" alt="alefox"/>
                                         <div className="offer-one__left__off">
                                             <span>32%</span>Discounts
                                         </div>
                                         <div className="offer-one__left__arrow">
                                             <img
-                                                src="assets/images/shapes/offer-arrow.png"
+                                                src="../src/assets/images/shapes/offer-arrow.png"
                                                 alt="alefox"
                                             />
                                         </div>
@@ -2171,12 +2171,12 @@ function Index() {
                             <h6 className="sec-title__tagline bw-split-in-right">
             <span
                 className="sec-title__tagline__left-leaf"
-                style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
             />
                                 From the Blog
                                 <span
                                     className="sec-title__tagline__right-leaf"
-                                    style={{backgroundImage: "url(assets/images/shapes/leaf.png)"}}
+                                    style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
                                 />
                             </h6>
                             {/* /.sec-title__tagline */}
@@ -2218,11 +2218,11 @@ function Index() {
                                 >
                                     <div className="blog-card__image">
                                         <img
-                                            src="assets/images/blog/blog-1-1.jpg"
+                                            src="../src/assets/images/blog/blog-1-1.jpg"
                                             alt="This Leader in Organic Agriculture Growth"
                                         />
                                         <img
-                                            src="assets/images/blog/blog-1-1.jpg"
+                                            src="../src/assets/images/blog/blog-1-1.jpg"
                                             alt="This Leader in Organic Agriculture Growth"
                                         />
                                         <a
@@ -2278,11 +2278,11 @@ function Index() {
                                 >
                                     <div className="blog-card__image">
                                         <img
-                                            src="assets/images/blog/blog-1-2.jpg"
+                                            src="../src/assets/images/blog/blog-1-2.jpg"
                                             alt="How to Findout Healthy Food For Body"
                                         />
                                         <img
-                                            src="assets/images/blog/blog-1-2.jpg"
+                                            src="../src/assets/images/blog/blog-1-2.jpg"
                                             alt="How to Findout Healthy Food For Body"
                                         />
                                         <a
@@ -2338,11 +2338,11 @@ function Index() {
                                 >
                                     <div className="blog-card__image">
                                         <img
-                                            src="assets/images/blog/blog-1-3.jpg"
+                                            src="../src/assets/images/blog/blog-1-3.jpg"
                                             alt="We Are Ripening Fruits Healthy Blog"
                                         />
                                         <img
-                                            src="assets/images/blog/blog-1-3.jpg"
+                                            src="../src/assets/images/blog/blog-1-3.jpg"
                                             alt="We Are Ripening Fruits Healthy Blog"
                                         />
                                         <a
@@ -2399,7 +2399,7 @@ function Index() {
                 <section className="cta-one">
                     <div
                         className="cta-one__shape"
-                        style={{backgroundImage: "url(assets/images/shapes/cta-1-1.png)"}}
+                        style={{backgroundImage: "url(../src/assets/images/shapes/cta-1-1.png)"}}
                     />
                     <div className="container wow fadeInUp">
                         <h3 className="cta-one__title">
@@ -2425,7 +2425,7 @@ function Index() {
                     <div
                         className="main-footer__bg background-black"
                         style={{
-                            backgroundImage: "url(assets/images/backgrounds/footer-bg-1-1.jpg)"
+                            backgroundImage: "url(../src/assets/images/backgrounds/footer-bg-1-1.jpg)"
                         }}
                     />
                     {/* /.main-footer__bg */}
@@ -2436,7 +2436,7 @@ function Index() {
                                     <div className="footer-widget footer-widget--about">
                                         <a href="index.html" className="footer-widget__logo">
                                             <img
-                                                src="assets/images/logo-light.png"
+                                                src="../src/assets/images/logo-light.png"
                                                 width={147}
                                                 alt="Alefox HTML Template"
                                             />
@@ -2542,7 +2542,7 @@ function Index() {
                                         {/* /.footer-widget__title */}
                                         <ul className="list-unstyled footer-widget__post">
                                             <li>
-                                                <img src="assets/images/blog/w-1.jpg" alt="alefox"/>
+                                                <img src="../src/assets/images/blog/w-1.jpg" alt="alefox"/>
                                                 <span className="footer-widget__post__date">
                       23 jun 2023
                     </span>
@@ -2553,7 +2553,7 @@ function Index() {
                                                 </h6>
                                             </li>
                                             <li>
-                                                <img src="assets/images/blog/w-2.jpg" alt="alefox"/>
+                                                <img src="../src/assets/images/blog/w-2.jpg" alt="alefox"/>
                                                 <span className="footer-widget__post__date">
                       23 jun 2023
                     </span>
@@ -2600,7 +2600,7 @@ function Index() {
       </span>
                     <div className="logo-box">
                         <a href="index.html" aria-label="logo image">
-                            <img src="assets/images/logo-light.png" width={155} alt=""/>
+                            <img src="../src/assets/images/logo-light.png" width={155} alt=""/>
                         </a>
                     </div>
                     {/* /.logo-box */}
@@ -2673,7 +2673,7 @@ function Index() {
                     <div className="sidebar-one__logo">
                         <a href="index.html" aria-label="logo image">
                             <img
-                                src="assets/images/logo-light.png"
+                                src="../src/assets/images/logo-light.png"
                                 alt="Careox HTML"
                                 width={147}
                             />
