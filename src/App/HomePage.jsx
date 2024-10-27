@@ -1,250 +1,112 @@
 import PageWrapper from "./common/PageWrapper.jsx";
 
 function HomePage() {
+    const sliders = [
+        {
+            mainHeading: 'We Organic food agriculture healthy',
+            subHeading: 'Poor can only be as strong as our people & because of team have designed game changing products.',
+            tagLine: 'Welcome to <span>Company</span>',
+            image: '',
+        },
+        {
+            mainHeading: 'We Organic food agriculture healthy',
+            subHeading: 'Poor can only be as strong as our people & because of team have designed game changing products.',
+            tagLine: 'Welcome to Company',
+            image: '',
+        },
+    ];
     return (
         <PageWrapper>
             <section className="main-slider-one">
                 <div
                     className="main-slider-one__carousel alefox-owl__carousel owl-carousel"
                     data-owl-options='{
-		"loop": true,
-		"animateOut": "fadeOut",
-		"animateIn": "fadeIn",
-		"items": 1,
-		"autoplay": true,
-		"autoplayTimeout": 7000,
-		"smartSpeed": 1000,
-		"nav": false,
-  "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-		"dots": true,
-		"margin": 0
-	    }'
+                            "loop": true,
+                            "animateOut": "fadeOut",
+                            "animateIn": "fadeIn",
+                            "items": 1,
+                            "autoplay": true,
+                            "autoplayTimeout": 7000,
+                            "smartSpeed": 1000,
+                            "nav": false,
+                      "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+                            "dots": true,
+                            "margin": 0
+                      }'
                 >
-                    <div className="item">
-                        <div className="main-slider-one__item">
-                            <div className="container">
-                                <div className="main-slider-one__content">
-                                    <h5 className="main-slider-one__sub-title">
-                  <span
-                      className="sec-title__tagline__left-leaf"
-                      style={{
-                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
-                      }}
-                  />
-                                        Wellcome to <span>Alefox !</span>
-                                    </h5>
-                                    {/* slider-sub-title */}
-                                    <h2 className="main-slider-one__title">
-                  <span
-                      className="main-slider-one__title__leaf"
-                      style={{
-                          backgroundImage:
-                              "url(../src/assets/images/shapes/slider-1-leaf.png)"
-                      }}
-                  />
-                                        We Organic Food
-                                        <br/> Agricultue Healthy.
-                                    </h2>
-                                    {/* slider-title */}
-                                    <p className="main-slider-one__text">
-                                        Poor can only be as strong as our people &amp; because of team
-                                        <br/> have designed game changing products.
-                                    </p>
-                                    <div className="main-slider-one__btn">
-                                        <a href="products.html" className="alefox-btn">
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            Discover More
-                                        </a>
-                                        {/* slider-btn */}
+
+                    {sliders.map((slider, index) => {
+                        return (
+
+                            <div className="item" key={index + ' slider'}>
+                                <div className="main-slider-one__item">
+                                    <div className="container">
+                                        <div className="main-slider-one__content">
+                                            <h5 className="main-slider-one__sub-title">
+                                            <span
+                                                className="sec-title__tagline__left-leaf"
+                                                style={{
+                                                    backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
+                                                }}
+                                            />
+                                                <p dangerouslySetInnerHTML={{ __html: slider.tagLine }} />
+                                            </h5>
+
+                                            <h2 className="main-slider-one__title">
+                                            <span
+                                                className="main-slider-one__title__leaf"
+                                                style={{
+                                                    backgroundImage: "url(../src/assets/images/shapes/slider-1-leaf.png)"
+                                                }}
+                                            />
+                                                {slider.mainHeading}
+                                            </h2>
+                                            <p className="main-slider-one__text">
+                                                Poor can only be as strong as our people &amp; because of team
+                                                <br/> have designed game changing products.
+                                            </p>
+                                            <div className="main-slider-one__btn">
+                                                <a href="products.html" className="alefox-btn">
+                                                    <span className="alefox-btn__item"/>
+                                                    <span className="alefox-btn__item"/>
+                                                    <span className="alefox-btn__item"/>
+                                                    <span className="alefox-btn__item"/>
+                                                    Discover More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="main-slider-one__layer"
+                                        style={{
+                                            backgroundImage: "url(../src/assets/images/backgrounds/slider-1-3.jpg)"
+                                        }}
+                                    />
+                                    <div className="main-slider-one__shape-one">
+                                        <img
+                                            src="../src/assets/images/shapes/slider-1-shape-1.png"
+                                            alt="alefox"
+                                        />
+                                    </div>
+                                    <div className="main-slider-one__shape-two">
+                                        <img
+                                            src="../src/assets/images/shapes/slider-1-shape-2.png"
+                                            alt="alefox"
+                                        />
+                                    </div>
+                                    <div className="main-slider-one__shape-three">
+                                        <img
+                                            src="../src/assets/images/shapes/slider-1-shape-3.png"
+                                            alt="alefox"
+                                        />
+                                    </div>
+                                    <div className="main-slider-one__discount">
+                                        <span>25%</span>Discounts
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                className="main-slider-one__layer"
-                                style={{
-                                    backgroundImage: "url(../src/assets/images/backgrounds/slider-1-1.jpg)"
-                                }}
-                            />
-                            {/* right-image */}
-                            <div className="main-slider-one__shape-one">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-1.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-one */}
-                            <div className="main-slider-one__shape-two">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-2.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-two */}
-                            <div className="main-slider-one__shape-three">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-3.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-one */}
-                            <div className="main-slider-one__discount">
-                                <span>25%</span>Discounts
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className="main-slider-one__item">
-                            <div className="container">
-                                <div className="main-slider-one__content">
-                                    <h5 className="main-slider-one__sub-title">
-                  <span
-                      className="sec-title__tagline__left-leaf"
-                      style={{
-                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
-                      }}
-                  />
-                                        Wellcome to <span>Alefox !</span>
-                                    </h5>
-                                    {/* slider-sub-title */}
-                                    <h2 className="main-slider-one__title">
-                  <span
-                      className="main-slider-one__title__leaf"
-                      style={{
-                          backgroundImage:
-                              "url(../src/assets/images/shapes/slider-1-leaf.png)"
-                      }}
-                  />
-                                        We Organic Food
-                                        <br/> Agricultue Healthy.
-                                    </h2>
-                                    {/* slider-title */}
-                                    <p className="main-slider-one__text">
-                                        Poor can only be as strong as our people &amp; because of team
-                                        <br/> have designed game changing products.
-                                    </p>
-                                    <div className="main-slider-one__btn">
-                                        <a href="products.html" className="alefox-btn">
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            Discover More
-                                        </a>
-                                        {/* slider-btn */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="main-slider-one__layer"
-                                style={{
-                                    backgroundImage: "url(../src/assets/images/backgrounds/slider-1-2.jpg)"
-                                }}
-                            />
-                            {/* right-image */}
-                            <div className="main-slider-one__shape-one">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-1.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-one */}
-                            <div className="main-slider-one__shape-two">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-2.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-two */}
-                            <div className="main-slider-one__shape-three">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-3.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-one */}
-                            <div className="main-slider-one__discount">
-                                <span>25%</span>Discounts
-                            </div>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className="main-slider-one__item">
-                            <div className="container">
-                                <div className="main-slider-one__content">
-                                    <h5 className="main-slider-one__sub-title">
-                  <span
-                      className="sec-title__tagline__left-leaf"
-                      style={{
-                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
-                      }}
-                  />
-                                        Wellcome to <span>Alefox !</span>
-                                    </h5>
-                                    {/* slider-sub-title */}
-                                    <h2 className="main-slider-one__title">
-                  <span
-                      className="main-slider-one__title__leaf"
-                      style={{
-                          backgroundImage:
-                              "url(../src/assets/images/shapes/slider-1-leaf.png)"
-                      }}
-                  />
-                                        We Organic Food
-                                        <br/> Agricultue Healthy.
-                                    </h2>
-                                    {/* slider-title */}
-                                    <p className="main-slider-one__text">
-                                        Poor can only be as strong as our people &amp; because of team
-                                        <br/> have designed game changing products.
-                                    </p>
-                                    <div className="main-slider-one__btn">
-                                        <a href="products.html" className="alefox-btn">
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            <span className="alefox-btn__item"/>
-                                            Discover More
-                                        </a>
-                                        {/* slider-btn */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                className="main-slider-one__layer"
-                                style={{
-                                    backgroundImage: "url(../src/assets/images/backgrounds/slider-1-3.jpg)"
-                                }}
-                            />
-                            {/* right-image */}
-                            <div className="main-slider-one__shape-one">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-1.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-one */}
-                            <div className="main-slider-one__shape-two">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-2.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-two */}
-                            <div className="main-slider-one__shape-three">
-                                <img
-                                    src="../src/assets/images/shapes/slider-1-shape-3.png"
-                                    alt="alefox"
-                                />
-                            </div>
-                            {/* shape-one */}
-                            <div className="main-slider-one__discount">
-                                <span>25%</span>Discounts
-                            </div>
-                        </div>
-                    </div>
+                        );
+                    })}
                 </div>
             </section>
             <section
