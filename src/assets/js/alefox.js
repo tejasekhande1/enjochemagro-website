@@ -1,5 +1,6 @@
 (function ($) {
   "use strict";
+  $(document).ready(function() {
 
   /*-- Checkout Accoradin --*/
   if ($(".checkout-page__payment__title").length) {
@@ -927,5 +928,6 @@
       }
     });
   }
+  });
 
 })(jQuery);
