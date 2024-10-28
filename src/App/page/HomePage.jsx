@@ -228,19 +228,17 @@ function HomePage() {
                                     />
                                 </div>
                             </div>
-                            {/* /.about-one__image */}
                         </div>
-                        {/* /.col-lg-6 */}
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
                             <div className="about-one__content">
                                 <div className="sec-title text-left">
                                     <h6 className="sec-title__tagline bw-split-in-right">
-                  <span
-                      className="sec-title__tagline__left-leaf"
-                      style={{
-                          backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
-                      }}
-                  />
+                                      <span
+                                          className="sec-title__tagline__left-leaf"
+                                          style={{
+                                              backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
+                                          }}
+                                      />
                                         Our About Us
                                         <span
                                             className="sec-title__tagline__right-leaf"
@@ -249,13 +247,10 @@ function HomePage() {
                                             }}
                                         />
                                     </h6>
-                                    {/* /.sec-title__tagline */}
                                     <h3 className="sec-title__title bw-split-in-left">
                                         This Organic of Agriculture About Food Market.
                                     </h3>
-                                    {/* /.sec-title__title */}
                                 </div>
-                                {/* /.sec-title */}
                                 <p className="about-one__content__text">
                                     Organic address a range of simply application and infrastructure
                                     this of passages of available, but the majority have suffered
@@ -289,201 +284,63 @@ function HomePage() {
                                     About More
                                 </a>
                             </div>
-                            {/* /.why-choose-two__content */}
                         </div>
-                        {/* /.col-lg-6 */}
-                    </div>
-                    {/* /.row */}
-                </div>
-                {/* /.container */}
-            </section>
-            <section
-                className="category-one"
-                style={{backgroundImage: "url(../src/assets/images/shapes/category-bg-1.png)"}}
-            >
-                <div
-                    className="category-one__shape"
-                    style={{
-                        backgroundImage: "url(../src/assets/images/shapes/category-shape-1.png)"
-                    }}
-                />
-                <div className="container">
-                    <div className="sec-title text-center">
-                        <h6 className="sec-title__tagline bw-split-in-right">
-            <span
-                className="sec-title__tagline__left-leaf"
-                style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
-            />
-                            Recently Category
-                            <span
-                                className="sec-title__tagline__right-leaf"
-                                style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}
-                            />
-                        </h6>
-                        {/* /.sec-title__tagline */}
-                        <h3 className="sec-title__title bw-split-in-left">
-                            Browse by Category
-                        </h3>
-                        {/* /.sec-title__title */}
-                    </div>
-                    {/* /.sec-title */}
-                    <div
-                        className="category-one__carousel alefox-owl__carousel alefox-owl__carousel--basic-nav owl-carousel owl-theme"
-                        data-owl-options='{
-				"items": 1,
-				"margin": 30,
-				"loop": false,
-				"smartSpeed": 700,
-				"nav": false,
-				"navText": ["<span class=\"icofont-bubble-left\"></span>","<span class=\"icofont-bubble-righ\"></span>"],
-				"dots": false,
-				"autoplay": false,
-				"responsive": {
-					"0": {
-						"items": 1
-					},
-					"500": {
-						"items": 2
-					},
-					"768": {
-						"items": 3
-					},
-					"992": {
-						"items": 4
-					},
-					"1200": {
-						"items": 5
-					}
-				}
-			}'
-                    >
-                        <div className="item">
-                            <a href="products.html" className="category-one__item">
-                                      <span className="category-one__item__icon">
-                                        <img src="../src/assets/images/shapes/vegetables.png" alt="alefox"/>
-                                      </span>
-                                <span className="category-one__item__text">Vegetables</span>
-                                <span
-                                    className="category-one__item__bg"
-                                    style={{
-                                        backgroundImage: "url(../src/assets/images/shapes/vegetables.png)"
-                                    }}
-                                />
-                            </a>
-                        </div>
-                        {/* iten */}
-                        <div className="item">
-                            <a href="products.html" className="category-one__item">
-              <span className="category-one__item__icon">
-                <img src="../src/assets/images/shapes/fruits.png" alt="alefox"/>
-              </span>
-                                <span className="category-one__item__text">Fresh Fruits</span>
-                                <span
-                                    className="category-one__item__bg"
-                                    style={{
-                                        backgroundImage: "url(../src/assets/images/shapes/fruits.png)"
-                                    }}
-                                />
-                            </a>
-                        </div>
-                        {/* iten */}
-                        <div className="item">
-                            <a href="products.html" className="category-one__item">
-              <span className="category-one__item__icon">
-                <img src="../src/assets/images/shapes/salads.png" alt="alefox"/>
-              </span>
-                                <span className="category-one__item__text">Salads</span>
-                                <span
-                                    className="category-one__item__bg"
-                                    style={{
-                                        backgroundImage: "url(../src/assets/images/shapes/salads.png)"
-                                    }}
-                                />
-                            </a>
-                        </div>
-                        {/* iten */}
-                        <div className="item">
-                            <a href="products.html" className="category-one__item">
-              <span className="category-one__item__icon">
-                <img src="../src/assets/images/shapes/grocery.png" alt="alefox"/>
-              </span>
-                                <span className="category-one__item__text">Grocery</span>
-                                <span
-                                    className="category-one__item__bg"
-                                    style={{
-                                        backgroundImage: "url(../src/assets/images/shapes/grocery.png)"
-                                    }}
-                                />
-                            </a>
-                        </div>
-                        {/* iten */}
-                        <div className="item">
-                            <a href="products.html" className="category-one__item">
-              <span className="category-one__item__icon">
-                <img src="../src/assets/images/shapes/beverage.png" alt="alefox"/>
-              </span>
-                                <span className="category-one__item__text">Beverage</span>
-                                <span
-                                    className="category-one__item__bg"
-                                    style={{
-                                        backgroundImage: "url(../src/assets/images/shapes/beverage.png)"
-                                    }}
-                                />
-                            </a>
-                        </div>
-                        {/* iten */}
                     </div>
                 </div>
             </section>
-            <div className="offer-two">
+            <section className="funfact-one funfact-one--about">
                 <div className="container">
-                    <div className="row gutter-y-30">
-                        <div className="col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
-                            <div className="offer-two__item">
-                                <div className="offer-two__item__border"/>
-                                <h5 className="offer-two__item__sub-title">30% Off</h5>
-                                <h3 className="offer-two__item__title">Take Everyday</h3>
-                                <p className="offer-two__item__text">
-                                    Consec tetur adipiscing elit
-                                    <br/> tempor incididunt ut.
-                                </p>
-                                <a href="products.html" className="alefox-btn">
-                                    <span className="alefox-btn__item"/>
-                                    <span className="alefox-btn__item"/>
-                                    <span className="alefox-btn__item"/>
-                                    <span className="alefox-btn__item"/>
-                                    See More
-                                </a>
-                                <div className="offer-two__item__image">
-                                    <img src="../src/assets/images/resources/offer-2-1.png" alt="alefox"/>
-                                </div>
+                    <ul className="list-unstyled funfact-one__list">
+                        <li>
+                            <div className="funfact-one__list__icon">
+                                <span className="icon-agronomy"/>
                             </div>
-                        </div>
-                        <div className="col-lg-6 wow fadeInRight" data-wow-delay="100ms">
-                            <div className="offer-two__item">
-                                <div className="offer-two__item__border"/>
-                                <h5 className="offer-two__item__sub-title">40% Off</h5>
-                                <h3 className="offer-two__item__title">Healthy Organic</h3>
-                                <p className="offer-two__item__text">
-                                    Consec tetur adipiscing elit
-                                    <br/> tempor incididunt ut.
-                                </p>
-                                <a href="products.html" className="alefox-btn">
-                                    <span className="alefox-btn__item"/>
-                                    <span className="alefox-btn__item"/>
-                                    <span className="alefox-btn__item"/>
-                                    <span className="alefox-btn__item"/>
-                                    See More
-                                </a>
-                                <div className="offer-two__item__image">
-                                    <img src="../src/assets/images/resources/offer-2-2.png" alt="alefox"/>
-                                </div>
+                            <div className="funfact-one__list__content">
+                                <h5 className="funfact-one__list__number count-box">
+                                    <span className="count-text" data-stop={99} data-speed={1500}/>
+                                    M+
+                                </h5>
+                                <p className="funfact-one__list__text">Healthy Food</p>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li>
+                            <div className="funfact-one__list__icon">
+                                <span className="icon-management"/>
+                            </div>
+                            <div className="funfact-one__list__content">
+                                <h5 className="funfact-one__list__number count-box">
+                                    <span className="count-text" data-stop={68} data-speed={1500}/>
+                                    K+
+                                </h5>
+                                <p className="funfact-one__list__text">Expert Team</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="funfact-one__list__icon">
+                                <span className="icon-sustainability"/>
+                            </div>
+                            <div className="funfact-one__list__content">
+                                <h5 className="funfact-one__list__number count-box">
+                                    <span className="count-text" data-stop={789} data-speed={1500}/>+
+                                </h5>
+                                <p className="funfact-one__list__text">Food Now</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="funfact-one__list__icon">
+                                <span className="icon-save-energy"/>
+                            </div>
+                            <div className="funfact-one__list__content">
+                                <h5 className="funfact-one__list__number count-box">
+                                    <span className="count-text" data-stop={424} data-speed={1500}/>+
+                                </h5>
+                                <p className="funfact-one__list__text">Food Organic</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 {/* /.container */}
-            </div>
+            </section>
             <section className="product-one">
                 <div className="container">
                     <div className="sec-title text-center">
@@ -905,10 +762,17 @@ function HomePage() {
                 </div>
                 {/* /.container */}
             </section>
-            {/* /.product-one */}
 
-
-            {/* extra */}
+            <section className="contact-map">
+                <div className="google-map__">
+                    <iframe
+                        title="template google map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.0312926628894!2d75.23045777473898!3d19.838628827589968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb990c398fbfc3%3A0xa0d6c5376769e9da!2sEnjo-Chem%20Agrochemical%20Industries!5e0!3m2!1sen!2sin!4v1730137246593!5m2!1sen!2sin"
+                        className="map__"
+                        allowFullScreen={true}
+                    />
+                </div>
+            </section>
             <section className="cta-one">
                 <div
                     className="cta-one__shape"
