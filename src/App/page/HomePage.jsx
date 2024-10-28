@@ -1,4 +1,4 @@
-import PageWrapper from "./common/PageWrapper.jsx";
+import PageWrapper from "../common/PageWrapper.jsx";
 
 function HomePage() {
     const sliders = [
