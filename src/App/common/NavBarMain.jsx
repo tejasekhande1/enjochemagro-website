@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function NavBarMain() {
     return (
         <>
@@ -5,7 +7,7 @@ function NavBarMain() {
                 <div className="container-fluid">
                     <div className="main-header__inner">
                         <div className="main-header__logo">
-                            <a href="index.html">
+                            <a href={''}>
                                 <img
                                     src="../src/assets/images/logo-dark.png"
                                     alt="Alefox HTML"
@@ -16,195 +18,11 @@ function NavBarMain() {
                         {/* /.main-header__logo */}
                         <nav className="main-header__nav main-menu">
                             <ul className="main-menu__list">
-                                <li className="dropdown megamenu">
-                                    <a href="index.html">Home</a>
-                                    <ul>
-                                        <li>
-                                            <section className="home-showcase">
-                                                <div className="container">
-                                                    <div className="home-showcase__inner">
-                                                        <div className="row">
-                                                            <div className="col-md-6 col-lg-3">
-                                                                <div className="demo-one__card">
-                                                                    <div className="demo-one__image">
-                                                                        <img
-                                                                            src="../src/assets/images/alefox-landing/home-1.jpg"
-                                                                            alt="alefox"
-                                                                        />
-                                                                        <div className="demo-one__btns">
-                                                                            <a
-                                                                                href="index.html"
-                                                                                className="alefox-btn demo-one__btn"
-                                                                            >
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                Multi Page
-                                                                            </a>
-                                                                            {/* /.thm-btn demo-one__btn */}
-                                                                            <a
-                                                                                href="index-one-page.html"
-                                                                                className="alefox-btn demo-one__btn"
-                                                                            >
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                One Page
-                                                                            </a>
-                                                                            {/* /.thm-btn demo-one__btn */}
-                                                                        </div>
-                                                                        {/* /.demo-one__btns */}
-                                                                    </div>
-                                                                    {/* /.demo-one__image */}
-                                                                    <div className="demo-one__content">
-                                                                        <h3 className="demo-one__title">
-                                                                            <a href="index.html">Home Page 01</a>
-                                                                        </h3>
-                                                                        {/* /.demo-one__title */}
-                                                                    </div>
-                                                                    {/* /.demo-one__content */}
-                                                                </div>
-                                                                {/* /.demo-one__card */}
-                                                            </div>
-                                                            {/* /.col-md-6 col-lg-3 */}
-                                                            <div className="col-md-6 col-lg-3">
-                                                                <div className="demo-one__card">
-                                                                    <div className="demo-one__image">
-                                                                        <img
-                                                                            src="../src/assets/images/alefox-landing/home-2.jpg"
-                                                                            alt="alefox"
-                                                                        />
-                                                                        <div className="demo-one__btns">
-                                                                            <a
-                                                                                href="index-2.html"
-                                                                                className="alefox-btn demo-one__btn"
-                                                                            >
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                Multi Page
-                                                                            </a>
-                                                                            {/* /.thm-btn demo-one__btn */}
-                                                                            <a
-                                                                                href="index-2-one-page.html"
-                                                                                className="alefox-btn demo-one__btn"
-                                                                            >
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                One Page
-                                                                            </a>
-                                                                            {/* /.thm-btn demo-one__btn */}
-                                                                        </div>
-                                                                        {/* /.demo-one__btns */}
-                                                                    </div>
-                                                                    {/* /.demo-one__image */}
-                                                                    <div className="demo-one__content">
-                                                                        <h3 className="demo-one__title">
-                                                                            <a href="index-2.html">Home Page 02</a>
-                                                                        </h3>
-                                                                        {/* /.demo-one__title */}
-                                                                    </div>
-                                                                    {/* /.demo-one__content */}
-                                                                </div>
-                                                                {/* /.demo-one__card */}
-                                                            </div>
-                                                            {/* /.col-md-6 col-lg-3 */}
-                                                            <div className="col-md-6 col-lg-3">
-                                                                <div className="demo-one__card">
-                                                                    <div className="demo-one__image">
-                                                                        <img
-                                                                            src="../src/assets/images/alefox-landing/home-3.jpg"
-                                                                            alt="alefox"
-                                                                        />
-                                                                        <div className="demo-one__btns">
-                                                                            <a
-                                                                                href="index-3.html"
-                                                                                className="alefox-btn demo-one__btn"
-                                                                            >
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                Multi Page
-                                                                            </a>
-                                                                            {/* /.thm-btn demo-one__btn */}
-                                                                            <a
-                                                                                href="index-3-one-page.html"
-                                                                                className="alefox-btn demo-one__btn"
-                                                                            >
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                One Page
-                                                                            </a>
-                                                                            {/* /.thm-btn demo-one__btn */}
-                                                                        </div>
-                                                                        {/* /.demo-one__btns */}
-                                                                    </div>
-                                                                    {/* /.demo-one__image */}
-                                                                    <div className="demo-one__content">
-                                                                        <h3 className="demo-one__title">
-                                                                            <a href="index-3.html">Home Page 03</a>
-                                                                        </h3>
-                                                                        {/* /.demo-one__title */}
-                                                                    </div>
-                                                                    {/* /.demo-one__content */}
-                                                                </div>
-                                                                {/* /.demo-one__card */}
-                                                            </div>
-                                                            {/* /.col-md-6 col-lg-3 */}
-                                                            <div className="col-md-6 col-lg-3">
-                                                                <div className="demo-one__card">
-                                                                    <div className="demo-one__image">
-                                                                        <img
-                                                                            src="../src/assets/images/alefox-landing/home-dark.jpg"
-                                                                            alt="alefox"
-                                                                        />
-                                                                        <div className="demo-one__btns">
-                                                                            <a
-                                                                                href="index-dark.html"
-                                                                                className="alefox-btn demo-one__btn"
-                                                                            >
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                <span className="alefox-btn__item"/>
-                                                                                View Page
-                                                                            </a>
-                                                                            {/* /.thm-btn demo-one__btn */}
-                                                                        </div>
-                                                                        {/* /.demo-one__btns */}
-                                                                    </div>
-                                                                    {/* /.demo-one__image */}
-                                                                    <div className="demo-one__content">
-                                                                        <h3 className="demo-one__title">
-                                                                            <a href="index-dark.html">Home Dark</a>
-                                                                        </h3>
-                                                                        {/* /.demo-one__title */}
-                                                                    </div>
-                                                                    {/* /.demo-one__content */}
-                                                                </div>
-                                                                {/* /.demo-one__card */}
-                                                            </div>
-                                                            {/* /.col-md-6 col-lg-3 */}
-                                                        </div>
-                                                        {/* /.row */}
-                                                    </div>
-                                                    {/* /.home-showcase__inner */}
-                                                </div>
-                                                {/* /.container */}
-                                            </section>
-                                        </li>
-                                    </ul>
+                                <li>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="/about">About</a>
                                 </li>
                                 <li className="dropdown">
                                     <a href="#">Pages</a>
