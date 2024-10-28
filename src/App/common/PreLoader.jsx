@@ -1,8 +1,8 @@
 function Navbar() {
     return (
         <>
-            <div className="custom-cursor__cursor"/>
-            <div className="custom-cursor__cursor-two"/>
+            {/*<div className="custom-cursor__cursor"/>*/}
+            {/*<div className="custom-cursor__cursor-two"/>*/}
             <div className="preloader">
                 <div
                     className="preloader__image"
