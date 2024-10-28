@@ -15,7 +15,6 @@ function NavBarMain() {
                                 />
                             </a>
                         </div>
-                        {/* /.main-header__logo */}
                         <nav className="main-header__nav main-menu">
                             <ul className="main-menu__list">
                                 <li>
@@ -23,6 +22,37 @@ function NavBarMain() {
                                 </li>
                                 <li>
                                     <a href="/about">About</a>
+                                </li>
+                                <li className="dropdown">
+                                    <a href="/products">Products</a>
+                                    <ul className="sub-menu">
+                                        <li>
+                                            <a href="/products">All Products</a>
+                                        </li>
+                                        <li className="dropdown">
+                                            <a href="#">Crop Protection</a>
+                                            <ul className="sub-menu">
+                                                <li>
+                                                    <a href="products.html">Insecticides</a>
+                                                </li>
+                                                <li>
+                                                    <a href="products-left.html">Fungicides</a>
+                                                </li>
+                                                <li>
+                                                    <a href="products-right.html">Herbicides</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="products-carousel.html">Micro Nutrients fertilizers</a>
+                                        </li>
+                                        <li>
+                                            <a href="product-details.html">Plant Growth Regulators</a>
+                                        </li>
+                                        <li>
+                                            <a href="product-details.html">Bio Fertilizers</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className="dropdown">
                                     <a href="#">Pages</a>
