@@ -1,5 +1,6 @@
-import {useContext, useState} from "react";
+import {useContext} from "react";
 import {LanguageContext} from "../../App.jsx";
+import {useTranslation} from "react-i18next";
 
 function TopBar() {
 
@@ -8,6 +9,7 @@ function TopBar() {
         { label: "Marathi", code: "mr" },
         { label: "Hindi", code: "hi" },
     ];
+    const { i18n, t } = useTranslation();
 
     const {language, setLanguage} = useContext(LanguageContext);
     return (
@@ -41,8 +43,10 @@ function TopBar() {
                                                 href="#"
                                                 key={index + 'language'}
                                                 onClick={(event ) => {
+                                                    event.preventDefault()
                                                     setLanguage(event.currentTarget.textContent.toLowerCase())
-                                                    document.getElementById('main-language').click();
+                                                    i18n.changeLanguage(language.code).then()
+                                                    document.getElementById('main-language').click()
                                                 }}
                                             >
                                                 {language.label}

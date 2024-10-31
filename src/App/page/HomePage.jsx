@@ -1,6 +1,9 @@
 import PageWrapper from "../common/PageWrapper.jsx";
+import {useTranslation} from "react-i18next";
 
 function HomePage() {
+    const {t } = useTranslation();
+
     const sliders = [
         {
             mainHeading: 'We Organic food agriculture healthy',
@@ -49,7 +52,8 @@ function HomePage() {
                                                     backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
                                                 }}
                                             />
-                                                <p dangerouslySetInnerHTML={{__html: slider.tagLine}}/>
+                                                {/*<p dangerouslySetInnerHTML={{__html: slider.tagLine}}/>*/}
+                                                {t('home')}
                                             </h5>
 
                                             <h2 className="main-slider-one__title">

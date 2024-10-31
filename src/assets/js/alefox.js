@@ -877,10 +877,35 @@
   });
 
   /*------ Language Toggler -----*/
-  $('.topbar-one__language > a').on('click', function (e) {
-    e.preventDefault();
-    $('.topbar-one__language__dropdown').slideToggle();
-  });
+    function languageToggle() {
+      console.log('hhh')
+      $('.topbar-one__language > a').on('click', function (e) {
+        console.log('innn')
+        e.preventDefault();
+        $('.topbar-one__language__dropdown').slideToggle();
+      });
+    }
+    $(document).ready(function () {
+
+      let observerInitialized = false;
+      let observer2; // This will hold the MutationObserver instance
+
+
+      // Check if the observer is already initialized
+      if (!observerInitialized) {
+        // Set up a MutationObserver to detect route changes or DOM updates
+        observer2 = new MutationObserver(languageToggle);
+
+        // Observe changes to the document body
+        observer2.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+
+        // Set the flag to true to indicate that the observer is now initialized
+        observerInitialized = true;
+      }
+    });
 
   // Sidebar
   if ($(".main-header--two__toggler, .sidebar-one__overlay, .sidebar-one__close").length) {
