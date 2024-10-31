@@ -755,86 +755,100 @@
 
   // window load event
 
-  $(window).on("load", function () {
-    if ($(".preloader").length) {
-      $(".preloader").fadeOut();
-    }
-    thmOwlInit();
-    thmTinyInit();
-    alefoxSlickInit()
-    priceFilter();
+// Define a function to initialize features
+    function initializeJQueryFeatures() {
+      const minDisplayTime = 400;
 
-    if ($(".circle-progress").length) {
-      $(".circle-progress").appear(function () {
-        let circleProgress = $(".circle-progress");
-        circleProgress.each(function () {
-          let progress = $(this);
-          let progressOptions = progress.data("options");
-          progress.circleProgress(progressOptions);
-        });
-      });
-    }
-    if ($(".masonry-layout").length) {
-      $(".masonry-layout").imagesLoaded(function () {
-        $(".masonry-layout").isotope({
-          layoutMode: "masonry"
-        });
-      });
-    }
-    if ($(".fitRow-layout").length) {
-      $(".fitRow-layout").imagesLoaded(function () {
-        $(".fitRow-layout").isotope({
-          layoutMode: "fitRows"
-        });
-      });
-    }
+      if ($(".preloader").length) {
+        setTimeout(() => {
+          $(".preloader").fadeOut();
+        }, minDisplayTime);
+      }
 
-    if ($(".post-filter").length) {
-      var postFilterList = $(".post-filter li");
-      // for first init
-      $(".filter-layout").isotope({
-        filter: ".filter-item",
-        animationOptions: {
-          duration: 500,
-          easing: "linear",
-          queue: false
-        }
-      });
-      // on click filter links
-      postFilterList.on("click", function () {
-        var Self = $(this);
-        var selector = Self.attr("data-filter");
-        postFilterList.removeClass("active");
-        Self.addClass("active");
+      thmOwlInit();
+      thmTinyInit();
+      alefoxSlickInit();
+      priceFilter();
+
+      if ($(".circle-progress").length) {
+        $(".circle-progress").appear(function () {
+          let circleProgress = $(".circle-progress");
+          circleProgress.each(function () {
+            let progress = $(this);
+            let progressOptions = progress.data("options");
+            progress.circleProgress(progressOptions);
+          });
+        });
+      }
+
+      if ($(".masonry-layout").length) {
+        $(".masonry-layout").imagesLoaded(function () {
+          $(".masonry-layout").isotope({
+            layoutMode: "masonry"
+          });
+        });
+      }
+
+      if ($(".fitRow-layout").length) {
+        $(".fitRow-layout").imagesLoaded(function () {
+          $(".fitRow-layout").isotope({
+            layoutMode: "fitRows"
+          });
+        });
+      }
+
+      if ($(".post-filter").length) {
+        const postFilterList = $(".post-filter li");
 
         $(".filter-layout").isotope({
-          filter: selector,
+          filter: ".filter-item",
           animationOptions: {
             duration: 500,
             easing: "linear",
             queue: false
           }
         });
-        return false;
-      });
+
+        postFilterList.on("click", function () {
+          const Self = $(this);
+          const selector = Self.attr("data-filter");
+          postFilterList.removeClass("active");
+          Self.addClass("active");
+
+          $(".filter-layout").isotope({
+            filter: selector,
+            animationOptions: {
+              duration: 500,
+              easing: "linear",
+              queue: false
+            }
+          });
+          return false;
+        });
+      }
+
+      if ($(".post-filter.has-dynamic-filter-counter").length) {
+        const activeFilterItem = $(".post-filter.has-dynamic-filter-counter").find("li");
+        activeFilterItem.each(function () {
+          const filterElement = $(this).data("filter");
+          const count = $(".filter-layout").find(filterElement).length;
+          $(this).append("<sup>[" + count + "]</sup>");
+        });
+      }
+
+      alefox_cuved_circle();
     }
 
-    if ($(".post-filter.has-dynamic-filter-counter").length) {
-      // var allItem = $('.single-filter-item').length;
+    // Run the initialization function on document ready and after any DOM changes
+    $(document).ready(initializeJQueryFeatures);
+    // Set up a MutationObserver to detect route changes or DOM updates
+    const observer = new MutationObserver(initializeJQueryFeatures);
 
-      var activeFilterItem = $(".post-filter.has-dynamic-filter-counter").find(
-          "li"
-      );
-
-      activeFilterItem.each(function () {
-        var filterElement = $(this).data("filter");
-        var count = $(".filter-layout").find(filterElement).length;
-        $(this).append("<sup>[" + count + "]</sup>");
-      });
-    }
-
-    alefox_cuved_circle();
-  });
+    // Observe changes to the document body
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
 
   $(window).on("scroll", function () {
     OnePageMenuScroll();

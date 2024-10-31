@@ -18,10 +18,12 @@ function NavBarMain() {
                         <nav className="main-header__nav main-menu">
                             <ul className="main-menu__list">
                                 <li>
-                                    <a href="/">Home</a>
+                                    {/*<a href="/">Home</a>*/}
+                                    <Link to={'/'}>Home</Link>
                                 </li>
                                 <li>
-                                    <a href="/about">About</a>
+                                    {/*<a href="/about">About</a>*/}
+                                    <Link to={'/about'}>About</Link>
                                 </li>
                                 <li className="dropdown">
                                     <a href="/products">Products</a>
