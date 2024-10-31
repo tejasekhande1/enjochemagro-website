@@ -1,13 +1,35 @@
-import { useState } from 'react'
+import {createContext, useState} from 'react'
 import './App.css'
-import HomePage from "./App/HomePage.jsx";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import AboutPage from "./App/page/AboutPage.jsx";
+import ProductPage from "./App/page/ProductPage.jsx";
+import HomePage from "./App/page/HomePage.jsx";
 
-function App() {
-    const [count, setCount] = useState(0)
-    const index = <HomePage/>;
+export const LanguageContext = createContext(null);
+
+export function App() {
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <HomePage/>,
+        },
+        {
+            path: "/about",
+            element: <AboutPage/>,
+        },
+        {
+            path: "/products",
+            element: <ProductPage/>,
+        },
+    ]);
+    const [language, setLanguage] = useState("English");
+
+
     return (
         <>
-            <div>{index}</div>
+            <LanguageContext.Provider value={{language, setLanguage}}>
+                <RouterProvider router={router} />
+            </LanguageContext.Provider>
         </>
     );
 }

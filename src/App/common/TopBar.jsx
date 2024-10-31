@@ -1,4 +1,15 @@
+import {useContext, useState} from "react";
+import {LanguageContext} from "../../App.jsx";
+
 function TopBar() {
+
+    const LANGUAGES = [
+        { label: "English", code: "en" },
+        { label: "Marathi", code: "mr" },
+        { label: "Hindi", code: "hi" },
+    ];
+
+    const {language, setLanguage} = useContext(LanguageContext);
     return (
         <>
             <div className="topbar-one">
@@ -16,42 +27,28 @@ function TopBar() {
                         </ul>
                         {/* /.list-unstyled topbar-one__info */}
                         <div className="topbar-one__right">
-                            <div className="topbar-one__social">
-                                <a href="https://facebook.com">
-                                    <i className="fab fa-facebook-f" aria-hidden="true"/>
-                                    <span className="sr-only">Facebook</span>
-                                </a>
-                                <a href="https://pinterest.com">
-                                    <i className="fab fa-pinterest-p" aria-hidden="true"/>
-                                    <span className="sr-only">Pinterest</span>
-                                </a>
-                                <a href="https://twitter.com">
-                                    <i className="fab fa-twitter" aria-hidden="true"/>
-                                    <span className="sr-only">Twitter</span>
-                                </a>
-                                <a href="https://instagram.com">
-                                    <i className="fab fa-instagram" aria-hidden="true"/>
-                                    <span className="sr-only">Instagram</span>
-                                </a>
-                            </div>
-                            {/* /.topbar-one__social */}
                             <div className="topbar-one__language">
-                                <a href="#">
-                                    <img src="../src/assets/images/shapes/flag.png" alt="alefox"/>
-                                    EN
+                                <a href="#" id={'main-language'}>
+                                    {language.toUpperCase()}
                                 </a>
                                 <div
                                     className="topbar-one__language__dropdown"
                                     style={{display: "none"}}
                                 >
-                                    <a href="#">
-                                        <img src="../src/assets/images/shapes/flag.png" alt="alefox"/>
-                                        EN
-                                    </a>
-                                    <a href="#">
-                                        <img src="../src/assets/images/shapes/flag-two.png" alt="alefox"/>
-                                        FR
-                                    </a>
+                                    {LANGUAGES.map((language, index) => {
+                                        return (
+                                            <a
+                                                href="#"
+                                                key={index + 'language'}
+                                                onClick={(event ) => {
+                                                    setLanguage(event.currentTarget.textContent.toLowerCase())
+                                                    document.getElementById('main-language').click();
+                                                }}
+                                            >
+                                                {language.label}
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
