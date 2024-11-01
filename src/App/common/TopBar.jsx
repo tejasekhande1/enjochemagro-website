@@ -19,12 +19,12 @@ function TopBar() {
                     <div className="topbar-one__inner">
                         <ul className="list-unstyled topbar-one__info">
                             <li className="topbar-one__info__item">
-                                <i className="icofont-wall-clock topbar-one__info__icon"/>
-                                Mon - Sat 8.00 - 18.00. Sun Closed
+                                <i className="icofont-email topbar-one__info__icon"/>
+                                support@enjochemagro.com
                             </li>
                             <li className="topbar-one__info__item">
                                 <i className="icofont-location-pin topbar-one__info__icon"/>
-                                27/52 Avenue, NY USA 685.
+                                Colgate chowk, Gangapur, Ch. Sambhajinagar-36.
                             </li>
                         </ul>
                         {/* /.list-unstyled topbar-one__info */}
@@ -37,7 +37,7 @@ function TopBar() {
                                     className="topbar-one__language__dropdown"
                                     style={{display: "none"}}
                                 >
-                                    {LANGUAGES.map((language, index) => {
+                                {LANGUAGES.map((language, index) => {
                                         return (
                                             <a
                                                 href="#"

@@ -10,7 +10,7 @@ function NavBarMain() {
                             <a href={''}>
                                 <img
                                     src="../src/assets/images/logo-dark.png"
-                                    alt="Alefox HTML"
+                                    alt="Enjo-Chem"
                                     width={147}
                                 />
                             </a>
@@ -258,35 +258,34 @@ function NavBarMain() {
                                 <span/>
                                 <span/>
                             </div>
-                            {/* /.mobile-nav__toggler */}
-                            <a href="#" className="search-toggler main-header__search">
-                                <i className="icon-magnifying-glass" aria-hidden="true"/>
-                                <span className="sr-only">Search</span>
-                            </a>
-                            {/* /.search-toggler */}
-                            <a href="cart.html" className="main-header__cart">
-                                <i className="icon-shopping-cart" aria-hidden="true"/>
-                                <span className="main-header__cart__count">02</span>
-                                <span className="sr-only">Search</span>
-                            </a>
-                            {/* /.search-toggler */}
+
                             <div className="main-header__right__border"/>
                             <div className="main-header__call">
-                                <div className="main-header__call__icon">
+                                <div
+                                    onClick={() => {
+                                        window.location.assign('https://api.whatsapp.com/send/?phone=918275017003&text&type=phone_number')
+                                    }}
+                                    className="main-header__call__icon"
+                                >
                                     <span className="icon-phone-call-two"/>
                                 </div>
-                                <div className="main-header__call__title">Requesting a Call:</div>
-                                <a className="main-header__call__text" href="tel:88012365499">
-                                    +88 0123 654 99
+                                {/*<div className="main-header__call__title">Requesting a Call:</div>*/}
+                                <a
+                                    className="main-header__call__text"
+                                    href="https://api.whatsapp.com/send/?phone=918275017003&text&type=phone_number"
+                                >
+                                    +91 8275 017 003
+                                </a>
+                                <a
+                                    className="main-header__call__text"
+                                    href="https://api.whatsapp.com/send/?phone=8275017003&text&type=phone_number"
+                                >
+                                    +91 8275 017 003
                                 </a>
                             </div>
-                            {/* /. main-header__info */}
                         </div>
-                        {/* /.main-header__right */}
                     </div>
-                    {/* /.main-header__inner */}
                 </div>
-                {/* /.container-fluid */}
             </header>
         </>
     );
