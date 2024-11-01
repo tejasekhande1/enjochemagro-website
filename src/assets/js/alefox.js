@@ -878,9 +878,7 @@
 
   /*------ Language Toggler -----*/
     function languageToggle() {
-      console.log('hhh')
       $('.topbar-one__language > a').on('click', function (e) {
-        console.log('innn')
         e.preventDefault();
         $('.topbar-one__language__dropdown').slideToggle();
       });
@@ -928,7 +926,6 @@
             true :
             $(".countdown-one__list").data("enable-days");
     let leadingZeros = $(".countdown-one__list").data("leading-zeros");
-    console.log(daysCondition);
     let deadLine =
         "dynamicDate" == mainDate ?
             new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000) :
