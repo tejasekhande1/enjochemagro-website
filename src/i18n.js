@@ -3,12 +3,18 @@ import { initReactI18next } from "react-i18next";
 import productsEnglish from '../src/assets/json/products/english.json';
 import productsMarathi from '../src/assets/json/products/english.json';
 import productsHindi from '../src/assets/json/products/english.json';
+const lang = {
+    marathi: 'mr',
+    english: 'en',
+    hindi: 'hi'
+};
+
 
 i18n
     .use(initReactI18next)
     .init({
         fallbackLng: "en",
-        lng: 'en',
+        lng: lang[localStorage.getItem('language')],
         interpolation: {
             escapeValue: false,
         },

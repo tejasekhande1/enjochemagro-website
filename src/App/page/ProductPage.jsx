@@ -22,23 +22,23 @@ function ProductPage() {
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-12">
-                                <div className="product__info-top">
-                                    <div className="product__showing-text-box">
-                                        <p className="product__showing-text">Showing 1–9 of 12 Results</p>
-                                    </div>
-                                    <div className="product__showing-sort">
-                                        <select className="selectpicker" aria-label="Sort by popular">
-                                            <option selected="">Sort by popular</option>
-                                            <option value={1}>Sort by view</option>
-                                            <option value={2}>Sort by price</option>
-                                            <option value={3}>Sort by ratings</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                {/*<div className="product__info-top">*/}
+                                {/*    <div className="product__showing-text-box">*/}
+                                {/*        <p className="product__showing-text">Showing 1–9 of 12 Results</p>*/}
+                                {/*    </div>*/}
+                                {/*    <div className="product__showing-sort">*/}
+                                {/*        <select className="selectpicker" aria-label="Sort by popular">*/}
+                                {/*            <option selected="">Sort by popular</option>*/}
+                                {/*            <option value={1}>Sort by view</option>*/}
+                                {/*            <option value={2}>Sort by price</option>*/}
+                                {/*            <option value={3}>Sort by ratings</option>*/}
+                                {/*        </select>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
                                 <div className="row gutter-y-30">
                                     {products.map((product, index) => {
                                         return(
-                                            <div className="col-md-6 col-lg-4 col-xl-3">
+                                            <div className="col-md-6 col-lg-4 col-xl-3" key={index + ' product'}>
                                                 <div
                                                     className="product__item wow fadeInUp"
                                                     data-wow-duration="1500ms"

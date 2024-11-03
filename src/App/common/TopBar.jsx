@@ -44,9 +44,11 @@ function TopBar() {
                                                 key={index + 'language'}
                                                 onClick={(event ) => {
                                                     event.preventDefault()
-                                                    setLanguage(event.currentTarget.textContent.toLowerCase())
-                                                    i18n.changeLanguage(language.code).then()
-                                                    document.getElementById('main-language').click()
+                                                    localStorage.setItem("language", event.currentTarget.textContent.toLowerCase());
+                                                    location.reload()
+                                                    // setLanguage(event.currentTarget.textContent.toLowerCase())
+                                                    // i18n.changeLanguage(language.code).then()
+                                                    // document.getElementById('main-language').click()
                                                 }}
                                             >
                                                 {language.label}

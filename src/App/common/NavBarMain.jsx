@@ -20,15 +20,13 @@ function NavBarMain() {
                         <nav className="main-header__nav main-menu">
                             <ul className="main-menu__list">
                                 <li>
-                                    {/*<a href="/">Home</a>*/}
-                                    <Link to={'/'}>{t('home.navText')}</Link>
+                                    <a href="/">{t('home.navText')}</a>
                                 </li>
                                 <li>
-                                    {/*<a href="/about">About</a>*/}
-                                    <Link to={'/about'}>{t('about.navText')}</Link>
+                                    <a href="/about">{t('about.navText')}</a>
                                 </li>
                                 <li className="dropdown">
-                                    <a href="/products">Products</a>
+                                    <a href="/products">{t('product.navText')}</a>
                                     <ul className="sub-menu">
                                         <li>
                                             <a href="/products">All Products</a>
@@ -37,223 +35,29 @@ function NavBarMain() {
                                             <a href="#">Crop Protection</a>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <a href="products.html">Insecticides</a>
+                                                    <a href="/">Insecticides</a>
                                                 </li>
                                                 <li>
-                                                    <a href="products-left.html">Fungicides</a>
+                                                    <a href="/">Fungicides</a>
                                                 </li>
                                                 <li>
-                                                    <a href="products-right.html">Herbicides</a>
+                                                    <a href="/">Herbicides</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="products-carousel.html">Micro Nutrients fertilizers</a>
+                                            <a href="/">Micro Nutrients fertilizers</a>
                                         </li>
                                         <li>
-                                            <a href="product-details.html">Plant Growth Regulators</a>
+                                            <a href="/">Plant Growth Regulators</a>
                                         </li>
                                         <li>
-                                            <a href="product-details.html">Bio Fertilizers</a>
+                                            <a href="/">Bio Fertilizers</a>
                                         </li>
                                     </ul>
-                                </li>
-                                <li className="dropdown">
-                                    <a href="#">Pages</a>
-                                    <ul>
-                                        <li>
-                                            <a href="project.html">Our Project</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="project.html">Project Page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-carousel.html">Project Carousel</a>
-                                                </li>
-                                                <li>
-                                                    <a href="project-details.html">Project Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="team.html">Our Team</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="team.html">Team Page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="team-carousel.html">Team Carousel</a>
-                                                </li>
-                                                <li>
-                                                    <a href="team-details.html">Team Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="reviews.html">Testimonials</a>
-                                        </li>
-                                        <li>
-                                            <a href="reviews-carousel.html">Testimonials Carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="packages.html">Pricing</a>
-                                        </li>
-                                        <li>
-                                            <a href="packages-carousel.html">Pricing Carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="gallery.html">Gallery</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="gallery.html">Gallery Masonry</a>
-                                                </li>
-                                                <li>
-                                                    <a href="gallery-filter.html">Gallery Filter</a>
-                                                </li>
-                                                <li>
-                                                    <a href="gallery-grid.html">Gallery Grid</a>
-                                                </li>
-                                                <li>
-                                                    <a href="gallery-carousel.html">Gallery Carousel</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="faq.html">Faq</a>
-                                        </li>
-                                        <li>
-                                            <a href="login.html">Login</a>
-                                        </li>
-                                        <li>
-                                            <a href="register.html">Register</a>
-                                        </li>
-                                        <li>
-                                            <a href="404.html">404 Error</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="dropdown">
-                                    <a href="#">Services</a>
-                                    <ul>
-                                        <li>
-                                            <a href="services.html">Services 01</a>
-                                        </li>
-                                        <li>
-                                            <a href="services-02.html">Services 02</a>
-                                        </li>
-                                        <li>
-                                            <a href="services-carousel.html">Services Carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-d-fresh.html">Always Fresh</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-d-farming.html">Organic Solutions</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-d-organic.html">Organic Product</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-d-agriculture.html">Agriculture Staff</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-d-growth.html">Growth Providing</a>
-                                        </li>
-                                        <li>
-                                            <a href="service-d-plants.html">Decorative Plants</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="dropdown">
-                                    <a href="#">Shop</a>
-                                    <ul className="sub-menu">
-                                        <li className="dropdown">
-                                            <a href="#">Products</a>
-                                            <ul className="sub-menu">
-                                                <li>
-                                                    <a href="products.html">No sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="products-left.html">Left sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="products-right.html">Right sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="products-carousel.html">Products carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-details.html">Product details</a>
-                                        </li>
-                                        <li>
-                                            <a href="cart.html">Cart</a>
-                                        </li>
-                                        <li>
-                                            <a href="wishlist.html">Wishlist</a>
-                                        </li>
-                                        <li>
-                                            <a href="checkout.html">Checkout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="dropdown">
-                                    <a href="#">News</a>
-                                    <ul className="sub-menu">
-                                        <li className="dropdown">
-                                            <a href="#">News grid</a>
-                                            <ul className="sub-menu">
-                                                <li>
-                                                    <a href="blog-grid.html">No sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-grid-left.html">Left sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-grid-right.html">Right sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="dropdown">
-                                            <a href="#">News list</a>
-                                            <ul className="sub-menu">
-                                                <li>
-                                                    <a href="blog-list.html">No sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-list-left.html">Left sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-list-right.html">Right sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="blog-carousel.html">News carousel</a>
-                                        </li>
-                                        <li className="dropdown">
-                                            <a href="#">News details</a>
-                                            <ul className="sub-menu">
-                                                <li>
-                                                    <a href="blog-details.html">No sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-details-left.html">Left sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-details-right.html">Right sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </nav>
-                        {/* /.main-header__nav */}
                         <div className="main-header__right">
                             <div className="mobile-nav__btn mobile-nav__toggler">
                                 <span/>
@@ -278,6 +82,7 @@ function NavBarMain() {
                                 >
                                     +91 8275 017 003
                                 </a>
+                                <br />
                                 <a
                                     className="main-header__call__text"
                                     href="https://api.whatsapp.com/send/?phone=8275017003&text&type=phone_number"

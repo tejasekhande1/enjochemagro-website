@@ -22,7 +22,9 @@ export function App() {
             element: <ProductPage/>,
         },
     ]);
-    const [language, setLanguage] = useState("English");
+    const localLanguage = localStorage.getItem("language") ?? "English";
+
+    const [language, setLanguage] = useState(localLanguage);
 
 
     return (
