@@ -53,6 +53,18 @@ i18n
                     },
                     about: {
                         navText: "About",
+                        text: 'About Us',
+                        aboutCEOText: 'About CEO',
+                        aboutCEODescription: 'Mr. Arun Murlidhar Kotame, the CEO of Enjo-Chem Agrochemical Industries, has an extensive professional journey. Beginning as a Field officer at Nashik in 1995, he ventured into entrepreneurship in 2011.',
+                        aboutCompanyText: 'About Company',
+                        aboutCompanyDescription: 'Enjo-Chem Agrochemical is a Manufacturer of Crop protection, Micronutrients, Pesticides and Fertilisers. Enjo-Chem is a leading agrochemical company dedicated to advancing agricultural productivity and sustainability. Our innovative solutions have a wide range of crop protection products, fertilisers, PGR, Pesticides and Micronutrients solutions. Committed to empowering farmers and nourishing communities, we leverage science and technology to create a more resilient and prosperous agriculture industry.',
+                        ourVisionText: 'Our Vision',
+                        ourVisionDescription: 'To be a global organization by enhancing and enriching core value for customers by setting up a benchmark in quality and determined to be one of the most trusted source of pesticides and fertilizers across the globe with focusing on satisfaction of the community who live the life by the seeds of their plants - The Farmers.',
+                        ourMissionText: 'Our Mission',
+                        ourMissionDescription: 'We are committed to supply the highest quality performance products to our customers within timelines at prevailing competitive prince and also to discover, develop & provide new formulations of pesticides while parallelly fulfilling our total quality control and quality assurance policy with no compromising our employees health and safety.',
+                        coreValuesText: 'Core Values',
+                        coreValuesDescription: 'Our core values are driven by a desire to improve the richness and protection of crop through scientific excellence with the highest standards of integrity. Our values are diamonds if our corporate reputation.',
+                        coreValuesPoints: ['Ethics and Integrity', 'Transparency', 'Innovations', 'Total Quality Control', 'Nurture Environment', 'R & D Leadership through collaboration'],
                     },
                     product: {
                         navText: 'Products'
@@ -126,7 +138,19 @@ i18n
                         navText: 'उत्पादन'
                     },
                     about: {
-                        navText: "बद्दल"
+                        navText: "बद्दल",
+                        text: 'आमच्याबद्दल',
+                        aboutCEOText: 'मुख्य कार्यकारी अधिकारी बद्दल',
+                        aboutCEODescription: 'एन्जो-केम अॅग्रोकेमिकल इंडस्ट्रीजचे सीईओ मिस्टर अरुण मुरलीधर कोटमे यांचा एक व्यापक पेशेवर अभियांत्रिकी आहे.1995 मध्ये नाशिकमध्ये फील्ड अधिकारी म्हणून सुरुवात करून, त्यांनी 2011 मध्ये उद्योजकतेत पाय पडले.',
+                        aboutCompanyText: 'कंपनीबद्दल',
+                        aboutCompanyDescription: 'एन्जो-केम अॅग्रोकेमिकल कृषी संरक्षण, मायक्रोन्यूट्रिएंट्स, कीटनाशक आणि उर्वरक चा निर्माता आहे. एन्जो-केम हे एक अग्रणी कृषी रसायन कंपनी आहे ज्याने कृषी उत्पादनशी आणि टिकाऊतेशी अग्रसर करण्यासाठी समर्पित आहे. आमच्या नवीनतम सोल्यूशनमध्ये कृषी संरक्षण उत्पादने, उर्वरक, पीजीआर, कीटनाशक आणि मायक्रोन्यूट्रिएंट्स सोल्यूशन्सची एक विशाल श्रृंखला आहे. किसानांना सशक्त करण्यासाठी आणि समुदायांना पोषण देण्यासाठी प्रतिबद्ध असून, आम्ही विज्ञान आणि प्रौद्योगिकीचा वापर करून एक अधिक सहनशील आणि समृद्ध कृषी उद्योग तयार करण्यासाठी प्रयत्नशील आहोत.',
+                        ourVisionText: 'आमच्या दृष्टिकोन',
+                        ourVisionDescription: 'गुणवत्तेत एक मानक स्थापित करून वैश्विक संस्था बनणे आणि ग्राहकांसाठी मूल्ये वाढवून आणि समृद्ध करून वर्षों तर्फे कीटनाशक आणि उर्वरकांचा सर्वांच्या विश्वात्मक स्रोत बनण्याचा निर्धार करून त्यांना जीवन जगण्याच्या बियांच्या बीजांनी जीवन जगणार्या समुदायाच्या संतुष्टीवर ध्यान केंद्रित करून.',
+                        ourMissionText: 'आमचे मिशन',
+                        ourMissionDescription: 'आम्ही आमच्या ग्राहकांना समयमळ अतिरिक्त प्रतिस्पर्धी किंमतावर उच्च गुणवत्तेचे प्रदर्शन उत्पादन प्रदान करण्यासाठी प्रतिबद्ध आहोत आणि साथ ही कीटनाशकांच्या नवीन नमुना शोधून, विकसित करून आणि प्रदान करून तसेच आमच्या कुल गुणवत्ता नियंत्रण आणि गुणवत्ता आश्वासन धोरणांचा पूर्ण करण्यासाठी आमच्या कर्मचारींच्या आरोग्य आणि सुरक्षेची कमी करून नाही.',
+                        coreValuesText: 'मूल्य',
+                        coreValuesDescription: 'आमच्या मूल्यांची इच्छा वैज्ञानिक उत्कृष्टतेच्या माध्यमातून फसलाची समृद्धी आणि संरक्षण सुधारण्याच्या इच्छेने चालित केली जाते आणि सर्वांत उच्च ईमानदारीच्या मानकांसह आमच्या मूल्ये आमच्या कॉर्पोरेट प्रतिष्ठेचे हीरे आहेत.',
+                        coreValuesPoints: ['नैतिकता आणि अखंडता', 'पारदर्शिता', 'नवोत्कृष्टता', 'कुल गुणवत्ता नियंत्रण', 'पर्यावरणाची देखरेख', 'सहकार्यातून आर आणि डी नेतृत्व'],
                     },
                     products: [...productsMarathi],
                     contact: {
@@ -194,7 +218,19 @@ i18n
                         productSubHeading: 'Enjo-Chem अॅग्रोकेमिकल उत्पाद घरच्या एनालिटिकल प्रयोगशाळेद्वारे सुसज्जित असलेल्या उन्नत प्रयोगशाळा उपकरणांच्या सहाय्याने समर्थित आहेत'
                     },
                     about: {
-                        navText:"बारेमें"
+                        navText:"बारेमें",
+                        text: 'हमारे बारे में',
+                        aboutCEOText: 'मुख्य कार्यकारी अधिकारी के बारे में',
+                        aboutCEODescription: 'एन्जो-केम एग्रोकेमिकल इंडस्ट्रीज के सीईओ मिस्टर अरुण मुरलीधर कोटमे का एक व्यापक पेशेवर यात्रा है। 1995 में नाशिक में फील्ड अधिकारी के रूप में शुरू होकर, उन्होंने 2011 में उद्यमिता में कदम रखा।',
+                        aboutCompanyText: 'कंपनी के बारे में',
+                        aboutCompanyDescription: 'एन्जो-केम एग्रोकेमिकल क्रॉप संरक्षण, माइक्रोन्यूट्रिएंट्स, कीटनाशक और उर्वरकों का निर्माता है। एन्जो-केम एक अग्रणी कृषि रसायन कंपनी है जो कृषि उत्पादकता और टिकाऊता को बढ़ाने के लिए समर्पित है। हमारे नवाचारी समाधानों में क्रॉप संरक्षण उत्पादों, उर्वरकों, पीजीआर, कीटनाशकों और माइक्रोन्यूट्रिएंट्स समाधानों की एक विस्तृत श्रृंखला है। किसानों को सशक्त बनाने और समुदायों को पोषण देने के लिए प्रतिबद्ध, हम विज्ञान और प्रौद्योगिकी का सहारा लेते हैं ताकि एक अधिक सहनशील और समृद्ध कृषि उद्योग बनाया जा सके।',
+                        ourVisionText: 'हमारी दृष्टि',
+                        ourVisionDescription: 'गुणवत्ता में एक मानक स्थापित करके ग्लोबल संगठन बनना और ग्राहकों के लिए मूल्यों को बढ़ाकर और समृद्ध करके वर्षों तक कीटनाशक और उर्वरकों का सबसे विश्वसनीय स्रोत बनने का निर्धारित है जो अपने पौधों के बीजों से जीवन जीते हैं - किसानों की संतुष्टि पर ध्यान केंद्रित करके।',
+                        ourMissionText: 'हमारा मिशन',
+                        ourMissionDescription: 'हम अपने ग्राहकों को समय सीमाओं के भीतर प्रतिस्पर्धी मूल्य पर सर्वोत्तम गुणवत्ता वाले प्रदर्शन उत्पादों प्रदान करने के लिए प्रतिबद्ध हैं और साथ ही कीटनाशकों के नए नमूने खोजने, विकसित करने और प्रदान करने के लिए भी अपनी कुल गुणवत्ता नियंत्रण और गुणवत्ता आश्वासन नीति को पूरा करते हुए अपने कर्मचारियों के स्वास्थ्य और सुरक्षा को कमी करते हुए नहीं।',
+                        coreValuesText: 'मूल्य',
+                        coreValuesDescription: 'हमारे मूल्यों को वैज्ञानिक उत्कृष्टता के माध्यम से फसल की समृद्धि और संरक्षण में सुधार करने की इच्छा से चलाया जाता है और सबसे उच्च ईमानदारी के मानकों के साथ। हमारे मूल्य हमारे कॉर्पोरेट प्रतिष्ठा के हीरे हैं।',
+                        coreValuesPoints: ['नैतिकता और अखंडता', 'पारदर्शिता','नवाचार', 'कुल गुणवत्ता नियंत्रण','पर्यावरण की देखभाल','सहयोग के माध्यम से आर एंड डी नेतृत्व'],
                     },
                     product: {
                         navText: 'उत्पाद'
