@@ -3208,6 +3208,24 @@ h6 {
 .main-header__cart:hover, .main-header__search:hover {
   color: var(--alefox-base, #44a05b);
 }
+
+.main-header__search__count_discount {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  position: absolute;
+  right: -0px;
+  top: 5px;
+  text-transform: none;
+  background-color: var(--alefox-base, #44a05b);
+  border-radius: 50%;
+  font-size: 8px !important;
+  color: var(--alefox-white, #fff);
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .main-header__cart__count, .main-header__search__count {
   width: 17px;
   height: 17px;
@@ -6891,16 +6909,18 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .product__item {
   position: relative;
+  height: auto;
 }
 .product__item__img {
-  min-height: 240px;
-  background-color: var(--alefox-gray2, #e1eff0);
+  height: 240px;
+  width: auto;
+  /*background-color: var(--alefox-gray2, #e1eff0);*/
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
+  /*padding: 25px;*/
 }
 .product__item__img::after {
   background: rgba(var(--alefox-white-rgb, 255, 255, 255), 0.3);
@@ -6916,7 +6936,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .product__item__img img {
   width: auto !important;
-  height: auto;
+  height: 100%;
   transition: all 500ms ease;
   max-width: 100%;
 }
@@ -6997,6 +7017,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background-color: var(--alefox-white, #fff);
   transition: all 500ms ease;
   filter: drop-shadow(0 0 68px rgba(0, 0, 0, 0.06));
+  height: 155px;
 }
 .product__item:hover .product__item__content {
   filter: drop-shadow(0 0 68px rgba(0, 0, 0, 0.1));
@@ -12063,15 +12084,15 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .about-one__image__three {
   position: absolute;
-  left: -104px;
+  left: -79px;
   top: 0;
   bottom: 0;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 207px;
-  height: 207px;
+  width: 157px;
+  height: 157px;
   background-color: var(--alefox-white, #fff);
   border-radius: 50%;
   padding: 16px;

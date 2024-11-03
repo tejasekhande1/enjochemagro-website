@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function NavBarMain() {
+    const {t} = useTranslation();
     return (
         <>
             <header className="main-header sticky-header sticky-header--normal">
@@ -19,11 +21,11 @@ function NavBarMain() {
                             <ul className="main-menu__list">
                                 <li>
                                     {/*<a href="/">Home</a>*/}
-                                    <Link to={'/'}>Home</Link>
+                                    <Link to={'/'}>{t('home.navText')}</Link>
                                 </li>
                                 <li>
                                     {/*<a href="/about">About</a>*/}
-                                    <Link to={'/about'}>About</Link>
+                                    <Link to={'/about'}>{t('about.navText')}</Link>
                                 </li>
                                 <li className="dropdown">
                                     <a href="/products">Products</a>
