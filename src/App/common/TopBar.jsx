@@ -1,4 +1,17 @@
+import {useContext} from "react";
+import {LanguageContext} from "../../App.jsx";
+import {useTranslation} from "react-i18next";
+
 function TopBar() {
+
+    const LANGUAGES = [
+        { label: "English", code: "en" },
+        { label: "Marathi", code: "mr" },
+        { label: "Hindi", code: "hi" },
+    ];
+    const { i18n, t } = useTranslation();
+
+    const {language, setLanguage} = useContext(LanguageContext);
     return (
         <>
             <div className="topbar-one">
@@ -6,52 +19,42 @@ function TopBar() {
                     <div className="topbar-one__inner">
                         <ul className="list-unstyled topbar-one__info">
                             <li className="topbar-one__info__item">
-                                <i className="icofont-wall-clock topbar-one__info__icon"/>
-                                Mon - Sat 8.00 - 18.00. Sun Closed
+                                <i className="icofont-email topbar-one__info__icon"/>
+                                support@enjochemagro.com
                             </li>
                             <li className="topbar-one__info__item">
                                 <i className="icofont-location-pin topbar-one__info__icon"/>
-                                27/52 Avenue, NY USA 685.
+                                Colgate chowk, Gangapur, Ch. Sambhajinagar-36.
                             </li>
                         </ul>
                         {/* /.list-unstyled topbar-one__info */}
                         <div className="topbar-one__right">
-                            <div className="topbar-one__social">
-                                <a href="https://facebook.com">
-                                    <i className="fab fa-facebook-f" aria-hidden="true"/>
-                                    <span className="sr-only">Facebook</span>
-                                </a>
-                                <a href="https://pinterest.com">
-                                    <i className="fab fa-pinterest-p" aria-hidden="true"/>
-                                    <span className="sr-only">Pinterest</span>
-                                </a>
-                                <a href="https://twitter.com">
-                                    <i className="fab fa-twitter" aria-hidden="true"/>
-                                    <span className="sr-only">Twitter</span>
-                                </a>
-                                <a href="https://instagram.com">
-                                    <i className="fab fa-instagram" aria-hidden="true"/>
-                                    <span className="sr-only">Instagram</span>
-                                </a>
-                            </div>
-                            {/* /.topbar-one__social */}
                             <div className="topbar-one__language">
-                                <a href="#">
-                                    <img src="../src/assets/images/shapes/flag.png" alt="alefox"/>
-                                    EN
+                                <a href="#" id={'main-language'}>
+                                    {language.toUpperCase()}
                                 </a>
                                 <div
                                     className="topbar-one__language__dropdown"
                                     style={{display: "none"}}
                                 >
-                                    <a href="#">
-                                        <img src="../src/assets/images/shapes/flag.png" alt="alefox"/>
-                                        EN
-                                    </a>
-                                    <a href="#">
-                                        <img src="../src/assets/images/shapes/flag-two.png" alt="alefox"/>
-                                        FR
-                                    </a>
+                                {LANGUAGES.map((language, index) => {
+                                        return (
+                                            <a
+                                                href="#"
+                                                key={index + 'language'}
+                                                onClick={(event ) => {
+                                                    event.preventDefault()
+                                                    localStorage.setItem("language", event.currentTarget.textContent.toLowerCase());
+                                                    location.reload()
+                                                    // setLanguage(event.currentTarget.textContent.toLowerCase())
+                                                    // i18n.changeLanguage(language.code).then()
+                                                    // document.getElementById('main-language').click()
+                                                }}
+                                            >
+                                                {language.label}
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
