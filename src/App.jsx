@@ -19,7 +19,31 @@ export function App() {
         },
         {
             path: "/products",
-            element: <ProductPage/>,
+            element: <ProductPage filter={''}/>,
+        },
+        {
+            path: "/products/insecticides",
+            element: <ProductPage filter={'insecticide'}/>,
+        },
+        {
+            path: "/products/fungicides",
+            element: <ProductPage filter={'fungicide'}/>,
+        },
+        {
+            path: "/products/herbicides",
+            element: <ProductPage filter={'herbicide'}/>,
+        },
+        {
+            path: "/products/micronutrients-fertilisers",
+            element: <ProductPage filter={'micronutrients-fertiliser'}/>,
+        },
+        {
+            path: "/products/pgr",
+            element: <ProductPage filter={'pgr'}/>,
+        },
+        {
+            path: "/products/bio-fertilizers",
+            element: <ProductPage filter={'bio-fertilizer'}/>,
         },
     ]);
     const localLanguage = localStorage.getItem("language") ?? "English";

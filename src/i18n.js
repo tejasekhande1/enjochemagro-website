@@ -1,8 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import productsEnglish from '../src/assets/json/products/english.json';
-import productsMarathi from '../src/assets/json/products/english.json';
-import productsHindi from '../src/assets/json/products/english.json';
+import productsMarathi from '../src/assets/json/products/marathi.json';
+import productsHindi from '../src/assets/json/products/hindi.json';
 const lang = {
     marathi: 'mr',
     english: 'en',
