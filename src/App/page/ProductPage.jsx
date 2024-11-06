@@ -2,12 +2,12 @@ import PageWrapper from "../common/PageWrapper.jsx";
 import {useTranslation} from "react-i18next";
 import {useState} from "react";
 
-function ProductPage() {
+function ProductPage({filter}) {
     const {t } = useTranslation();
     const products = [...t('products', {returnObjects: true})];
-    const [productFilter, setProductFilter] = useState('');
+    const [productFilter, setProductFilter] = useState(filter);
     return (
-        <PageWrapper>
+        <PageWrapper product={{productFilter: productFilter, setProductFilter: setProductFilter}}>
             <>
                 <section className="page-header">
                     <div className="page-header__shape-left" />
@@ -15,7 +15,7 @@ function ProductPage() {
                     <div className="product-page__bg page-header__bg" />
                     
                     <div className="container">
-                        <h2 className="page-header__title bw-split-in-down">Products</h2>
+                        <h2 className="page-header__title bw-split-in-down">{t('product.navText')}</h2>
                     </div>
                     
                 </section>
@@ -26,13 +26,13 @@ function ProductPage() {
                             <div className="col-lg-12">
                                 <div className="product__info-top">
                                     <div className="product__showing-text-box">
-                                        <p className="product__showing-text">Showing 1–9 of 12 Results</p>
+                                        <p className="product__showing-text">{filter}</p>
                                     </div>
                                     <div className="product__showing-sort">
                                         <select className="select" aria-label="Sort by popular" value={productFilter} onChange={(event) => {
                                             setProductFilter(event.target.value);
                                         }}>
-                                            <option value={''}>Filter By</option>
+                                            <option value={''}>Filter By All</option>
                                             <option value={'insecticide'}>Insecticide</option>
                                             <option value={'fungicide'}>Fungicide</option>
                                             <option value={'herbicide'}>Herbicide</option>

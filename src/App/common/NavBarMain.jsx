@@ -35,24 +35,24 @@ function NavBarMain() {
                                             <a href="#">Crop Protection</a>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <a href="/">Insecticides</a>
+                                                    <a href="/products/insecticides">Insecticides</a>
                                                 </li>
                                                 <li>
-                                                    <a href="/">Fungicides</a>
+                                                    <a href="/products/fungicides">Fungicides</a>
                                                 </li>
                                                 <li>
-                                                    <a href="/">Herbicides</a>
+                                                    <a href="/products/herbicides">Herbicides</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="/">Micro Nutrients fertilizers</a>
+                                            <a href="/products/micronutrients-fertilisers">Micro Nutrients fertilizers</a>
                                         </li>
                                         <li>
-                                            <a href="/">Plant Growth Regulators</a>
+                                            <a href="/products/pgr">Plant Growth Regulators</a>
                                         </li>
                                         <li>
-                                            <a href="/">Bio Fertilizers</a>
+                                            <a href="/products/bio-fertilizers">Bio Fertilizers</a>
                                         </li>
                                     </ul>
                                 </li>
