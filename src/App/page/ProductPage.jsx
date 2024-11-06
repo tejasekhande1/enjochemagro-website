@@ -1,16 +1,18 @@
 import PageWrapper from "../common/PageWrapper.jsx";
 import {useTranslation} from "react-i18next";
+import {useState} from "react";
 
 function ProductPage() {
     const {t } = useTranslation();
     const products = [...t('products', {returnObjects: true})];
+    const [productFilter, setProductFilter] = useState('');
     return (
         <PageWrapper>
             <>
                 <section className="page-header">
                     <div className="page-header__shape-left" />
                     <div className="page-header__shape-right" />
-                    <div className="page-header__bg" />
+                    <div className="product-page__bg page-header__bg" />
                     
                     <div className="container">
                         <h2 className="page-header__title bw-split-in-down">Products</h2>
@@ -22,21 +24,28 @@ function ProductPage() {
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-12">
-                                {/*<div className="product__info-top">*/}
-                                {/*    <div className="product__showing-text-box">*/}
-                                {/*        <p className="product__showing-text">Showing 1–9 of 12 Results</p>*/}
-                                {/*    </div>*/}
-                                {/*    <div className="product__showing-sort">*/}
-                                {/*        <select className="selectpicker" aria-label="Sort by popular">*/}
-                                {/*            <option selected="">Sort by popular</option>*/}
-                                {/*            <option value={1}>Sort by view</option>*/}
-                                {/*            <option value={2}>Sort by price</option>*/}
-                                {/*            <option value={3}>Sort by ratings</option>*/}
-                                {/*        </select>*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
+                                <div className="product__info-top">
+                                    <div className="product__showing-text-box">
+                                        <p className="product__showing-text">Showing 1–9 of 12 Results</p>
+                                    </div>
+                                    <div className="product__showing-sort">
+                                        <select className="select" aria-label="Sort by popular" value={productFilter} onChange={(event) => {
+                                            setProductFilter(event.target.value);
+                                        }}>
+                                            <option value={''}>Filter By</option>
+                                            <option value={'insecticide'}>Insecticide</option>
+                                            <option value={'fungicide'}>Fungicide</option>
+                                            <option value={'herbicide'}>Herbicide</option>
+                                            <option value={'micronutrients-fertiliser'}>Micronutrients-Fertiliser</option>
+                                            <option value={'pgr'}>Plant Growth Regulators</option>
+                                            <option value={'bio-fertilizer'}>Bio-fertilizer</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div className="row gutter-y-30">
-                                    {products.map((product, index) => {
+                                    {products.filter((product) => {
+                                        return productFilter !== '' ? product.type === productFilter : true
+                                    }).map((product, index) => {
                                         return(
                                             <div className="col-md-6 col-lg-4 col-xl-3" key={index + ' product'}>
                                                 <div
