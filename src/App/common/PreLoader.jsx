@@ -1,8 +1,10 @@
+import React from 'react';  // Import React for JSX
+
 function Navbar() {
     return (
         <>
-            <div style={{display: "none"}} className="custom-cursor__cursor"/>
-            <div style={{display: "none"}} className="custom-cursor__cursor-two"/>
+            <div  className="custom-cursor__cursor"/>
+            <div  className="custom-cursor__cursor-two"/>
 
         </>
     );

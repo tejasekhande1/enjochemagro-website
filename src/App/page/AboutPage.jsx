@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from 'react-dom';
 import PageWrapper from "../common/PageWrapper.jsx";
 import {useTranslation} from "react-i18next";
 
@@ -42,7 +44,7 @@ function AboutPage() {
                                 className="about-one__image wow fadeInLeft"
                                 data-wow-delay="200ms"
                             >
-                                <img src="../src/assets/images/custom/about/ceo.png" alt="alefox"/>
+                                <img src="/assets/images/custom/about/ceo.png" alt="alefox"/>
                             </div>
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
@@ -78,7 +80,7 @@ function AboutPage() {
                                 className="about-one__image wow fadeInLeft"
                                 data-wow-delay="200ms"
                             >
-                                <img src="../src/assets/images/custom/about/timeline.png" alt="alefox"/>
+                                <img src="/assets/images/custom/about/timeline.png" alt="alefox"/>
                             </div>
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
@@ -114,7 +116,7 @@ function AboutPage() {
                                 className="about-one__image wow fadeInLeft"
                                 data-wow-delay="200ms"
                             >
-                                <img src="../src/assets/images/custom/about/vision.jpg" alt="alefox"/>
+                                <img src="/assets/images/custom/about/vision.jpg" alt="alefox"/>
                             </div>
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
@@ -149,7 +151,7 @@ function AboutPage() {
                                 className="about-one__image wow fadeInLeft"
                                 data-wow-delay="200ms"
                             >
-                                <img src="../src/assets/images/custom/about/mission.jpg" alt="alefox"/>
+                                <img src="/assets/images/custom/about/mission.jpg" alt="alefox"/>
                             </div>
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
@@ -185,7 +187,7 @@ function AboutPage() {
                                 className="about-one__image wow fadeInLeft"
                                 data-wow-delay="200ms"
                             >
-                                <img src="../src/assets/images/custom/about/core-values.jpg" alt="alefox"/>
+                                <img src="/assets/images/custom/about/core-values.jpg" alt="alefox"/>
                             </div>
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay="300ms">

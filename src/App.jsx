@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+import ReactDOM from 'react-dom';
 import {createContext, useState} from 'react'
 import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";

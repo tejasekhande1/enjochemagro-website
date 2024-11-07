@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+import ReactDOM from 'react-dom';
 import PageWrapper from "../common/PageWrapper.jsx";
 import {useTranslation} from "react-i18next";
 import {useState} from "react";
@@ -55,7 +57,7 @@ function ProductPage({filter}) {
                                                 >
                                                     <div className="product__item__img">
                                                         <img
-                                                            src={"../src/assets/images/custom/products/" + (index + 1) + '.png'}
+                                                            src={"/assets/images/custom/products/" + (index + 1) + '.png'}
                                                             alt="enjo-chem"
                                                         />
                                                         {/*<div className="product__item__flash">*/}
