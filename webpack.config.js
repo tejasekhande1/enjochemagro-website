@@ -75,5 +75,9 @@ module.exports = {
         port: 3000,  // Dev server port
         historyApiFallback: true,
     },
+    performance: {
+        maxAssetSize: 500000000000,  // Increase the asset size limit
+        maxEntrypointSize: 500000000000,  // Increase the entrypoint size limit
+    },
     devtool: 'source-map',  // Enable source maps for easier debugging
 };
