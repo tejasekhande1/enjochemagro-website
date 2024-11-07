@@ -17,7 +17,7 @@ function ProductPage({filter}) {
                     <div className="product-page__bg page-header__bg" />
                     
                     <div className="container">
-                        <h2 className="page-header__title bw-split-in-down">{t('product.navText')}</h2>
+                        <h2 className="page-header__title">{t('product.navText')}</h2>
                     </div>
                     
                 </section>

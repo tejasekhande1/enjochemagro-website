@@ -1,13 +1,11 @@
 import React from 'react';  // Import React for JSX
 
-function Navbar() {
+function PreLoader() {
     return (
         <>
-            <div  className="custom-cursor__cursor"/>
-            <div  className="custom-cursor__cursor-two"/>
 
         </>
     );
 }
 
-export default Navbar;
+export default PreLoader;
