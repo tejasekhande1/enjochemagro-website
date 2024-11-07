@@ -6,6 +6,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import AboutPage from "./App/page/AboutPage.jsx";
 import ProductPage from "./App/page/ProductPage.jsx";
 import HomePage from "./App/page/HomePage.jsx";
+import NotFoundPage from "./App/page/NotFoundPage";
 
 export const LanguageContext = createContext(null);
 
@@ -47,6 +48,11 @@ export function App() {
             path: "/products/bio-fertilizers",
             element: <ProductPage filter={'bio-fertilizer'}/>,
         },
+
+        {
+            path: '*',
+            element: <NotFoundPage />
+        }
     ]);
     const localLanguage = localStorage.getItem("language") ?? "English";
 
