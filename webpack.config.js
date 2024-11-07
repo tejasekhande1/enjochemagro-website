@@ -73,6 +73,7 @@ module.exports = {
         open: true,  // Automatically open the browser on server start
         hot: true,   // Enable hot module replacement
         port: 3000,  // Dev server port
+        historyApiFallback: true,
     },
     devtool: 'source-map',  // Enable source maps for easier debugging
 };
