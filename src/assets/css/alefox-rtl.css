@@ -10523,6 +10523,9 @@ body.megamenu-popup-active .mobile-nav__content {
   -webkit-mask-size: cover;
   mask-size: cover;
 }
+.product-page__bg {
+  background-image: url(../images/custom/product-page/product-page-bg.jpg);
+}
 .page-header__bg {
   position: absolute;
   top: 0;
