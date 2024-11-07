@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -11,7 +13,7 @@ function NavBarMain() {
                         <div className="main-header__logo">
                             <a href={''}>
                                 <img
-                                    src="../src/assets/images/logo-dark.png"
+                                    src="/assets/images/logo-dark.png"
                                     alt="Enjo-Chem"
                                     width={147}
                                 />

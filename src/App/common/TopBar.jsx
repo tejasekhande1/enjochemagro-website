@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+
 import {useContext} from "react";
 import {LanguageContext} from "../../App.jsx";
 import {useTranslation} from "react-i18next";

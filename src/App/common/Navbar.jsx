@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+
 function Navbar() {
     return (
         <>
@@ -10,7 +12,7 @@ function Navbar() {
       </span>
                     <div className="logo-box">
                         <a href="index.html" aria-label="logo image">
-                            <img src="../src/assets/images/logo-light.png" width={155} alt=""/>
+                            <img src="/assets/images/logo-light.png" width={155} alt=""/>
                         </a>
                     </div>
                     {/* /.logo-box */}
@@ -83,7 +85,7 @@ function Navbar() {
                     <div className="sidebar-one__logo">
                         <a href="index.html" aria-label="logo image">
                             <img
-                                src="../src/assets/images/logo-light.png"
+                                src="/assets/images/logo-light.png"
                                 alt="Careox HTML"
                                 width={147}
                             />

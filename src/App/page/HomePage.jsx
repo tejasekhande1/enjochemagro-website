@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+import ReactDOM from 'react-dom';
 import PageWrapper from "../common/PageWrapper.jsx";
 import {useTranslation} from "react-i18next";
 import {Link} from "react-router-dom";
@@ -38,7 +40,7 @@ function HomePage() {
                                             <span
                                                 className="sec-title__tagline__left-leaf"
                                                 style={{
-                                                    backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
+                                                    backgroundImage: "url(/assets/images/shapes/leaf.png)"
                                                 }}
                                             />
                                                 {slider.tagLine1} <span>{slider.tagLine2}</span>
@@ -48,7 +50,7 @@ function HomePage() {
                                             <span
                                                 className="main-slider-one__title__leaf"
                                                 style={{
-                                                    backgroundImage: "url(../src/assets/images/shapes/slider-1-leaf.png)"
+                                                    backgroundImage: "url(/assets/images/shapes/slider-1-leaf.png)"
                                                 }}
                                             />
                                                 {slider.mainHeading1} {slider.mainHeading2 ? <><br/> {slider.mainHeading2} </>: '' } &nbsp;&nbsp;
@@ -76,19 +78,19 @@ function HomePage() {
                                     />
                                     <div className="main-slider-one__shape-one">
                                         <img
-                                            src="../src/assets/images/shapes/slider-1-shape-1.png"
+                                            src="/assets/images/shapes/slider-1-shape-1.png"
                                             alt="enjo-chem"
                                         />
                                     </div>
                                     <div className="main-slider-one__shape-two">
                                         <img
-                                            src="../src/assets/images/shapes/slider-1-shape-2.png"
+                                            src="/assets/images/shapes/slider-1-shape-2.png"
                                             alt="enjo-chem"
                                         />
                                     </div>
                                     <div className="main-slider-one__shape-three">
                                         <img
-                                            src="../src/assets/images/shapes/slider-1-shape-3.png"
+                                            src="/assets/images/shapes/slider-1-shape-3.png"
                                             alt="enjo-chem"
                                         />
                                     </div>
@@ -105,7 +107,7 @@ function HomePage() {
                 <div
                     className="about-one__shape"
                     style={{
-                        backgroundImage: "url(../src/assets/images/resources/about-1-shape-1.png)"
+                        backgroundImage: "url(/assets/images/resources/about-1-shape-1.png)"
                     }}
                 />
                 <div className="container">
@@ -115,13 +117,13 @@ function HomePage() {
                                 className="about-one__image wow fadeInLeft"
                                 data-wow-delay="200ms"
                             >
-                                <img src="../src/assets/images/home/research.png" alt="enjo-chem"/>
+                                <img src="/assets/images/home/research.png" alt="enjo-chem"/>
                                 {/*<div className="about-one__image__two">*/}
-                                {/*    <img src="../src/assets/images/resources/about-1-2.jpg" alt="enjo-chem"/>*/}
+                                {/*    <img src="/assets/images/resources/about-1-2.jpg" alt="enjo-chem"/>*/}
                                 {/*</div>*/}
                                 <div className="about-one__image__three">
                                     <img
-                                        src="../src/assets/images/home/quality-product.png"
+                                        src="/assets/images/home/quality-product.png"
                                         alt="enjo-chem"
                                     />
                                 </div>
@@ -152,7 +154,7 @@ function HomePage() {
                 <div
                     className="about-one__shape"
                     style={{
-                        backgroundImage: "url(../src/assets/images/resources/about-1-shape-1.png)"
+                        backgroundImage: "url(/assets/images/resources/about-1-shape-1.png)"
                     }}
                 />
                 <div className="container">
@@ -162,7 +164,7 @@ function HomePage() {
                                 className="about-one__image wow fadeInLeft"
                                 data-wow-delay="200ms"
                             >
-                                <img src="../src/assets/images/custom/spray.jpg" alt="enjo-chem"/>
+                                <img src="/assets/images/custom/spray.jpg" alt="enjo-chem"/>
 
                             </div>
                         </div>
@@ -173,14 +175,14 @@ function HomePage() {
                                       <span
                                           className="sec-title__tagline__left-leaf"
                                           style={{
-                                              backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
+                                              backgroundImage: "url(/assets/images/shapes/leaf.png)"
                                           }}
                                       />
 
                                         <span
                                             className="sec-title__tagline__right-leaf"
                                             style={{
-                                                backgroundImage: "url(../src/assets/images/shapes/leaf.png)"
+                                                backgroundImage: "url(/assets/images/shapes/leaf.png)"
                                             }}
                                         />
                                     </h6>
@@ -280,12 +282,12 @@ function HomePage() {
                         {/*<h6 className="sec-title__tagline bw-split-in-right">*/}
                         {/*    <span*/}
                         {/*        className="sec-title__tagline__left-leaf"*/}
-                        {/*        style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}*/}
+                        {/*        style={{backgroundImage: "url(/assets/images/shapes/leaf.png)"}}*/}
                         {/*    />*/}
                         {/*    Recently Added*/}
                         {/*    <span*/}
                         {/*        className="sec-title__tagline__right-leaf"*/}
-                        {/*        style={{backgroundImage: "url(../src/assets/images/shapes/leaf.png)"}}*/}
+                        {/*        style={{backgroundImage: "url(/assets/images/shapes/leaf.png)"}}*/}
                         {/*    />*/}
                         {/*</h6>*/}
                         {/* /.sec-title__tagline */}
@@ -301,7 +303,7 @@ function HomePage() {
                     <div className="row gutter-y-30" style={{display: "flex", flexWrap: 'wrap', alignItems: 'stretch'}}>
                         {products.map((product, index) => {
                             return(
-                            <div className="col-md-6 col-lg-4 col-xl-3">
+                            <div className="col-md-6 col-lg-4 col-xl-3" key={index + 'products-list'}>
                                 <div
                                     className="product__item wow fadeInUp"
                                     data-wow-duration="1500ms"
@@ -309,7 +311,7 @@ function HomePage() {
                                 >
                                     <div className="product__item__img">
                                         <img
-                                            src={"../src/assets/images/custom/products/" + (index + 1) + '.png'}
+                                            src={"/assets/images/custom/products/" + (index + 1) + '.png'}
                                             alt="enjo-chem"
                                         />
                                         {/*<div className="product__item__flash">*/}
@@ -365,7 +367,7 @@ function HomePage() {
             <section className="cta-one">
                 <div
                     className="cta-one__shape"
-                    style={{backgroundImage: "url(../src/assets/images/shapes/cta-1-1.png)"}}
+                    style={{backgroundImage: "url(/assets/images/shapes/cta-1-1.png)"}}
                 />
                 <div className="container wow fadeInUp">
                     <h3 className="cta-one__title">

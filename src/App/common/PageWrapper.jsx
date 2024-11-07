@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+
 import Navbar from "./Navbar.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
 import TopBar from "./TopBar.jsx";
