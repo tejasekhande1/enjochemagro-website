@@ -32,7 +32,7 @@ i18n
                                 subHeading2: 'sustainability',
                                 tagLine1: 'Welcome to',
                                 tagLine2: 'Enjo-Chem',
-                                image: '../src/assets/images/home/home-slider-1.jpg',
+                                image: '/assets/images/home/home-slider-1.jpg',
                             },
                             {
                                 mainHeading1: 'Best Products',
@@ -41,7 +41,7 @@ i18n
                                 subHeading2: 'sustainability',
                                 tagLine1: 'Welcome to',
                                 tagLine2: 'Enjo-Chem',
-                                image: '../src/assets/images/home/home-slider-2.jpg',
+                                image: '/assets/images/home/home-slider-2.jpg',
                             },
                         ],
                         introHeading: 'Premium Agricultural Goods for Farmer Prosperity',
@@ -73,7 +73,17 @@ i18n
                         coreValuesPoints: ['Ethics and Integrity', 'Transparency', 'Innovations', 'Total Quality Control', 'Nurture Environment', 'R & D Leadership through collaboration'],
                     },
                     product: {
-                        navText: 'Products'
+                        navText: 'Products',
+                        navs: {
+                            'allProducts': 'All Products',
+                            'cropProtection': 'Crop Protection',
+                            'insecticide': 'Insecticides',
+                            'fungicide': 'Fungicides',
+                            'herbicide': 'Herbicides',
+                            'micronutrients-fertiliser': 'Micro-Nutrients Fertilizers',
+                            'pgr': 'Plant Growth Regulators',
+                            'bio-fertilizer': 'Bio-Fertilizers',
+                        },
                     },
                     products: [...productsEnglish],
                     contact: {
@@ -115,7 +125,7 @@ i18n
                                 subHeading2: 'टिकाऊपणा',
                                 tagLine1: 'Enjo-Chem मध्ये',
                                 tagLine2: 'आपले स्वागत आहे',
-                                image: '../src/assets/images/home/home-slider-1.jpg',
+                                image: '/assets/images/home/home-slider-1.jpg',
                             },
                             {
                                 mainHeading1: 'सर्वोत्तम उत्पादने',
@@ -124,7 +134,7 @@ i18n
                                 subHeading2: 'टिकाऊपणा',
                                 tagLine1: 'Enjo-Chem मध्ये',
                                 tagLine2: 'आपले स्वागत आहे',
-                                image: '../src/assets/images/home/home-slider-2.jpg',
+                                image: '/assets/images/home/home-slider-2.jpg',
                             },
                         ],
                         introHeading: 'शेतकरी समृद्धीसाठी प्रीमियम कृषी माल!',
@@ -141,7 +151,17 @@ i18n
                         productSubHeading: 'एन्जो-केम एग्रोकेमिकल उत्पाद एक मजबूत आर और डी के साथ समर्थित हैं, जो घरेलू एनालिटिकल प्रयोगशाला द्वारा सुसज्जित है जो विशेषज्ञ प्रयोगशाला उपकरणों से लैस है।'
                     },
                     product: {
-                        navText: 'उत्पादन'
+                        navText: 'उत्पादन',
+                        navs: {
+                            'allProducts': 'सर्व उत्पादने',
+                            'cropProtection': 'फसल संरक्षण',
+                            'insecticide': 'कीटनाशक',
+                            'fungicide': 'फंगीसाइड्स',
+                            'herbicide': 'हरबिसाइड्स',
+                            'micronutrients-fertiliser': 'माइक्रो-पोषक उर्वरक',
+                            'pgr': 'पौधों के विकास नियंत्रक',
+                            'bio-fertilizer': 'बायो-उर्वरक',
+                        },
                     },
                     about: {
                         navText: "बद्दल",
@@ -198,7 +218,7 @@ i18n
                                 subHeading2: 'प्रतिबद्ध हैं',
                                 tagLine1: 'Enjo-Chem में',
                                 tagLine2: 'स्वागत है',
-                                image: '../src/assets/images/home/home-slider-1.jpg',
+                                image: '/assets/images/home/home-slider-1.jpg',
                             },
                             {
                                 mainHeading1: 'सर्वश्रेष्ठ उत्पाद',
@@ -207,7 +227,7 @@ i18n
                                 subHeading2: 'प्रतिबद्ध हैं',
                                 tagLine1: 'Enjo-Chem में',
                                 tagLine2: 'स्वागत है',
-                                image: '../src/assets/images/home/home-slider-2.jpg',
+                                image: '/assets/images/home/home-slider-2.jpg',
                             },
                         ],
                         introHeading: 'किसानों की समृद्धि के लिए प्रीमियम कृषि उत्पाद',
@@ -239,7 +259,17 @@ i18n
                         coreValuesPoints: ['नैतिकता और अखंडता', 'पारदर्शिता','नवाचार', 'कुल गुणवत्ता नियंत्रण','पर्यावरण की देखभाल','सहयोग के माध्यम से आर एंड डी नेतृत्व'],
                     },
                     product: {
-                        navText: 'उत्पाद'
+                        navText: 'उत्पाद',
+                        navs: {
+                            'allProducts': 'सभी उत्पाद',
+                            'cropProtection': 'फसल संरक्षण',
+                            'insecticide': 'कीटनाशक',
+                            'fungicide': 'फंगीसाइड्स',
+                            'herbicide': 'हरबिसाइड्स',
+                            'micronutrients-fertiliser': 'माइक्रो-पोषक उर्वरक',
+                            'pgr': 'पौधों के विकास नियंत्रक',
+                            'bio-fertilizer': 'बायो-उर्वरक',
+                        },
                     },
                     contact: {
                         navText: 'संपर्क',

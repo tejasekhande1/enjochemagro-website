@@ -1,3 +1,4 @@
+import React from 'react';
 import PageWrapper from "../common/PageWrapper.jsx";
 import {useTranslation} from "react-i18next";
 import {useState} from "react";
@@ -15,7 +16,7 @@ function ProductPage({filter}) {
                     <div className="product-page__bg page-header__bg" />
                     
                     <div className="container">
-                        <h2 className="page-header__title bw-split-in-down">{t('product.navText')}</h2>
+                        <h2 className="page-header__title">{t('product.navText')}</h2>
                     </div>
                     
                 </section>
@@ -32,13 +33,13 @@ function ProductPage({filter}) {
                                         <select className="select" aria-label="Sort by popular" value={productFilter} onChange={(event) => {
                                             setProductFilter(event.target.value);
                                         }}>
-                                            <option value={''}>Filter By All</option>
-                                            <option value={'insecticide'}>Insecticide</option>
-                                            <option value={'fungicide'}>Fungicide</option>
-                                            <option value={'herbicide'}>Herbicide</option>
-                                            <option value={'micronutrients-fertiliser'}>Micronutrients-Fertiliser</option>
-                                            <option value={'pgr'}>Plant Growth Regulators</option>
-                                            <option value={'bio-fertilizer'}>Bio-fertilizer</option>
+                                            <option value={''}>{t('product.navs.allProducts')}</option>
+                                            <option value={'insecticide'}>{t('product.navs.insecticide')}</option>
+                                            <option value={'fungicide'}>{t('product.navs.fungicide')}</option>
+                                            <option value={'herbicide'}>{t('product.navs.herbicide')}</option>
+                                            <option value={'micronutrients-fertiliser'}>{t('product.navs.micronutrients-fertiliser')}</option>
+                                            <option value={'pgr'}>{t('product.navs.pgr')}</option>
+                                            <option value={'bio-fertilizer'}>{t('product.navs.bio-fertilizer')}</option>
                                         </select>
                                     </div>
                                 </div>
@@ -55,7 +56,7 @@ function ProductPage({filter}) {
                                                 >
                                                     <div className="product__item__img">
                                                         <img
-                                                            src={"../src/assets/images/custom/products/" + (index + 1) + '.png'}
+                                                            src={"/assets/images/custom/products/" + (index + 1) + '.png'}
                                                             alt="enjo-chem"
                                                         />
                                                         {/*<div className="product__item__flash">*/}

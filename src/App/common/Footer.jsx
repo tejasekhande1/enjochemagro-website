@@ -1,3 +1,5 @@
+import React from 'react';  // Import React for JSX
+import ReactDOM from 'react-dom';
 import {useTranslation} from "react-i18next";
 
 function Footer() {
@@ -16,7 +18,7 @@ function Footer() {
                                 <div className="footer-widget footer-widget--about">
                                     <a href="/" className="footer-widget__logo">
                                         <img
-                                            src="../src/assets/images/logo-light.png"
+                                            src="/assets/images/logo-light.png"
                                             width={147}
                                             alt="Enjo-Chem"
                                         />

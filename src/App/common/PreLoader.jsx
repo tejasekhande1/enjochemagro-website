@@ -1,11 +1,11 @@
-function Navbar() {
+import React from 'react';  // Import React for JSX
+
+function PreLoader() {
     return (
         <>
-            <div style={{display: "none"}} className="custom-cursor__cursor"/>
-            <div style={{display: "none"}} className="custom-cursor__cursor-two"/>
 
         </>
     );
 }
 
-export default Navbar;
+export default PreLoader;
