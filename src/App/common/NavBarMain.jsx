@@ -89,6 +89,15 @@ function NavBarMain() {
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a href="/career">{t('career.navText')}</a>
+                                </li>
+                                <li>
+                                    <a href="/b2b">{t('b2bProduct.navText')}</a>
+                                </li>
+                                <li>
+                                    <a href="/contact">{t('contact.navText')}</a>
+                                </li>
                             </ul>
                         </nav>
                         <div className="main-header__right">
