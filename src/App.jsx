@@ -60,6 +60,12 @@ export function App() {
                 total: 9,
             },
         ],
+        fieldVisits: [
+            {
+                path: 'field-visits',
+                total: 30,
+            },
+        ],
     };
     const router = createBrowserRouter([
         {
@@ -113,6 +119,10 @@ export function App() {
         {
             path: "/annual-dealers-meet",
             element: <GalleryPage sections={gallery.annualDealersMeet} page={'gallery.annualDealersMeet'} />,
+        },
+        {
+            path: "/field-visits",
+            element: <GalleryPage sections={gallery.fieldVisits} page={'gallery.fieldVisits'} />,
         },
 
         {

@@ -108,6 +108,11 @@ i18n
                             headerText: 'Annual Dealer Meeting',
                             subSectionText: ['Annual Dealers meeting 2024 AT Chatrapati Sambhajinagar', 'Annual Dealers meeting 2023 AT Chatrapati Sambhajinagar', 'TOP SELLLERS MEET 2022 AT GOA', 'Annual Dealers meeting 2022 at Chatrapati Sambhajinagar', 'ANNUAL DEALERS MEETING 2017 AT WARDHA', 'TOP SELLERS MEET 2014 AT KERALA', 'ANNUAL DEALER MEET 2014 AT WARDHA'],
                         },
+                        fieldVisits: {
+                            navText: 'Field Visits',
+                            headerText: 'Field Visits',
+                            subSectionText: ['Field Visits'],
+                        },
                     },
                     contact: {
                         navText: 'Contact',
@@ -223,6 +228,11 @@ i18n
                             navText: 'वार्षिक विक्रेता सभा',
                             headerText: 'वार्षिक डीलर सभा',
                             subSectionText: ['छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा 2024', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२३', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२२', 'वार्षिक डीलर सभा २०१७ वर्धा', 'केरळ येथे टॉप सेलर्स मीट २०१४', 'वार्षिक डीलर सभा २०१४ वर्धा'],
+                        },
+                        fieldVisits: {
+                            navText: 'फील्ड भेट',
+                            headerText: 'फील्ड भेट',
+                            subSectionText: ['फील्ड भेट'],
                         },
                     },
                     contact: {
@@ -342,6 +352,11 @@ i18n
                             navText: 'वार्षिक डीलर्स मीट',
                             headerText: 'वार्षिक डीलर सम्मेलन',
                             subSectionText: ['छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2024', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2023', 'गोवा में शीर्ष विक्रेताओं की मीट 2022', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2022', 'वार्षिक डीलर सम्मेलन 2017 वर्धा', 'केरला में शीर्ष विक्रेताओं की मीट 2014', 'वार्षिक डीलर सम्मेलन 2014 वर्धा'],
+                        },
+                        fieldVisits: {
+                            navText: 'फील्ड दौरा',
+                            headerText: 'फील्ड दौरा',
+                            subSectionText: ['फील्ड दौरा'],
                         },
                     },
                     quickLinks: 'त्वरित सम्पक',

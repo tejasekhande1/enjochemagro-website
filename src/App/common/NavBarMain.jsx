@@ -76,7 +76,7 @@ function NavBarMain() {
                                             <a href="/annual-dealers-meet">{t('gallery.annualDealersMeet.navText')}</a>
                                         </li>
                                         <li>
-                                            <a href="/annual-dealers-meet">{t('gallery.annualDealersMeet.navText')}</a>
+                                            <a href="/field-visits">{t('gallery.fieldVisits.navText')}</a>
                                         </li>
                                     </ul>
                                 </li>
