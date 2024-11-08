@@ -8,7 +8,7 @@ function ProductPage({filter}) {
     const products = [...t('products', {returnObjects: true})];
     const [productFilter, setProductFilter] = useState(filter);
     return (
-        <PageWrapper product={{productFilter: productFilter, setProductFilter: setProductFilter}}>
+        <PageWrapper>
             <>
                 <section className="page-header">
                     <div className="page-header__shape-left" />
@@ -56,7 +56,7 @@ function ProductPage({filter}) {
                                                 >
                                                     <div className="product__item__img">
                                                         <img
-                                                            src={"/assets/images/custom/products/" + (index + 1) + '.png'}
+                                                            src={"/assets/images/custom/products/" + (product.id) + '.png'}
                                                             alt="enjo-chem"
                                                         />
                                                         {/*<div className="product__item__flash">*/}

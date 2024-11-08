@@ -1,5 +1,4 @@
-import React from 'react';  // Import React for JSX
-import ReactDOM from 'react-dom';
+import React from 'react';
 import {createContext, useState} from 'react'
 import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -8,6 +7,10 @@ import ProductPage from "./App/page/ProductPage.jsx";
 import HomePage from "./App/page/HomePage.jsx";
 import NotFoundPage from "./App/page/NotFoundPage";
 import ProductDetailPage from "./App/page/ProductDetailPage";
+import GalleryPage from "./App/page/GalleryPage";
+import {gallery} from "./assets/json/gallery/gallery";
+import VideoPage from "./App/page/VideoPage";
+import {videoNews} from "./assets/json/gallery/videoNews";
 
 export const LanguageContext = createContext(null);
 
@@ -49,10 +52,37 @@ export function App() {
             path: "/products/bio-fertilizers",
             element: <ProductPage filter={'bio-fertilizer'}/>,
         },
-
         {
             path: "/products/:id",
             element: <ProductDetailPage />,
+        },
+        {
+            path: "/new-launch",
+            element: <GalleryPage sections={gallery.newLaunch} page={'media.newLaunch'} />,
+        },
+        {
+            path: "/company-news",
+            element: <GalleryPage sections={gallery.companyNews} page={'media.companyNews'} />,
+        },
+        {
+            path: "/annual-dealers-meet",
+            element: <GalleryPage sections={gallery.annualDealersMeet} page={'gallery.annualDealersMeet'} />,
+        },
+        {
+            path: "/field-visits",
+            element: <GalleryPage sections={gallery.fieldVisits} page={'gallery.fieldVisits'} />,
+        },
+        {
+            path: "/tour",
+            element: <GalleryPage sections={gallery.tour} page={'gallery.tour'} />,
+        },
+        {
+            path: "/video-news",
+            element: <VideoPage srcs={videoNews} page={'gallery.videoNews'}/>,
+        },
+        {
+            path: "/farmer-meeting",
+            element: <GalleryPage sections={gallery.farmerMeeting} page={'gallery.farmerMeeting'} />,
         },
 
         {

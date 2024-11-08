@@ -14,7 +14,7 @@ i18n
     .use(initReactI18next)
     .init({
         fallbackLng: "en",
-        lng: lang[localStorage.getItem('language')],
+        lng: lang[localStorage.getItem('language') ?? 'english'],
         interpolation: {
             escapeValue: false,
         },
@@ -88,6 +88,47 @@ i18n
                         enquiry: 'Enquiry Now',
                     },
                     products: [...productsEnglish],
+                    media: {
+                        navText: 'Media',
+                        newLaunch: {
+                            navText: 'New Launch',
+                            headerText: 'New Launch Products',
+                            subSectionText: ['New Launch 2024', 'New Launch 2023'],
+                        },
+                        companyNews: {
+                            navText: 'Company News',
+                            headerText: 'Company News',
+                            subSectionText: ['Company News'],
+                        }
+                    },
+                    gallery: {
+                        navText: 'Gallery',
+                        annualDealersMeet: {
+                            navText: 'Annual Dealers Meet',
+                            headerText: 'Annual Dealer Meeting',
+                            subSectionText: ['Annual Dealers meeting 2024 AT Chatrapati Sambhajinagar', 'Annual Dealers meeting 2023 AT Chatrapati Sambhajinagar', 'TOP SELLLERS MEET 2022 AT GOA', 'Annual Dealers meeting 2022 at Chatrapati Sambhajinagar', 'ANNUAL DEALERS MEETING 2017 AT WARDHA', 'TOP SELLERS MEET 2014 AT KERALA', 'ANNUAL DEALER MEET 2014 AT WARDHA'],
+                        },
+                        fieldVisits: {
+                            navText: 'Field Visits',
+                            headerText: 'Field Visits',
+                            subSectionText: ['Field Visits'],
+                        },
+                        tour: {
+                            navText: 'Tour Photos',
+                            headerText: 'Tour Photos',
+                            subSectionText: ['Thailand TOUR 2024', 'Kashmir TOUR 2024', 'Somnath, Diu, Sasan Gir tour 2024', 'Thailand TOUR 2023', 'SINGAPORE TOUR 2018', 'DWARKA TOUR 2017'],
+                        },
+                        videoNews: {
+                            navText: "Video News",
+                            headerText: "Video News",
+                            subSectionText: ["Video News"],
+                        },
+                        farmerMeeting: {
+                            navText: "Farmer's Meeting",
+                            headerText: "Farmer's Meeting",
+                            subSectionText: ["Farmer's Meeting"],
+                        },
+                    },
                     contact: {
                         navText: 'Contact',
                     },
@@ -183,6 +224,47 @@ i18n
                         coreValuesPoints: ['नैतिकता आणि अखंडता', 'पारदर्शिता', 'नवोत्कृष्टता', 'कुल गुणवत्ता नियंत्रण', 'पर्यावरणाची देखरेख', 'सहकार्यातून आर आणि डी नेतृत्व'],
                     },
                     products: [...productsMarathi],
+                    media: {
+                        navText: 'मीडिया',
+                        newLaunch: {
+                            navText: 'नवीन लॉन्च',
+                            headerText: 'नवीन लॉन्च उत्पादने',
+                            subSectionText: ['नवीन लॉन्च 2024', 'नवीन लॉन्च २०२३'],
+                        },
+                        companyNews: {
+                            navText: 'कंपनीची बातम्या',
+                            headerText: 'कंपनीची बातम्या',
+                            subSectionText: ['कंपनीची बातम्या'],
+                        }
+                    },
+                    gallery: {
+                        navText: 'गॅलरी',
+                        annualDealersMeet: {
+                            navText: 'वार्षिक विक्रेता सभा',
+                            headerText: 'वार्षिक डीलर सभा',
+                            subSectionText: ['छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा 2024', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२३', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२२', 'वार्षिक डीलर सभा २०१७ वर्धा', 'केरळ येथे टॉप सेलर्स मीट २०१४', 'वार्षिक डीलर सभा २०१४ वर्धा'],
+                        },
+                        fieldVisits: {
+                            navText: 'फील्ड भेट',
+                            headerText: 'फील्ड भेट',
+                            subSectionText: ['फील्ड भेट'],
+                        },
+                        tour: {
+                            navText: 'प्रवास फोटो',
+                            headerText: 'टूर फोटो',
+                            subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
+                        },
+                        videoNews: {
+                            navText: "व्हिडिओ बातम्या",
+                            headerText: "व्हिडिओ बातम्या",
+                            subSectionText: ["व्हिडिओ बातम्या"],
+                        },
+                        farmerMeeting: {
+                            navText: "शेतकरी भेट",
+                            headerText: "शेतकरी भेट",
+                            subSectionText: ["शेतकरी भेट"],
+                        },
+                    },
                     contact: {
                         navText: 'संपर्क',
                     },
@@ -281,6 +363,47 @@ i18n
                         navText: 'संपर्क',
                     },
                     products: [...productsHindi],
+                    media: {
+                        navText: 'मीडिया',
+                        newLaunch: {
+                            navText: 'नई लॉन्च',
+                            headerText: 'नई लॉन्च उत्पादने',
+                            subSectionText: ['नई लॉन्च 2024', 'नई लॉन्च 2023'],
+                        },
+                        companyNews: {
+                            navText: 'कंपनी की खबरें',
+                            headerText: 'कंपनी की खबरें',
+                            subSectionText: ['कंपनी की खबरें'],
+                        }
+                    },
+                    gallery: {
+                        navText: 'गैलरी',
+                        annualDealersMeet: {
+                            navText: 'वार्षिक डीलर्स मीट',
+                            headerText: 'वार्षिक डीलर सम्मेलन',
+                            subSectionText: ['छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2024', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2023', 'गोवा में शीर्ष विक्रेताओं की मीट 2022', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2022', 'वार्षिक डीलर सम्मेलन 2017 वर्धा', 'केरला में शीर्ष विक्रेताओं की मीट 2014', 'वार्षिक डीलर सम्मेलन 2014 वर्धा'],
+                        },
+                        fieldVisits: {
+                            navText: 'फील्ड दौरा',
+                            headerText: 'फील्ड दौरा',
+                            subSectionText: ['फील्ड दौरा'],
+                        },
+                        tour: {
+                            navText: 'यात्रा फ़ोटो',
+                            headerText: 'यात्रा फ़ोटो',
+                            subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
+                        },
+                        videoNews: {
+                            navText: "वीडियो समाचार",
+                            headerText: "वीडियो समाचार",
+                            subSectionText: ["वीडियो समाचार"],
+                        },
+                        farmerMeeting: {
+                            navText: "किसानों से मिलना",
+                            headerText: "किसानों की मुलाकात",
+                            subSectionText: ["किसानों की मुलाकात"],
+                        },
+                    },
                     quickLinks: 'त्वरित सम्पक',
                     footer: {
                         description: 'एन्जो-केम एग्रोकेमिकल एक क्रॉप प्रोटेक्शन, माइक्रोन्यूट्रिएंट्स, पेस्टिसाइड्स और फर्टिलाइजर्स का निर्माता है। एन्जो-केम एक अग्रणी एग्रोकेमिकल कंपनी है जो कृषि उत्पादकता और स्थायित्व को बढ़ाने के लिए समर्पित है',
