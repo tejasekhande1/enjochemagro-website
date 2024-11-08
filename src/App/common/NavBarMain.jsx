@@ -93,6 +93,9 @@ function NavBarMain() {
                                     <a href="/career">{t('career.navText')}</a>
                                 </li>
                                 <li>
+                                    <a href="/b2b">{t('b2bProduct.navText')}</a>
+                                </li>
+                                <li>
                                     <a href="/contact">{t('contact.navText')}</a>
                                 </li>
                             </ul>

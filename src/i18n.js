@@ -3,6 +3,11 @@ import { initReactI18next } from "react-i18next";
 import productsEnglish from '../src/assets/json/products/english.json';
 import productsMarathi from '../src/assets/json/products/marathi.json';
 import productsHindi from '../src/assets/json/products/hindi.json';
+import {products as b2bProductsEnglish} from "./assets/json/b2b/english";
+import {products as b2bProductsMarathi}  from "./assets/json/b2b/marathi";
+import {products as b2bProductsHindi}  from "./assets/json/b2b/hindi";
+
+
 const lang = {
     marathi: 'mr',
     english: 'en',
@@ -167,6 +172,10 @@ i18n
                         resume: 'Resume',
                         coverLetter: 'Cover Letter',
                         send: 'Send',
+                    },
+                    b2bProducts: [...b2bProductsEnglish],
+                    b2bProduct: {
+                        navText: 'B2B',
                     },
                     footer: {
                         description: 'Enjo-Chem Agrochemical is a Manufacturer of Crop protection, Micronutrients, Pesticides and Fertilisers. Enjo-Chem is a leading agrochemical company dedicated to advancing agricultural productivity and sustainability.',
@@ -339,6 +348,10 @@ i18n
                         coverLetter: 'कव्हर लेटर',
                         send: 'पाठवा',
                     },
+                    b2bProducts: [...b2bProductsMarathi],
+                    b2bProduct: {
+                        navText: 'व्यापार-व्यापार',
+                    },
                     footer: {
                         description: 'एन्जो-केम अॅग्रोकेमिकल एक क्रॉप प्रोटेक्शन, मायक्रोन्यूट्रिएंट्स, पेस्टिसाइड्स आणि फर्टिलायझर्सचे निर्माता आहे. एन्जो-केम हे एक अग्रणी अॅग्रोकेमिकल कंपनी आहे ज्याने कृषीविज्ञान आणि शेतीविज्ञानाचा वापर करून कृषीची उत्पादनशीलता आणि सतततेचे वाढवण्यास समर्पित आहे.',
                         productTitle: 'आमचे उत्पादन',
@@ -510,6 +523,10 @@ i18n
                         coverLetter: 'कवर लेटर',
                         send: 'भेजें',
                     },
+                    b2bProduct: {
+                      navText: 'व्यापार-से-व्यापार',
+                    },
+                    b2bProducts: [...b2bProductsHindi],
                     footer: {
                         description: 'एन्जो-केम एग्रोकेमिकल एक क्रॉप प्रोटेक्शन, माइक्रोन्यूट्रिएंट्स, पेस्टिसाइड्स और फर्टिलाइजर्स का निर्माता है। एन्जो-केम एक अग्रणी एग्रोकेमिकल कंपनी है जो कृषि उत्पादकता और स्थायित्व को बढ़ाने के लिए समर्पित है',
                         productTitle: 'हमारे उत्पाद',

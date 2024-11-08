@@ -4,14 +4,12 @@ import {useTranslation} from "react-i18next";
 import {useState} from "react";
 import {useParams} from "react-router-dom";
 
-function ProductDetailPage({filter}) {
+function B2BDetailPage() {
     const {t} = useTranslation()
-    const products = [...t('products', {returnObjects: true})]
-    const [productFilter, setProductFilter] = useState(filter)
+    const products = [...t('b2bProducts', {returnObjects: true})]
     const { id } = useParams();
     const product = products.find(product => product.id === parseInt(id))
     if(!product) window.location.assign('/')
-
     return (
         <PageWrapper>
             <>
@@ -31,11 +29,11 @@ function ProductDetailPage({filter}) {
                                         <div className="item">
                                             <div className="product-details__gallery__image">
                                                 <img
-                                                    src={"/assets/images/custom/products/" + (product.id) + '.png'}
+                                                    src={"/assets/images/custom/b2b/" + (product.id) + '.jpg'}
                                                     alt="enjo-chem"
                                                 />
                                                 <a className="img-popup"
-                                                   href={"/assets/images/custom/products/" + (product.id) + '.png'}><span
+                                                   href={"/assets/images/custom/b2b/" + (product.id) + '.jpg'}><span
                                                     className="fas fa-eye"></span></a>
                                             </div>
                                         </div>
@@ -51,45 +49,21 @@ function ProductDetailPage({filter}) {
                                 data-wow-delay="300ms"
                             >
                                 <div className="product-details__content">
-                                    <h3 className="product-details__title">{product.name}</h3>
+                                    <h3 className="product-details__title">{product.title}</h3>
                                     <span className="product-details__price__stock"
-                                          style={{marginLeft: 0, marginTop: 0}}>In stock</span>
-                                    {/* /.product-title */}
-                                    <div className="product-details__price mt-2">
-                                        {/*<span className="product-details__price__regular">$80.00</span>*/}
-                                        {/*<span className="product-details__price__offer">$200.00</span>*/}
-                                        {/*<span className="product-details__price__stock">In stock</span>*/}
-                                    </div>
-                                    {/* /.product-price */}
-                                    {/*<div className="product-details__review">*/}
-                                    {/*    <span className="icofont-star"/>*/}
-                                    {/*    <span className="icofont-star"/>*/}
-                                    {/*    <span className="icofont-star"/>*/}
-                                    {/*    <span className="icofont-star"/>*/}
-                                    {/*    <span className="icofont-star"/>*/}
-                                    {/*    <a href="product-details.html">( 5 Customer Review )</a>*/}
-                                    {/*</div>*/}
-                                    {/* /.review-ratings */}
+                                          style={{marginLeft: 0, marginTop: 0}}>
+                                        In stock
+                                    </span>
                                     <div className="product-details__excerpt">
-                                        {product.feature}
+                                        {product.description}
                                     </div>
-                                    {/* /.excerp-text */}
-                                    {/*<ul className="product-details__feature">*/}
-                                    {/*    <li>*/}
-                                    {/*    <span className="product-details__feature__icon">*/}
-                                    {/*      <i className="icofont-check-alt"/>*/}
-                                    {/*    </span>*/}
-                                    {/*        Excellent audio performance*/}
-                                    {/*    </li>*/}
-                                    {/*    <li>*/}
-                                    {/*    <span className="product-details__feature__icon">*/}
-                                    {/*      <i className="icofont-check-alt"/>*/}
-                                    {/*    </span>*/}
-                                    {/*        Lorem ipsum available, but the majority have suffered.*/}
-                                    {/*    </li>*/}
-                                    {/*</ul>*/}
-
                                     <ul className="product-details__info">
+                                        <li>
+                                            <span className="product-details__info__icon">
+                                              <i className="icofont-check-alt"/>
+                                            </span>
+                                            <strong>Content:</strong> {product.content}
+                                        </li>
                                         <li>
                                             <span className="product-details__info__icon">
                                               <i className="icofont-check-alt"/>
@@ -100,19 +74,7 @@ function ProductDetailPage({filter}) {
                                             <span className="product-details__info__icon">
                                               <i className="icofont-check-alt"/>
                                             </span>
-                                            <strong>Packing Size:</strong> {product.packingSize}
-                                        </li>
-                                        <li>
-                                            <span className="product-details__info__icon">
-                                              <i className="icofont-check-alt"/>
-                                            </span>
-                                            <strong>Crops:</strong> {product.crops}
-                                        </li>
-                                        <li>
-                                            <span className="product-details__info__icon">
-                                              <i className="icofont-check-alt"/>
-                                            </span>
-                                            <strong>Pests:</strong> {product.pests}
+                                            <strong>Packing Size:</strong> {product.package}
                                         </li>
                                     </ul>
 
@@ -146,4 +108,4 @@ function ProductDetailPage({filter}) {
     );
 }
 
-export default ProductDetailPage;
+export default B2BDetailPage;

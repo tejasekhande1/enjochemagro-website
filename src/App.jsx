@@ -13,6 +13,8 @@ import VideoPage from "./App/page/VideoPage";
 import {videoNews} from "./assets/json/gallery/videoNews";
 import ContactPage from "./App/page/ContactPage";
 import CareerPage from "./App/page/CareerPage";
+import B2BPage from "./App/page/B2BPage";
+import B2BDetailPage from "./App/page/B2BDetailPage";
 
 export const LanguageContext = createContext(null);
 
@@ -89,6 +91,14 @@ export function App() {
         {
             path: "/career",
             element: <CareerPage />,
+        },
+        {
+            path: "/b2b",
+            element: <B2BPage />,
+        },
+        {
+            path: "/b2b/:id",
+            element: <B2BDetailPage />,
         },
         {
             path: "/contact",
