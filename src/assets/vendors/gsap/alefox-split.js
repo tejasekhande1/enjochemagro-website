@@ -8,6 +8,7 @@
     // Split Text
     function bwsplit_text() {
         setTimeout(function () {
+            if(localStorage.getItem('language') !== 'english') return
             var splitTextElements = $(".sec-title__title, .sec-title__tagline, .page-header__title");
             if (splitTextElements.length === 0) return;
             gsap.registerPlugin(SplitText);

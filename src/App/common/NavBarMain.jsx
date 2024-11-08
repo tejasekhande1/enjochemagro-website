@@ -89,10 +89,13 @@ function NavBarMain() {
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a href="/contact">{t('contact.navText')}</a>
+                                </li>
                             </ul>
                         </nav>
                         <div className="main-header__right">
-                            <div className="mobile-nav__btn mobile-nav__toggler">
+                        <div className="mobile-nav__btn mobile-nav__toggler">
                                 <span/>
                                 <span/>
                                 <span/>
