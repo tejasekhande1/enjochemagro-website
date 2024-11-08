@@ -8,10 +8,29 @@ import ProductPage from "./App/page/ProductPage.jsx";
 import HomePage from "./App/page/HomePage.jsx";
 import NotFoundPage from "./App/page/NotFoundPage";
 import ProductDetailPage from "./App/page/ProductDetailPage";
+import GalleryPage from "./App/page/GalleryPage";
 
 export const LanguageContext = createContext(null);
 
 export function App() {
+    const gallery = {
+        newLaunch: [
+            {
+                path: 'new-launch/2023',
+                total: 2,
+            },
+            {
+                path: 'new-launch/2024',
+                total: 5,
+            },
+        ],
+        companyNews: [
+            {
+                path: 'company-news',
+                total: 13,
+            },
+        ],
+    };
     const router = createBrowserRouter([
         {
             path: "/",
@@ -49,10 +68,17 @@ export function App() {
             path: "/products/bio-fertilizers",
             element: <ProductPage filter={'bio-fertilizer'}/>,
         },
-
         {
             path: "/products/:id",
             element: <ProductDetailPage />,
+        },
+        {
+            path: "/new-launch",
+            element: <GalleryPage sections={gallery.newLaunch} page={'media.newLaunch'} />,
+        },
+        {
+            path: "/company-news",
+            element: <GalleryPage sections={gallery.companyNews} page={'media.companyNews'} />,
         },
 
         {

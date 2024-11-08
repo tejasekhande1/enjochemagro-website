@@ -88,6 +88,19 @@ i18n
                         enquiry: 'Enquiry Now',
                     },
                     products: [...productsEnglish],
+                    media: {
+                        navText: 'Media',
+                        newLaunch: {
+                            navText: 'New Launch',
+                            headerText: 'New Launch Products',
+                            subSectionText: ['New Launch 2024', 'New Launch 2023'],
+                        },
+                        companyNews: {
+                            navText: 'Company News',
+                            headerText: 'Company News',
+                            subSectionText: ['Company News'],
+                        }
+                    },
                     contact: {
                         navText: 'Contact',
                     },
@@ -183,6 +196,19 @@ i18n
                         coreValuesPoints: ['नैतिकता आणि अखंडता', 'पारदर्शिता', 'नवोत्कृष्टता', 'कुल गुणवत्ता नियंत्रण', 'पर्यावरणाची देखरेख', 'सहकार्यातून आर आणि डी नेतृत्व'],
                     },
                     products: [...productsMarathi],
+                    media: {
+                        navText: 'मीडिया',
+                        newLaunch: {
+                            navText: 'नवीन लॉन्च',
+                            headerText: 'नवीन लॉन्च उत्पादने',
+                            subSectionText: ['नवीन लॉन्च 2024', 'नवीन लॉन्च २०२३'],
+                        },
+                        companyNews: {
+                            navText: 'कंपनीची बातम्या',
+                            headerText: 'कंपनीची बातम्या',
+                            subSectionText: ['कंपनीची बातम्या'],
+                        }
+                    },
                     contact: {
                         navText: 'संपर्क',
                     },
@@ -281,6 +307,19 @@ i18n
                         navText: 'संपर्क',
                     },
                     products: [...productsHindi],
+                    media: {
+                        navText: 'मीडिया',
+                        newLaunch: {
+                            navText: 'नई लॉन्च',
+                            headerText: 'नई लॉन्च उत्पादने',
+                            subSectionText: ['नई लॉन्च 2024', 'नई लॉन्च 2023'],
+                        },
+                        companyNews: {
+                            navText: 'कंपनी की खबरें',
+                            headerText: 'कंपनी की खबरें',
+                            subSectionText: ['कंपनी की खबरें'],
+                        }
+                    },
                     quickLinks: 'त्वरित सम्पक',
                     footer: {
                         description: 'एन्जो-केम एग्रोकेमिकल एक क्रॉप प्रोटेक्शन, माइक्रोन्यूट्रिएंट्स, पेस्टिसाइड्स और फर्टिलाइजर्स का निर्माता है। एन्जो-केम एक अग्रणी एग्रोकेमिकल कंपनी है जो कृषि उत्पादकता और स्थायित्व को बढ़ाने के लिए समर्पित है',

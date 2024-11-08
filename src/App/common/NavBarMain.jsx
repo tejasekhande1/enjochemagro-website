@@ -58,6 +58,17 @@ function NavBarMain() {
                                         </li>
                                     </ul>
                                 </li>
+                                <li className="dropdown">
+                                    <a href="/new-launch">{t('media.navText')}</a>
+                                    <ul className="sub-menu">
+                                        <li>
+                                            <a href="/new-launch">{t('media.newLaunch.navText')}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/company-news">{t('media.companyNews.navText')}</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                         <div className="main-header__right">
@@ -84,7 +95,7 @@ function NavBarMain() {
                                 >
                                     +91 8275 017 003
                                 </a>
-                                <br />
+                                <br/>
                                 <a
                                     className="main-header__call__text"
                                     href="https://api.whatsapp.com/send/?phone=8275017003&text&type=phone_number"

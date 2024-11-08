@@ -12,7 +12,7 @@ function ProductDetailPage({filter}) {
     const product = products.find(product => product.id === parseInt(id))
 
     return (
-        <PageWrapper product={{productFilter: productFilter, setProductFilter: setProductFilter}}>
+        <PageWrapper>
             <>
 
                 <section className="product-details" style={{padding: "60px 0"}}>
