@@ -66,6 +66,32 @@ export function App() {
                 total: 30,
             },
         ],
+        tour: [
+            {
+                path: 'tour/thailand-2024',
+                total: 5,
+            },
+            {
+                path: 'tour/kashmir',
+                total: 2,
+            },
+            {
+                path: 'tour/diu',
+                total: 4,
+            },
+            {
+                path: 'tour/thailand-2023',
+                total: 5,
+            },
+            {
+                path: 'tour/singapore',
+                total: 14,
+            },
+            {
+                path: 'tour/dwarka-2017',
+                total: 7,
+            },
+        ],
     };
     const router = createBrowserRouter([
         {
@@ -123,6 +149,10 @@ export function App() {
         {
             path: "/field-visits",
             element: <GalleryPage sections={gallery.fieldVisits} page={'gallery.fieldVisits'} />,
+        },
+        {
+            path: "/tour",
+            element: <GalleryPage sections={gallery.tour} page={'gallery.tour'} />,
         },
 
         {

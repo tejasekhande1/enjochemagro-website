@@ -78,6 +78,9 @@ function NavBarMain() {
                                         <li>
                                             <a href="/field-visits">{t('gallery.fieldVisits.navText')}</a>
                                         </li>
+                                        <li>
+                                            <a href="/tour">{t('gallery.tour.navText')}</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>

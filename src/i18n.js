@@ -113,6 +113,11 @@ i18n
                             headerText: 'Field Visits',
                             subSectionText: ['Field Visits'],
                         },
+                        tour: {
+                            navText: 'Tour Photos',
+                            headerText: 'Tour Photos',
+                            subSectionText: ['Thailand TOUR 2024', 'Kashmir TOUR 2024', 'Somnath, Diu, Sasan Gir tour 2024', 'Thailand TOUR 2023', 'SINGAPORE TOUR 2018', 'DWARKA TOUR 2017'],
+                        },
                     },
                     contact: {
                         navText: 'Contact',
@@ -233,6 +238,11 @@ i18n
                             navText: 'फील्ड भेट',
                             headerText: 'फील्ड भेट',
                             subSectionText: ['फील्ड भेट'],
+                        },
+                        tour: {
+                            navText: 'प्रवास फोटो',
+                            headerText: 'टूर फोटो',
+                            subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
                         },
                     },
                     contact: {
@@ -357,6 +367,11 @@ i18n
                             navText: 'फील्ड दौरा',
                             headerText: 'फील्ड दौरा',
                             subSectionText: ['फील्ड दौरा'],
+                        },
+                        tour: {
+                            navText: 'यात्रा फ़ोटो',
+                            headerText: 'यात्रा फ़ोटो',
+                            subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
                         },
                     },
                     quickLinks: 'त्वरित सम्पक',
