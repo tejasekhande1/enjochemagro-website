@@ -31,30 +31,30 @@ function NavBarMain() {
                                     <a href="/products">{t('product.navText')}</a>
                                     <ul className="sub-menu">
                                         <li>
-                                            <a href="/products">All Products</a>
+                                            <a href="/products">{t('product.navs.allProducts')}</a>
                                         </li>
                                         <li className="dropdown">
-                                            <a href="#">Crop Protection</a>
+                                            <a href="#">{t('product.navs.cropProtection')}</a>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <a href="/products/insecticides">Insecticides</a>
+                                                    <a href="/products/insecticides">{t('product.navs.insecticide')}</a>
                                                 </li>
                                                 <li>
-                                                    <a href="/products/fungicides">Fungicides</a>
+                                                    <a href="/products/fungicides">{t('product.navs.fungicide')}</a>
                                                 </li>
                                                 <li>
-                                                    <a href="/products/herbicides">Herbicides</a>
+                                                    <a href="/products/herbicides">{t('product.navs.herbicide')}</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="/products/micronutrients-fertilisers">Micro Nutrients fertilizers</a>
+                                            <a href="/products/micronutrients-fertilisers">{t('product.navs.micronutrients-fertiliser')}</a>
                                         </li>
                                         <li>
-                                            <a href="/products/pgr">Plant Growth Regulators</a>
+                                            <a href="/products/pgr">{t('product.navs.pgr')}</a>
                                         </li>
                                         <li>
-                                            <a href="/products/bio-fertilizers">Bio Fertilizers</a>
+                                            <a href="/products/bio-fertilizers">{t('product.navs.bio-fertilizer')}</a>
                                         </li>
                                     </ul>
                                 </li>
