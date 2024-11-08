@@ -7,9 +7,9 @@ function Navbar() {
                 <div className="mobile-nav__overlay mobile-nav__toggler"/>
                 {/* /.mobile-nav__overlay */}
                 <div className="mobile-nav__content">
-      <span className="mobile-nav__close mobile-nav__toggler">
-        <i className="fa fa-times"/>
-      </span>
+                  <span className="mobile-nav__close mobile-nav__toggler">
+                    <i className="fa fa-times"/>
+                  </span>
                     <div className="logo-box">
                         <a href="index.html" aria-label="logo image">
                             <img src="/assets/images/logo-light.png" width={155} alt=""/>
@@ -21,31 +21,38 @@ function Navbar() {
                     <ul className="mobile-nav__contact list-unstyled">
                         <li>
                             <i className="fa fa-envelope"/>
-                            <a href="mailto:needhelp@alefox.com">needhelp@alefox.com</a>
+                            <a href="mailto:support@enjochemagro.com">support@enjochemagro.com</a>
                         </li>
                         <li>
                             <i className="fa fa-phone-alt"/>
-                            <a href="tel:666-888-0000">666 888 0000</a>
+                            <a href="https://api.whatsapp.com/send/?phone=918275017003&text&type=phone_number">
+                                +91 8275 017 003
+                            </a>
                         </li>
                     </ul>
                     {/* /.mobile-nav__contact */}
                     <div className="mobile-nav__social">
-                        <a href="https://facebook.com">
-                            <i className="fab fa-facebook-f" aria-hidden="true"/>
-                            <span className="sr-only">Facebook</span>
-                        </a>
-                        <a href="https://pinterest.com">
-                            <i className="fab fa-pinterest-p" aria-hidden="true"/>
-                            <span className="sr-only">Pinterest</span>
-                        </a>
-                        <a href="https://twitter.com">
-                            <i className="fab fa-twitter" aria-hidden="true"/>
-                            <span className="sr-only">Twitter</span>
-                        </a>
-                        <a href="https://instagram.com">
+                        <a href="https://www.instagram.com/enjo_chem/?igsh=MXRrcGRiajJ1Zzl2NA%3D%3D&utm_source=qr">
                             <i className="fab fa-instagram" aria-hidden="true"/>
                             <span className="sr-only">Instagram</span>
                         </a>
+                        <a href="https://www.facebook.com/share/TLFua9MGvwceGrsH/?mibextid=hu50Ix">
+                            <i className="fab fa-facebook-f" aria-hidden="true"/>
+                            <span className="sr-only">Facebook</span>
+                        </a>
+                        <a href="https://x.com/enjochem8733?s=21&t=CnVxyHoohRO8ord7FIvguA">
+                            <i className="fab fa-twitter" aria-hidden="true"/>
+                            <span className="sr-only">Twitter</span>
+                        </a>
+                        <a href="https://www.linkedin.com/company/enjo-chem-agrochemical-industries">
+                            <i className="fab fa-linkedin" aria-hidden="true"/>
+                            <span className="sr-only">LinkedIn</span>
+                        </a>
+                        <a href="https://youtube.com/@enjo-chemagrochemicalindus4018?si=KDHTtiA4JW9Q7nco">
+                            <i className="fab fa-youtube" aria-hidden="true"/>
+                            <span className="sr-only">Youtube</span>
+                        </a>
+
                     </div>
                     {/* /.mobile-nav__social */}
                 </div>
@@ -64,9 +71,9 @@ function Navbar() {
                     >
                         <input type="text" id="search" placeholder="Search Here..."/>
                         <button type="submit" aria-label="search submit" className="alefox-btn">
-          <span>
-            <i className="icon-magnifying-glass"/>
-          </span>
+                          <span>
+                            <i className="icon-magnifying-glass"/>
+                          </span>
                         </button>
                     </form>
                 </div>
