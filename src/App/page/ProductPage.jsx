@@ -69,7 +69,7 @@ function ProductPage({filter}) {
                                                             {/*<a href="wishlist.html">*/}
                                                             {/*    <i className="far fa-heart"/>*/}
                                                             {/*</a>*/}
-                                                            <a href="/">
+                                                            <a href={"/products/" + product.id}>
                                                                 <i className="fas fa-eye"/>
                                                             </a>
                                                         </div>
