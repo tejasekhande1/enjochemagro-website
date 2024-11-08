@@ -80,14 +80,14 @@ function B2BDetailPage() {
 
                                     <div className="product-details__qty">
                                         <div className="product-details__buttons">
-                                            <a href="cart.html" className="alefox-btn">
+                                            <a href="" className="alefox-btn">
                                                 <span className="alefox-btn__item"/>
                                                 <span className="alefox-btn__item"/>
                                                 <span className="alefox-btn__item"/>
                                                 <span className="alefox-btn__item"/>
                                                 {t('product.call')}
                                             </a>
-                                            <a href="/" className="alefox-btn">
+                                            <a href="/contact" className="alefox-btn">
                                                 <span className="alefox-btn__item"/>
                                                 <span className="alefox-btn__item"/>
                                                 <span className="alefox-btn__item"/>
