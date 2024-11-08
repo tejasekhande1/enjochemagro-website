@@ -522,6 +522,7 @@
       alefoxslickCarousel.each(function () {
         let elm = $(this);
         let options = elm.data("slick-options");
+        console.log(options)
         let alefoxslickCarousel = elm.slick(
             "object" === typeof options ? options : JSON.parse(options)
         );

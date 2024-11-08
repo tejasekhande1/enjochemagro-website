@@ -84,6 +84,8 @@ i18n
                             'pgr': 'Plant Growth Regulators',
                             'bio-fertilizer': 'Bio-Fertilizers',
                         },
+                        call: 'Call US',
+                        enquiry: 'Enquiry Now',
                     },
                     products: [...productsEnglish],
                     contact: {
@@ -162,6 +164,8 @@ i18n
                             'pgr': 'पौधों के विकास नियंत्रक',
                             'bio-fertilizer': 'बायो-उर्वरक',
                         },
+                        call: 'आमच्याशी संपर्क साधा',
+                        enquiry: 'आता पूछताछ करा',
                     },
                     about: {
                         navText: "बद्दल",
@@ -270,6 +274,8 @@ i18n
                             'pgr': 'पौधों के विकास नियंत्रक',
                             'bio-fertilizer': 'बायो-उर्वरक',
                         },
+                        call: 'हमें कॉल करें',
+                        enquiry: 'अब पूछताछ करें',
                     },
                     contact: {
                         navText: 'संपर्क',
