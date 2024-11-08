@@ -1,5 +1,4 @@
-import React from 'react';  // Import React for JSX
-import ReactDOM from 'react-dom';
+import React from 'react';
 import {createContext, useState} from 'react'
 import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -92,6 +91,12 @@ export function App() {
                 total: 7,
             },
         ],
+        farmerMeeting: [
+            {
+                path: 'farmer-meeting',
+                total: 22,
+            },
+        ],
     };
     const router = createBrowserRouter([
         {
@@ -153,6 +158,10 @@ export function App() {
         {
             path: "/tour",
             element: <GalleryPage sections={gallery.tour} page={'gallery.tour'} />,
+        },
+        {
+            path: "/farmer-meeting",
+            element: <GalleryPage sections={gallery.farmerMeeting} page={'gallery.farmerMeeting'} />,
         },
 
         {
