@@ -12,6 +12,7 @@ import {gallery} from "./assets/json/gallery/gallery";
 import VideoPage from "./App/page/VideoPage";
 import {videoNews} from "./assets/json/gallery/videoNews";
 import ContactPage from "./App/page/ContactPage";
+import CareerPage from "./App/page/CareerPage";
 
 export const LanguageContext = createContext(null);
 
@@ -86,9 +87,14 @@ export function App() {
             element: <GalleryPage sections={gallery.farmerMeeting} page={'gallery.farmerMeeting'} />,
         },
         {
+            path: "/career",
+            element: <CareerPage />,
+        },
+        {
             path: "/contact",
             element: <ContactPage />,
         },
+
 
         {
             path: '*',
