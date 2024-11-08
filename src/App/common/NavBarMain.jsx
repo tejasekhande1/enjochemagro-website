@@ -82,6 +82,9 @@ function NavBarMain() {
                                             <a href="/tour">{t('gallery.tour.navText')}</a>
                                         </li>
                                         <li>
+                                            <a href="/video-news">{t('gallery.videoNews.navText')}</a>
+                                        </li>
+                                        <li>
                                             <a href="/farmer-meeting">{t('gallery.farmerMeeting.navText')}</a>
                                         </li>
                                     </ul>

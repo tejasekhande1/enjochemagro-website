@@ -118,6 +118,11 @@ i18n
                             headerText: 'Tour Photos',
                             subSectionText: ['Thailand TOUR 2024', 'Kashmir TOUR 2024', 'Somnath, Diu, Sasan Gir tour 2024', 'Thailand TOUR 2023', 'SINGAPORE TOUR 2018', 'DWARKA TOUR 2017'],
                         },
+                        videoNews: {
+                            navText: "Video News",
+                            headerText: "Video News",
+                            subSectionText: ["Video News"],
+                        },
                         farmerMeeting: {
                             navText: "Farmer's Meeting",
                             headerText: "Farmer's Meeting",
@@ -248,6 +253,11 @@ i18n
                             navText: 'प्रवास फोटो',
                             headerText: 'टूर फोटो',
                             subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
+                        },
+                        videoNews: {
+                            navText: "व्हिडिओ बातम्या",
+                            headerText: "व्हिडिओ बातम्या",
+                            subSectionText: ["व्हिडिओ बातम्या"],
                         },
                         farmerMeeting: {
                             navText: "शेतकरी भेट",
@@ -382,6 +392,11 @@ i18n
                             navText: 'यात्रा फ़ोटो',
                             headerText: 'यात्रा फ़ोटो',
                             subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
+                        },
+                        videoNews: {
+                            navText: "वीडियो समाचार",
+                            headerText: "वीडियो समाचार",
+                            subSectionText: ["वीडियो समाचार"],
                         },
                         farmerMeeting: {
                             navText: "किसानों से मिलना",

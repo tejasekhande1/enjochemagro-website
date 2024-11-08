@@ -9,6 +9,8 @@ import NotFoundPage from "./App/page/NotFoundPage";
 import ProductDetailPage from "./App/page/ProductDetailPage";
 import GalleryPage from "./App/page/GalleryPage";
 import {gallery} from "./assets/json/gallery/gallery";
+import VideoPage from "./App/page/VideoPage";
+import {videoNews} from "./assets/json/gallery/videoNews";
 
 export const LanguageContext = createContext(null);
 
@@ -73,6 +75,10 @@ export function App() {
         {
             path: "/tour",
             element: <GalleryPage sections={gallery.tour} page={'gallery.tour'} />,
+        },
+        {
+            path: "/video-news",
+            element: <VideoPage srcs={videoNews} page={'gallery.videoNews'}/>,
         },
         {
             path: "/farmer-meeting",
