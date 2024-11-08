@@ -1,5 +1,4 @@
-import React from 'react';  // Import React for JSX
-import ReactDOM from 'react-dom';
+import React from 'react';
 import PageWrapper from "../common/PageWrapper.jsx";
 import {useTranslation} from "react-i18next";
 import {useState} from "react";
@@ -34,13 +33,13 @@ function ProductPage({filter}) {
                                         <select className="select" aria-label="Sort by popular" value={productFilter} onChange={(event) => {
                                             setProductFilter(event.target.value);
                                         }}>
-                                            <option value={''}>Filter By All</option>
-                                            <option value={'insecticide'}>Insecticide</option>
-                                            <option value={'fungicide'}>Fungicide</option>
-                                            <option value={'herbicide'}>Herbicide</option>
-                                            <option value={'micronutrients-fertiliser'}>Micronutrients-Fertiliser</option>
-                                            <option value={'pgr'}>Plant Growth Regulators</option>
-                                            <option value={'bio-fertilizer'}>Bio-fertilizer</option>
+                                            <option value={''}>{t('product.navs.allProducts')}</option>
+                                            <option value={'insecticide'}>{t('product.navs.insecticide')}</option>
+                                            <option value={'fungicide'}>{t('product.navs.fungicide')}</option>
+                                            <option value={'herbicide'}>{t('product.navs.herbicide')}</option>
+                                            <option value={'micronutrients-fertiliser'}>{t('product.navs.micronutrients-fertiliser')}</option>
+                                            <option value={'pgr'}>{t('product.navs.pgr')}</option>
+                                            <option value={'bio-fertilizer'}>{t('product.navs.bio-fertilizer')}</option>
                                         </select>
                                     </div>
                                 </div>
