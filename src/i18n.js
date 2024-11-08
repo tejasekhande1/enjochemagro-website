@@ -61,6 +61,10 @@ i18n
                         },
                         productHeading: 'Enjo-Chem Agrochemicals Products',
                         productSubHeading: 'Enjo-Chem Agrochemicals products are backed up by a strong R&D through in-house ANALYTICAL LABORATORY which is equipped with sophisticated laboratory equipments',
+                        information: {
+                            heading: 'Your Partner in Sustainable Agriculture Solutions',
+                            description: 'Empowering farmers with high-quality pesticides and fertilizers for healthier crops, increased yields, and a greener future. Committed to safe and effective solutions for sustainable agriculture',
+                        },
                     },
                     about: {
                         navText: "About",
@@ -235,7 +239,11 @@ i18n
                             manufacturingUnit: "उत्पादन युनिट"
                         },
                         productHeading: 'Enjo-Chem एग्रोकेमिकल उत्पाद',
-                        productSubHeading: 'एन्जो-केम एग्रोकेमिकल उत्पाद एक मजबूत आर और डी के साथ समर्थित हैं, जो घरेलू एनालिटिकल प्रयोगशाला द्वारा सुसज्जित है जो विशेषज्ञ प्रयोगशाला उपकरणों से लैस है।'
+                        productSubHeading: 'एन्जो-केम एग्रोकेमिकल उत्पाद एक मजबूत आर और डी के साथ समर्थित हैं, जो घरेलू एनालिटिकल प्रयोगशाला द्वारा सुसज्जित है जो विशेषज्ञ प्रयोगशाला उपकरणों से लैस है।',
+                        information: {
+                            heading: 'शाश्वत शेती समाधानात आपला भागीदार',
+                            description: 'आरोग्यदायी पिके, वाढीव उत्पादन आणि हरित भविष्यासाठी उच्च-गुणवत्तेची कीटकनाशके आणि खते शेतकऱ्यांना पुरवणे. शाश्वत शेतीसाठी सुरक्षित आणि प्रभावी उपाय प्रदान करण्यासाठी वचनबद्ध.',
+                        },
                     },
                     product: {
                         navText: 'उत्पादन',
@@ -410,7 +418,11 @@ i18n
                             manufacturingUnit: "उत्पादन इकाई"
                         },
                         productHeading: 'Enjo-Chem अॅग्रोकेमिकल उत्पाद',
-                        productSubHeading: 'Enjo-Chem अॅग्रोकेमिकल उत्पाद घरच्या एनालिटिकल प्रयोगशाळेद्वारे सुसज्जित असलेल्या उन्नत प्रयोगशाळा उपकरणांच्या सहाय्याने समर्थित आहेत'
+                        productSubHeading: 'Enjo-Chem अॅग्रोकेमिकल उत्पाद घरच्या एनालिटिकल प्रयोगशाळेद्वारे सुसज्जित असलेल्या उन्नत प्रयोगशाळा उपकरणांच्या सहाय्याने समर्थित आहेत',
+                        information: {
+                            heading: 'सस्टेनेबल कृषि समाधान में आपका साथी',
+                            description: 'स्वस्थ फसलें, बेहतर उत्पादन और हरित भविष्य के लिए उच्च गुणवत्ता वाले कीटनाशक और उर्वरक किसानों को प्रदान करना। सस्टेनेबल कृषि के लिए सुरक्षित और प्रभावी समाधान देने के लिए प्रतिबद्ध।',
+                        },
                     },
                     about: {
                         navText:"बारेमें",

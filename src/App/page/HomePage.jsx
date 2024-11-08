@@ -302,52 +302,61 @@ function HomePage() {
                     {/* /.sec-title */}
                     <div className="row gutter-y-30" style={{display: "flex", flexWrap: 'wrap', alignItems: 'stretch'}}>
                         {products.map((product, index) => {
-                            return(
-                            <div className="col-md-6 col-lg-4 col-xl-3" key={index + 'products-list'}>
-                                <div
-                                    className="product__item wow fadeInUp"
-                                    data-wow-duration="1500ms"
-                                    data-wow-delay="000ms"
-                                >
-                                    <div className="product__item__img">
-                                        <img
-                                            src={"/assets/images/custom/products/" + (index + 1) + '.png'}
-                                            alt="enjo-chem"
-                                        />
-                                        {/*<div className="product__item__flash">*/}
-                                        {/*    <span className="product__item__flash__off">Sale</span>*/}
-                                        {/*</div>*/}
-                                        <div className="product__item__btn">
-                                            {/*<a href="cart.html">*/}
-                                            {/*    <i className="icon-shopping-cart"/>*/}
-                                            {/*</a>*/}
-                                            {/*<a href="wishlist.html">*/}
-                                            {/*    <i className="far fa-heart"/>*/}
-                                            {/*</a>*/}
-                                            <a href={"/products/" + product.id}>
-                                                <i className="fas fa-eye"/>
-                                            </a>
+                            return (
+                                <div className="col-md-6 col-lg-4 col-xl-3" key={index + 'products-list'}>
+                                    <div
+                                        className="product__item wow fadeInUp"
+                                        data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                    >
+                                        <div className="product__item__img">
+                                            <img
+                                                src={"/assets/images/custom/products/" + (index + 1) + '.png'}
+                                                alt="enjo-chem"
+                                            />
+                                            {/*<div className="product__item__flash">*/}
+                                            {/*    <span className="product__item__flash__off">Sale</span>*/}
+                                            {/*</div>*/}
+                                            <div className="product__item__btn">
+                                                {/*<a href="cart.html">*/}
+                                                {/*    <i className="icon-shopping-cart"/>*/}
+                                                {/*</a>*/}
+                                                {/*<a href="wishlist.html">*/}
+                                                {/*    <i className="far fa-heart"/>*/}
+                                                {/*</a>*/}
+                                                <a href={"/products/" + product.id}>
+                                                    <i className="fas fa-eye"/>
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    {/* /.product-image */}
-                                    <div className="product__item__content">
-                                        <h4 className="product__item__title">
-                                            {product.name}
-                                        </h4>
-                                        <div className="product__item__cats">
-                                            {product.ingredients}
+                                        {/* /.product-image */}
+                                        <div className="product__item__content">
+                                            <h4 className="product__item__title">
+                                                {product.name}
+                                            </h4>
+                                            <div className="product__item__cats">
+                                                {product.ingredients}
+                                            </div>
+                                            {/*<div className="product__item__cats">*/}
+                                            {/*    {product.packingSize}*/}
+                                            {/*</div>*/}
+                                            {/*<div className="product__item__cats">*/}
+                                            {/*    {product.dosage}*/}
+                                            {/*</div>*/}
                                         </div>
-                                        {/*<div className="product__item__cats">*/}
-                                        {/*    {product.packingSize}*/}
-                                        {/*</div>*/}
-                                        {/*<div className="product__item__cats">*/}
-                                        {/*    {product.dosage}*/}
-                                        {/*</div>*/}
                                     </div>
                                 </div>
-                            </div>
                             );
                         })}
+                        <div className={'d-flex justify-content-center'}>
+                            <a href="/products" className="alefox-btn">
+                                <span className="alefox-btn__item"/>
+                                <span className="alefox-btn__item"/>
+                                <span className="alefox-btn__item"/>
+                                <span className="alefox-btn__item"/>
+                                {t('product.navText')}
+                            </a>
+                        </div>
                     </div>
                     {/* /.row */}
                 </div>
@@ -371,13 +380,10 @@ function HomePage() {
                 />
                 <div className="container wow fadeInUp">
                     <h3 className="cta-one__title">
-                        Steps in The Process for Agriculture
-                        <br/> Organic Services
+                        {t('home.information.heading')}
                     </h3>
                     <p className="cta-one__text">
-                        We are the some preferred choice by many car owners because our
-                        experience and <br/>
-                        is selfe vident.For your car we will do som everything
+                        {t('home.information.description')}
                     </p>
                     <a href="/about" className="alefox-btn">
                         <span className="alefox-btn__item"/>
