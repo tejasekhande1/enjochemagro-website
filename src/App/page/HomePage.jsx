@@ -324,7 +324,7 @@ function HomePage() {
                                             {/*<a href="wishlist.html">*/}
                                             {/*    <i className="far fa-heart"/>*/}
                                             {/*</a>*/}
-                                            <a href="/">
+                                            <a href={"/products/" + product.id}>
                                                 <i className="fas fa-eye"/>
                                             </a>
                                         </div>
@@ -379,7 +379,7 @@ function HomePage() {
                         experience and <br/>
                         is selfe vident.For your car we will do som everything
                     </p>
-                    <a href="contact.html" className="alefox-btn">
+                    <a href="/about" className="alefox-btn">
                         <span className="alefox-btn__item"/>
                         <span className="alefox-btn__item"/>
                         <span className="alefox-btn__item"/>
