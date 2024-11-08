@@ -69,6 +69,17 @@ function NavBarMain() {
                                         </li>
                                     </ul>
                                 </li>
+                                <li className="dropdown">
+                                    <a href="/annual-dealers-meet">{t('gallery.navText')}</a>
+                                    <ul className="sub-menu">
+                                        <li>
+                                            <a href="/annual-dealers-meet">{t('gallery.annualDealersMeet.navText')}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/annual-dealers-meet">{t('gallery.annualDealersMeet.navText')}</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                         <div className="main-header__right">

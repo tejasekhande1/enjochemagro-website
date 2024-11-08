@@ -101,6 +101,14 @@ i18n
                             subSectionText: ['Company News'],
                         }
                     },
+                    gallery: {
+                        navText: 'Gallery',
+                        annualDealersMeet: {
+                            navText: 'Annual Dealers Meet',
+                            headerText: 'Annual Dealer Meeting',
+                            subSectionText: ['Annual Dealers meeting 2024 AT Chatrapati Sambhajinagar', 'Annual Dealers meeting 2023 AT Chatrapati Sambhajinagar', 'TOP SELLLERS MEET 2022 AT GOA', 'Annual Dealers meeting 2022 at Chatrapati Sambhajinagar', 'ANNUAL DEALERS MEETING 2017 AT WARDHA', 'TOP SELLERS MEET 2014 AT KERALA', 'ANNUAL DEALER MEET 2014 AT WARDHA'],
+                        },
+                    },
                     contact: {
                         navText: 'Contact',
                     },
@@ -208,6 +216,14 @@ i18n
                             headerText: 'कंपनीची बातम्या',
                             subSectionText: ['कंपनीची बातम्या'],
                         }
+                    },
+                    gallery: {
+                        navText: 'गॅलरी',
+                        annualDealersMeet: {
+                            navText: 'वार्षिक विक्रेता सभा',
+                            headerText: 'वार्षिक डीलर सभा',
+                            subSectionText: ['छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा 2024', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२३', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२२', 'वार्षिक डीलर सभा २०१७ वर्धा', 'केरळ येथे टॉप सेलर्स मीट २०१४', 'वार्षिक डीलर सभा २०१४ वर्धा'],
+                        },
                     },
                     contact: {
                         navText: 'संपर्क',
@@ -319,6 +335,14 @@ i18n
                             headerText: 'कंपनी की खबरें',
                             subSectionText: ['कंपनी की खबरें'],
                         }
+                    },
+                    gallery: {
+                        navText: 'गैलरी',
+                        annualDealersMeet: {
+                            navText: 'वार्षिक डीलर्स मीट',
+                            headerText: 'वार्षिक डीलर सम्मेलन',
+                            subSectionText: ['छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2024', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2023', 'गोवा में शीर्ष विक्रेताओं की मीट 2022', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2022', 'वार्षिक डीलर सम्मेलन 2017 वर्धा', 'केरला में शीर्ष विक्रेताओं की मीट 2014', 'वार्षिक डीलर सम्मेलन 2014 वर्धा'],
+                        },
                     },
                     quickLinks: 'त्वरित सम्पक',
                     footer: {

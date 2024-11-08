@@ -30,6 +30,36 @@ export function App() {
                 total: 13,
             },
         ],
+        annualDealersMeet: [
+            {
+                path: 'annual-dealers-meet/sambhajinagar-2024',
+                total: 15,
+            },
+            {
+                path: 'annual-dealers-meet/sambhajinagar-2023',
+                total: 8,
+            },
+            {
+                path: 'annual-dealers-meet/goa',
+                total: 9,
+            },
+            {
+                path: 'annual-dealers-meet/sambhajinagar-2022',
+                total: 8,
+            },
+            {
+                path: 'annual-dealers-meet/wardha-2017',
+                total: 4,
+            },
+            {
+                path: 'annual-dealers-meet/kerala',
+                total: 8,
+            },
+            {
+                path: 'annual-dealers-meet/wardha-2014',
+                total: 9,
+            },
+        ],
     };
     const router = createBrowserRouter([
         {
@@ -79,6 +109,10 @@ export function App() {
         {
             path: "/company-news",
             element: <GalleryPage sections={gallery.companyNews} page={'media.companyNews'} />,
+        },
+        {
+            path: "/annual-dealers-meet",
+            element: <GalleryPage sections={gallery.annualDealersMeet} page={'gallery.annualDealersMeet'} />,
         },
 
         {

@@ -11,9 +11,10 @@ function GalleryPage({sections, page}) {
             <>
                 <section className="gallery-one" style={{paddingTop: '1rem'}}>
                     <div className="container-fluid">
+                        <h1 className={'mx-2 my-3 p-3'}>{t(page + '.navText')}</h1>
                         {sections.map((section, index) => {
                             return(
-                                <div key={index} className={'mb-5 p-4'} style={{backgroundColor: 'whitesmoke', borderRadius: '0.3rem'}}>
+                                <div key={index} className={'mb-5 p-4'} style={{backgroundColor: '#F8F8F8', borderRadius: '0.3rem'}}>
                                     <h3>{sebSectionHeaders[index]}</h3>
                                     <hr />
                                     <div className="row mt-3" key={index} >
