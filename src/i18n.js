@@ -3,6 +3,11 @@ import { initReactI18next } from "react-i18next";
 import productsEnglish from '../src/assets/json/products/english.json';
 import productsMarathi from '../src/assets/json/products/marathi.json';
 import productsHindi from '../src/assets/json/products/hindi.json';
+import {products as b2bProductsEnglish} from "./assets/json/b2b/english";
+import {products as b2bProductsMarathi}  from "./assets/json/b2b/marathi";
+import {products as b2bProductsHindi}  from "./assets/json/b2b/hindi";
+
+
 const lang = {
     marathi: 'mr',
     english: 'en',
@@ -14,7 +19,7 @@ i18n
     .use(initReactI18next)
     .init({
         fallbackLng: "en",
-        lng: lang[localStorage.getItem('language')],
+        lng: lang[localStorage.getItem('language') ?? 'english'],
         interpolation: {
             escapeValue: false,
         },
@@ -56,6 +61,10 @@ i18n
                         },
                         productHeading: 'Enjo-Chem Agrochemicals Products',
                         productSubHeading: 'Enjo-Chem Agrochemicals products are backed up by a strong R&D through in-house ANALYTICAL LABORATORY which is equipped with sophisticated laboratory equipments',
+                        information: {
+                            heading: 'Your Partner in Sustainable Agriculture Solutions',
+                            description: 'Empowering farmers with high-quality pesticides and fertilizers for healthier crops, increased yields, and a greener future. Committed to safe and effective solutions for sustainable agriculture',
+                        },
                     },
                     about: {
                         navText: "About",
@@ -84,12 +93,94 @@ i18n
                             'pgr': 'Plant Growth Regulators',
                             'bio-fertilizer': 'Bio-Fertilizers',
                         },
+                        call: 'Call US',
+                        enquiry: 'Enquiry Now',
                     },
                     products: [...productsEnglish],
+                    media: {
+                        navText: 'Media',
+                        newLaunch: {
+                            navText: 'New Launch',
+                            headerText: 'New Launch Products',
+                            subSectionText: ['New Launch 2024', 'New Launch 2023'],
+                        },
+                        companyNews: {
+                            navText: 'Company News',
+                            headerText: 'Company News',
+                            subSectionText: ['Company News'],
+                        }
+                    },
+                    gallery: {
+                        navText: 'Gallery',
+                        annualDealersMeet: {
+                            navText: 'Annual Dealers Meet',
+                            headerText: 'Annual Dealer Meeting',
+                            subSectionText: ['Annual Dealers meeting 2024 AT Chatrapati Sambhajinagar', 'Annual Dealers meeting 2023 AT Chatrapati Sambhajinagar', 'TOP SELLLERS MEET 2022 AT GOA', 'Annual Dealers meeting 2022 at Chatrapati Sambhajinagar', 'ANNUAL DEALERS MEETING 2017 AT WARDHA', 'TOP SELLERS MEET 2014 AT KERALA', 'ANNUAL DEALER MEET 2014 AT WARDHA'],
+                        },
+                        fieldVisits: {
+                            navText: 'Field Visits',
+                            headerText: 'Field Visits',
+                            subSectionText: ['Field Visits'],
+                        },
+                        tour: {
+                            navText: 'Tour Photos',
+                            headerText: 'Tour Photos',
+                            subSectionText: ['Thailand TOUR 2024', 'Kashmir TOUR 2024', 'Somnath, Diu, Sasan Gir tour 2024', 'Thailand TOUR 2023', 'SINGAPORE TOUR 2018', 'DWARKA TOUR 2017'],
+                        },
+                        videoNews: {
+                            navText: "Video News",
+                            headerText: "Video News",
+                            subSectionText: ["Video News"],
+                        },
+                        farmerMeeting: {
+                            navText: "Farmer's Meeting",
+                            headerText: "Farmer's Meeting",
+                            subSectionText: ["Farmer's Meeting"],
+                        },
+                    },
                     contact: {
                         navText: 'Contact',
+                        form: {
+                            contactUs: 'Contact Us',
+                            header: 'Get in Touch',
+                            name: 'Name',
+                            email: 'Email',
+                            phone: 'Phone',
+                            message: 'Message',
+                            send: 'Send Request',
+                        },
+                        address: {
+                            address1: 'Office & Mfg. Premises',
+                            address1Mini: 'Survey No. 53-2/1, kotamgaon, Tal. Yeola, Dist. Nashik, Maharashtra, India - 423401',
+                            address2: 'Head Office',
+                            address2Mini: 'B-14/10/12, Colgate chawk, MIDC waluj Kh, Gangapur, Chh. Sambhajinagar-431136',
+                            address3: 'Akola Sales Office',
+                            address3Mini: 'C/O. Padmavati Udhyg, near MIDC Police station, MIDC no. 2, 444004',
+                            phoneText: 'Phone',
+                            phoneNumber: '+91 8275017003, +91 9579291495',
+                            emailText: 'Email',
+                            email: 'support@enjochemagro.com, enjochemagro133@gmail.com',
+                        },
                     },
                     quickLinks: 'Quick Links',
+                    career: {
+                        navText: 'Career',
+                        name: 'Name',
+                        address: 'Address',
+                        email: 'Email',
+                        phone: 'Phone',
+                        dateOfBirth: 'Date Of Birth',
+                        linkedinProfileLink: 'LinkedIn Profile Link',
+                        postApplyingFor: 'Post Applying For',
+                        availableStartDate: 'Available Start Date',
+                        resume: 'Resume',
+                        coverLetter: 'Cover Letter',
+                        send: 'Send',
+                    },
+                    b2bProducts: [...b2bProductsEnglish],
+                    b2bProduct: {
+                        navText: 'B2B',
+                    },
                     footer: {
                         description: 'Enjo-Chem Agrochemical is a Manufacturer of Crop protection, Micronutrients, Pesticides and Fertilisers. Enjo-Chem is a leading agrochemical company dedicated to advancing agricultural productivity and sustainability.',
                         productTitle: 'Our Products',
@@ -148,7 +239,11 @@ i18n
                             manufacturingUnit: "उत्पादन युनिट"
                         },
                         productHeading: 'Enjo-Chem एग्रोकेमिकल उत्पाद',
-                        productSubHeading: 'एन्जो-केम एग्रोकेमिकल उत्पाद एक मजबूत आर और डी के साथ समर्थित हैं, जो घरेलू एनालिटिकल प्रयोगशाला द्वारा सुसज्जित है जो विशेषज्ञ प्रयोगशाला उपकरणों से लैस है।'
+                        productSubHeading: 'एन्जो-केम एग्रोकेमिकल उत्पाद एक मजबूत आर और डी के साथ समर्थित हैं, जो घरेलू एनालिटिकल प्रयोगशाला द्वारा सुसज्जित है जो विशेषज्ञ प्रयोगशाला उपकरणों से लैस है।',
+                        information: {
+                            heading: 'शाश्वत शेती समाधानात आपला भागीदार',
+                            description: 'आरोग्यदायी पिके, वाढीव उत्पादन आणि हरित भविष्यासाठी उच्च-गुणवत्तेची कीटकनाशके आणि खते शेतकऱ्यांना पुरवणे. शाश्वत शेतीसाठी सुरक्षित आणि प्रभावी उपाय प्रदान करण्यासाठी वचनबद्ध.',
+                        },
                     },
                     product: {
                         navText: 'उत्पादन',
@@ -162,6 +257,8 @@ i18n
                             'pgr': 'पौधों के विकास नियंत्रक',
                             'bio-fertilizer': 'बायो-उर्वरक',
                         },
+                        call: 'आमच्याशी संपर्क साधा',
+                        enquiry: 'आता पूछताछ करा',
                     },
                     about: {
                         navText: "बद्दल",
@@ -179,10 +276,90 @@ i18n
                         coreValuesPoints: ['नैतिकता आणि अखंडता', 'पारदर्शिता', 'नवोत्कृष्टता', 'कुल गुणवत्ता नियंत्रण', 'पर्यावरणाची देखरेख', 'सहकार्यातून आर आणि डी नेतृत्व'],
                     },
                     products: [...productsMarathi],
+                    media: {
+                        navText: 'मीडिया',
+                        newLaunch: {
+                            navText: 'नवीन लॉन्च',
+                            headerText: 'नवीन लॉन्च उत्पादने',
+                            subSectionText: ['नवीन लॉन्च 2024', 'नवीन लॉन्च २०२३'],
+                        },
+                        companyNews: {
+                            navText: 'कंपनीची बातम्या',
+                            headerText: 'कंपनीची बातम्या',
+                            subSectionText: ['कंपनीची बातम्या'],
+                        }
+                    },
+                    gallery: {
+                        navText: 'गॅलरी',
+                        annualDealersMeet: {
+                            navText: 'वार्षिक विक्रेता सभा',
+                            headerText: 'वार्षिक डीलर सभा',
+                            subSectionText: ['छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा 2024', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२३', 'छत्रपती संभाजीनगर येथे वार्षिक डीलर्स सभा २०२२', 'वार्षिक डीलर सभा २०१७ वर्धा', 'केरळ येथे टॉप सेलर्स मीट २०१४', 'वार्षिक डीलर सभा २०१४ वर्धा'],
+                        },
+                        fieldVisits: {
+                            navText: 'फील्ड भेट',
+                            headerText: 'फील्ड भेट',
+                            subSectionText: ['फील्ड भेट'],
+                        },
+                        tour: {
+                            navText: 'प्रवास फोटो',
+                            headerText: 'टूर फोटो',
+                            subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
+                        },
+                        videoNews: {
+                            navText: "व्हिडिओ बातम्या",
+                            headerText: "व्हिडिओ बातम्या",
+                            subSectionText: ["व्हिडिओ बातम्या"],
+                        },
+                        farmerMeeting: {
+                            navText: "शेतकरी भेट",
+                            headerText: "शेतकरी भेट",
+                            subSectionText: ["शेतकरी भेट"],
+                        },
+                    },
                     contact: {
                         navText: 'संपर्क',
+                        form: {
+                            contactUs: 'आमच्याशी संपर्क साधा',
+                            header: 'संपर्कात रहा',
+                            name: 'नाव',
+                            email: 'ईमेल',
+                            phone: 'फोन',
+                            message: 'संदेश',
+                            send: 'विनंती पाठवा',
+                        },
+                        address: {
+                            address1: 'कार्यालय आणि निर्माण ठिकाण',
+                            address1Mini: 'सर्वेक्षण क्रमांक 53-2/1, कोटमगाव, ता. येवला, जि. नाशिक, महाराष्ट्र, भारत - 423401',
+                            address2: 'मुख्य कार्यालय',
+                            address2Mini: 'बी-14/10/12, कोलगेट चौक, मिडसी वाळूज खंड, गंगापूर, छ. संभाजीनगर-431136',
+                            address3: 'अकोला विक्री कार्यालय',
+                            address3Mini: 'C/O. पद्मावती उद्योग, मिडसी पोलीस स्थानकाजवळ, मिडसी क्र. 2, 444004',
+                            phoneText: 'फोन',
+                            phoneNumber: '+91 8275017003, +91 9579291495',
+                            emailText: 'ईमेल',
+                            email: 'support@enjochemagro.com, enjochemagro133@gmail.com',
+                        },
                     },
                     quickLinks: 'द्रुत दुवे',
+                    career: {
+                        navText: 'करियर',
+                        name: 'नाव',
+                        address: 'पत्ता',
+                        email: 'ईमेल',
+                        phone: 'फोन',
+                        dateOfBirth: 'जन्मतारीख',
+                        linkedinProfileLink: 'लिंक्डइन प्रोफाइल लिंक',
+                        postApplyingFor: 'अर्ज केलेली पोस्ट',
+                        availableStartDate: 'उपलब्ध प्रारंभ दिनांक',
+                        resume: 'रेझ्युमे',
+                        coverLetter: 'कव्हर लेटर',
+                        send: 'पाठवा',
+                    },
+                    b2bProducts: [...b2bProductsMarathi],
+                    b2bProduct: {
+                        navText: 'व्यापार-व्यापार',
+                    },
                     footer: {
                         description: 'एन्जो-केम अॅग्रोकेमिकल एक क्रॉप प्रोटेक्शन, मायक्रोन्यूट्रिएंट्स, पेस्टिसाइड्स आणि फर्टिलायझर्सचे निर्माता आहे. एन्जो-केम हे एक अग्रणी अॅग्रोकेमिकल कंपनी आहे ज्याने कृषीविज्ञान आणि शेतीविज्ञानाचा वापर करून कृषीची उत्पादनशीलता आणि सतततेचे वाढवण्यास समर्पित आहे.',
                         productTitle: 'आमचे उत्पादन',
@@ -241,7 +418,11 @@ i18n
                             manufacturingUnit: "उत्पादन इकाई"
                         },
                         productHeading: 'Enjo-Chem अॅग्रोकेमिकल उत्पाद',
-                        productSubHeading: 'Enjo-Chem अॅग्रोकेमिकल उत्पाद घरच्या एनालिटिकल प्रयोगशाळेद्वारे सुसज्जित असलेल्या उन्नत प्रयोगशाळा उपकरणांच्या सहाय्याने समर्थित आहेत'
+                        productSubHeading: 'Enjo-Chem अॅग्रोकेमिकल उत्पाद घरच्या एनालिटिकल प्रयोगशाळेद्वारे सुसज्जित असलेल्या उन्नत प्रयोगशाळा उपकरणांच्या सहाय्याने समर्थित आहेत',
+                        information: {
+                            heading: 'सस्टेनेबल कृषि समाधान में आपका साथी',
+                            description: 'स्वस्थ फसलें, बेहतर उत्पादन और हरित भविष्य के लिए उच्च गुणवत्ता वाले कीटनाशक और उर्वरक किसानों को प्रदान करना। सस्टेनेबल कृषि के लिए सुरक्षित और प्रभावी समाधान देने के लिए प्रतिबद्ध।',
+                        },
                     },
                     about: {
                         navText:"बारेमें",
@@ -270,12 +451,94 @@ i18n
                             'pgr': 'पौधों के विकास नियंत्रक',
                             'bio-fertilizer': 'बायो-उर्वरक',
                         },
+                        call: 'हमें कॉल करें',
+                        enquiry: 'अब पूछताछ करें',
                     },
                     contact: {
                         navText: 'संपर्क',
+                        form: {
+                            contactUs: 'हमसे संपर्क करें',
+                            header: 'संपर्क में रहें',
+                            name: 'नाम',
+                            email: 'ईमेल',
+                            phone: 'फोन',
+                            message: 'संदेश',
+                            send: 'अनुरोध भेजें',
+                        },
+                        address: {
+                            address1: 'कार्यालय और निर्माण स्थल',
+                            address1Mini: 'सर्वेक्षण संख्या 53-2/1, कोटमगाव, ता. येवला, जि. नासिक, महाराष्ट्र, भारत - 423401',
+                            address2: 'मुख्य कार्यालय',
+                            address2Mini: 'बी-14/10/12, कोलगेट चौक, मिडसी वाळूज खंड, गंगापूर, छ. संभाजीनगर-431136',
+                            address3: 'अकोला विक्री कार्यालय',
+                            address3Mini: 'C/O. पद्मावती उद्योग, मिडसी पोलीस स्थानकाजवळ, मिडसी क्र. 2, 444004',
+                            phoneText: 'फोन',
+                            phoneNumber: '+91 8275017003, +91 9579291495',
+                            emailText: 'ईमेल',
+                            email: 'support@enjochemagro.com, enjochemagro133@gmail.com',
+                        },
                     },
                     products: [...productsHindi],
+                    media: {
+                        navText: 'मीडिया',
+                        newLaunch: {
+                            navText: 'नई लॉन्च',
+                            headerText: 'नई लॉन्च उत्पादने',
+                            subSectionText: ['नई लॉन्च 2024', 'नई लॉन्च 2023'],
+                        },
+                        companyNews: {
+                            navText: 'कंपनी की खबरें',
+                            headerText: 'कंपनी की खबरें',
+                            subSectionText: ['कंपनी की खबरें'],
+                        }
+                    },
+                    gallery: {
+                        navText: 'गैलरी',
+                        annualDealersMeet: {
+                            navText: 'वार्षिक डीलर्स मीट',
+                            headerText: 'वार्षिक डीलर सम्मेलन',
+                            subSectionText: ['छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2024', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2023', 'गोवा में शीर्ष विक्रेताओं की मीट 2022', 'छत्रपति संभाजीनगर में वार्षिक डीलर सम्मेलन 2022', 'वार्षिक डीलर सम्मेलन 2017 वर्धा', 'केरला में शीर्ष विक्रेताओं की मीट 2014', 'वार्षिक डीलर सम्मेलन 2014 वर्धा'],
+                        },
+                        fieldVisits: {
+                            navText: 'फील्ड दौरा',
+                            headerText: 'फील्ड दौरा',
+                            subSectionText: ['फील्ड दौरा'],
+                        },
+                        tour: {
+                            navText: 'यात्रा फ़ोटो',
+                            headerText: 'यात्रा फ़ोटो',
+                            subSectionText: ['थाईलैंड यात्रा 2024', 'कश्मीर यात्रा 2024', 'सोमनाथ, दिउ, सासन गिर यात्रा 2024', 'थाईलैंड यात्रा 2023', 'सिंगापुर यात्रा 2018', 'द्वारका यात्रा 2017'],
+                        },
+                        videoNews: {
+                            navText: "वीडियो समाचार",
+                            headerText: "वीडियो समाचार",
+                            subSectionText: ["वीडियो समाचार"],
+                        },
+                        farmerMeeting: {
+                            navText: "किसानों से मिलना",
+                            headerText: "किसानों की मुलाकात",
+                            subSectionText: ["किसानों की मुलाकात"],
+                        },
+                    },
                     quickLinks: 'त्वरित सम्पक',
+                    career: {
+                        navText: 'करियर',
+                        name: 'नाम',
+                        address: 'पता',
+                        email: 'ईमेल',
+                        phone: 'फोन',
+                        dateOfBirth: 'जन्म तिथि',
+                        linkedinProfileLink: 'लिंक्डइन प्रोफाइल लिंक',
+                        postApplyingFor: 'जिस पद के लिए आवेदन कर रहे हैं',
+                        availableStartDate: 'उपलब्ध प्रारंभ तिथि',
+                        resume: 'रिज़्यूमे',
+                        coverLetter: 'कवर लेटर',
+                        send: 'भेजें',
+                    },
+                    b2bProduct: {
+                      navText: 'व्यापार-से-व्यापार',
+                    },
+                    b2bProducts: [...b2bProductsHindi],
                     footer: {
                         description: 'एन्जो-केम एग्रोकेमिकल एक क्रॉप प्रोटेक्शन, माइक्रोन्यूट्रिएंट्स, पेस्टिसाइड्स और फर्टिलाइजर्स का निर्माता है। एन्जो-केम एक अग्रणी एग्रोकेमिकल कंपनी है जो कृषि उत्पादकता और स्थायित्व को बढ़ाने के लिए समर्पित है',
                         productTitle: 'हमारे उत्पाद',

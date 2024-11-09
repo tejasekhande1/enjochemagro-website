@@ -58,6 +58,46 @@ function NavBarMain() {
                                         </li>
                                     </ul>
                                 </li>
+                                <li className="dropdown">
+                                    <a href="/new-launch">{t('media.navText')}</a>
+                                    <ul className="sub-menu">
+                                        <li>
+                                            <a href="/new-launch">{t('media.newLaunch.navText')}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/company-news">{t('media.companyNews.navText')}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li className="dropdown">
+                                    <a href="/annual-dealers-meet">{t('gallery.navText')}</a>
+                                    <ul className="sub-menu">
+                                        <li>
+                                            <a href="/annual-dealers-meet">{t('gallery.annualDealersMeet.navText')}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/field-visits">{t('gallery.fieldVisits.navText')}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/tour">{t('gallery.tour.navText')}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/video-news">{t('gallery.videoNews.navText')}</a>
+                                        </li>
+                                        <li>
+                                            <a href="/farmer-meeting">{t('gallery.farmerMeeting.navText')}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/career">{t('career.navText')}</a>
+                                </li>
+                                <li>
+                                    <a href="/b2b">{t('b2bProduct.navText')}</a>
+                                </li>
+                                <li>
+                                    <a href="/contact">{t('contact.navText')}</a>
+                                </li>
                             </ul>
                         </nav>
                         <div className="main-header__right">
@@ -84,7 +124,7 @@ function NavBarMain() {
                                 >
                                     +91 8275 017 003
                                 </a>
-                                <br />
+                                <br/>
                                 <a
                                     className="main-header__call__text"
                                     href="https://api.whatsapp.com/send/?phone=8275017003&text&type=phone_number"
